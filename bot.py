@@ -4,7 +4,7 @@ import os
 import json
 from datetime import datetime
 
-WEBHOOK_URL = os.environ["https://discord.com/api/webhooks/1504483133092008017/s6yQTvB7lLVOPcT3zFafUJ2hgkVLUDVI6tf8U4cetD_AFAa48z3q_BzFa9j5fidRvrcY"]
+WEBHOOK_URL = os.environ["DISCORD_WEBHOOK_URL"]
 
 BASE_URL = "https://dev-event.vercel.app/events"
 
