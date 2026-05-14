@@ -9,6 +9,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: dev-event-bot
+  cancel-in-progress: true
+
 jobs:
   run-bot:
     runs-on: ubuntu-latest
@@ -40,8 +44,10 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
 
+          git pull origin main --rebase
+
           git add events_cache.json
 
           git diff --cached --quiet || git commit -m "update cache"
 
-          git push
+          git push origin main
