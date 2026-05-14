@@ -1,25 +1,25 @@
 # DEV EVENT Discord Bot
-
-사이트의 행사 정보를 자동으로 수집하여 Discord 채널로 전송하는 GitHub Actions 기반 자동화 봇입니다.
+행사 정보를 자동으로 수집하여 Discord 채널로 전송하는 GitHub Actions 기반 자동화 봇입니다.
 
 ## 기능
 
-- DEV EVENT 행사 자동 수집
+- DEV EVENT 행사 자동 크롤링
 - Discord Webhook 자동 전송
-- GitHub Actions 기반 24시간 자동 실행
+- GitHub Actions 기반 서버리스 자동 실행
 - 중복 행사 자동 필터링
-- 무료 서버리스 운영 가능
 - 5분 단위 자동 모니터링
+- 무료 운영 가능
 
-## 알리미 봇 미리 보기
+## 봇 알림 미리보기
 
 ```
-[새로운 개발 행사]
-AI 컨퍼런스 2026
+새로운 개발 행사
+
+AI Conference 2026
 https://dev-event.vercel.app/events/xxx
 ```
 
-## 디렉토리 구조
+## 전체적 구조
 
 ```
 discord-dev-event-bot/
@@ -31,9 +31,9 @@ discord-dev-event-bot/
         └── bot.yml
 ```
 
-## 설치하기
+## Installation
 
-### 1. 레포지토리 복제
+### 1. Clone Repository
 
 ```bash
 git clone https://github.com/dubu-alt/discord-dev-event-bot
@@ -46,7 +46,26 @@ cd discord-dev-event-bot
 pip install -r requirements.txt
 ```
 
-## Discord Webhook 구성 및 설치
+## Requirements 생성
+
+**requirements.txt**
+
+```
+requests
+beautifulsoup4
+```
+
+## Initial Setup
+
+### events_cache.json
+
+처음에는 빈 배열로 생성합니다.
+
+```json
+[]
+```
+
+### Discord Webhook Setup
 
 1. Discord 채널 설정 진입
 2. 연동 → 웹후크(Webhooks)
@@ -58,7 +77,9 @@ pip install -r requirements.txt
 https://discord.com/api/webhooks/xxxxx/xxxxx
 ```
 
-## GitHub Secrets 설정 방법
+**주의:** 웹훅 URL을 절대 코드에 직접 넣지 마세요. GitHub Secrets에 저장해야 합니다.
+
+### GitHub Secrets Setup
 
 GitHub Repository에서:
 
@@ -72,7 +93,22 @@ Settings → Secrets and variables → Actions → New repository secret
 |------|-------|
 | DISCORD_WEBHOOK_URL | 디스코드 웹훅 URL |
 
-## GitHub Actions Setup
+### GitHub Actions Permission Setup
+
+GitHub Repository에서:
+
+```
+Settings → Actions → General
+```
+
+다음 설정 활성화:
+
+```
+Workflow permissions
+☑ Read and write permissions
+```
+
+## GitHub Actions Workflow
 
 파일 위치: `.github/workflows/bot.yml`
 
@@ -83,6 +119,13 @@ on:
   schedule:
     - cron: '*/5 * * * *'
   workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dev-event-bot
+  cancel-in-progress: true
 
 jobs:
   run-bot:
@@ -115,8 +158,9 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
           git add events_cache.json
-          git diff --cached --quiet || git commit -m "update cache"
-          git push
+          git diff --cached --quiet && exit 0
+          git commit -m "update cache"
+          git push --force-with-lease
 ```
 
 ## Bot Code (bot.py)
@@ -143,6 +187,11 @@ headers = {
 }
 
 response = requests.get(BASE_URL, headers=headers)
+
+if response.status_code != 200:
+    print("사이트 요청 실패")
+    exit()
+
 soup = BeautifulSoup(response.text, "html.parser")
 cards = soup.select("a")
 
@@ -181,50 +230,58 @@ for card in cards:
 
 with open(CACHE_FILE, "w", encoding="utf-8") as f:
     json.dump(sent_events, f, ensure_ascii=False, indent=2)
+
+print("완료")
 ```
 
-## 로컬 실행 방법
+## 로컬에서 실행
 
 ```bash
 python bot.py
 ```
 
-## 깃 설치 방법
+## Git 연동 방법
 
 ```bash
 git init
 git add .
 git commit -m "init"
 git branch -M main
-git remote add origin YOUR_REPOSITORY_URL
+git remote add origin https://github.com/dubu-alt/discord-dev-event-bot
 git push -u origin main
 ```
 
-## 트러블슈팅 
+## 문제점 해결 방법
 
-### 깃 푸쉬 실패
+### GitHub Actions Push Error (403)
 
-```bash
-git pull origin main --allow-unrelated-histories
-git add .
-git commit -m "merge"
-git push -u origin main
+403 오류 발생 시:
+
+```
+Settings → Actions → General → Workflow permissions → Read and write permissions 활성화
 ```
 
-### GitHub Actions Not Running
+### Webhook Error
 
-- 기본 브랜치가 `main`인지 확인
-- Actions 탭에서 활성화 확인
-- `workflow_dispatch` 버튼으로 수동 실행 테스트
+**확인 사항:**
 
-## 추가 예정
+- GitHub Secret 이름이 정확히 `DISCORD_WEBHOOK_URL`인지 확인
+- 코드에 웹훅 URL 직접 입력하지 않았는지 확인
 
-- AI 행사 필터링
+**정상 코드:**
+
+```python
+WEBHOOK_URL = os.environ["DISCORD_WEBHOOK_URL"]
+```
+
+## Future Improvements
+
+- AI 행사만 필터링
 - 날짜 파싱
 - 마감 임박 알림
-- Discord 버튼 UI
-- SQLite 저장
-- Redis 캐시
+- 행사 이미지 임베드
 - 카테고리별 채널 분리
-- 행사 이미지 자동 임베드
-- 슬래시 명령어 지원
+- SQLite 저장
+- Discord Slash Commands
+- Redis 캐시
+- Docker 배포
