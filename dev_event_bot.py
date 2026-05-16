@@ -80,9 +80,10 @@ class MarkdownParser:
 
     MONTH_PATTERN = re.compile(r'##\s+`?(\d{1,2}년\s+\d{1,2}월)`?')
     EVENT_LINK_PATTERN = re.compile(
-        r'(?:^|(?<=\s))[-*]?\s*(?:\*\*|__)?\[(?P<title>[^\]]+?)\]'
-        r'\((?P<url>[^)]+?)\)(?:\*\*|__)?',
-        re.MULTILINE,
+        r'(?:^|(?<=\s))[-*]?\s*(?:\*\*|__)?\[(?P<title>.*?)\]'
+        r'\((?P<url>https?://.*?)\)(?:\*\*|__)?'
+        r'(?=\s*(?:[-+*]\s+(?:분류|주최|접수|일시)\s*:|$))',
+        re.MULTILINE | re.DOTALL,
     )
     METADATA_PATTERN = re.compile(r'(?:^|\s)[-+*]\s+(?=(?:분류|주최|접수|일시)\s*:)')
 
@@ -128,7 +129,7 @@ class MarkdownParser:
                 metadata_text = section[metadata_start:metadata_end]
 
                 events.append({
-                    'title': event_match.group('title').strip(),
+                    'title': cls._normalize_text(event_match.group('title')),
                     'url': event_match.group('url').strip(),
                     'month': current_month,
                     'metadata': cls._parse_metadata(metadata_text),
@@ -136,10 +137,15 @@ class MarkdownParser:
 
         return events
 
+    @staticmethod
+    def _normalize_text(value: str) -> str:
+        """줄바꿈으로 분리된 제목/메타데이터 조각을 한 줄 텍스트로 정리"""
+        return re.sub(r'\s+', ' ', value).strip()
+
     @classmethod
     def _parse_metadata(cls, metadata_text: str) -> List[str]:
         """인라인/여러 줄 메타데이터를 Discord에 넣기 좋은 목록으로 정리"""
-        normalized = re.sub(r'\s+', ' ', metadata_text).strip()
+        normalized = cls._normalize_text(metadata_text)
         normalized = re.sub(r'^(?:[-+*]\s*)+', '', normalized).strip()
         if not normalized:
             return []

@@ -8,6 +8,9 @@ on:
   # 수동 실행 버튼
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   run-bot:
     runs-on: ubuntu-latest
@@ -26,11 +29,23 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       
+      - name: Ensure cache file exists
+        run: |
+          test -f events_cache.json || printf '[]\n' > events_cache.json
+      
       - name: Run Dev-Event Bot
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: |
           python dev_event_bot.py
+      
+      - name: Upload cache artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: events_cache
+          path: events_cache.json
+          if-no-files-found: error
       
       - name: Commit and push cache
         if: always()
@@ -38,6 +53,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add events_cache.json
-          git commit -m "Update events cache" || echo "No changes to commit"
+          git diff --cached --quiet && exit 0
+          git commit -m "Update events cache"
           git push
         continue-on-error: true
