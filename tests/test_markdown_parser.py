@@ -87,6 +87,6 @@ class MarkdownParserTest(unittest.TestCase):
             "The Turing Test Hackathon 2026 — Phase 2. AI Awakening Hackathon",
         )
 
-
+        
 if __name__ == "__main__":
     unittest.main()
