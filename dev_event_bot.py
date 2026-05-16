@@ -77,62 +77,80 @@ class EventCache:
 
 class MarkdownParser:
     """마크다운 형식 README.md 파서"""
-    
-    @staticmethod
-    def parse_events(content: str) -> List[Dict]:
+
+    MONTH_PATTERN = re.compile(r'##\s+`?(\d{1,2}년\s+\d{1,2}월)`?')
+    EVENT_LINK_PATTERN = re.compile(
+        r'(?:^|(?<=\s))[-*]?\s*(?:\*\*|__)?\[(?P<title>[^\]]+?)\]'
+        r'\((?P<url>[^)]+?)\)(?:\*\*|__)?',
+        re.MULTILINE,
+    )
+    METADATA_PATTERN = re.compile(r'(?:^|\s)[-+*]\s+(?=(?:분류|주최|접수|일시)\s*:)')
+
+    @classmethod
+    def parse_events(cls, content: str) -> List[Dict]:
         """
         README.md에서 이벤트 정보 추출
-        
-        형식:
-        ## `26년 03월`
-        
-        * **[이벤트명](링크)**
-          + 분류: `온라인`, `무료`, `모임`
-          + 주최: 기관명
-          + 접수: 03. 01(월) ~ 03. 31(일)
+
+        지원 형식:
+        - 기존 여러 줄 목록 형식
+          * **[이벤트명](링크)**
+            + 분류: `온라인`, `무료`, `모임`
+            + 주최: 기관명
+            + 접수: 03. 01(월) ~ 03. 31(일)
+        - 현재 Dev-Event README 인라인 형식
+          ## `26년 05월` - __[이벤트명](링크)__ - 분류: ... - 주최: ...
         """
         events = []
-        lines = content.split('\n')
-        
-        current_month = None
-        i = 0
-        
-        while i < len(lines):
-            line = lines[i]
-            
-            # 월별 섹션 헤더 파싱 (백틱 있음/없음 모두 지원)
-            month_match = re.match(r'##\s+`?(\d+년\s+\d+월)`?', line)
-            if month_match:
-                current_month = month_match.group(1)
-                i += 1
-                continue
-            
-            # 이벤트 항목 파싱
-            if line.strip().startswith('* **['):
-                match = re.search(r'\*\*\[(.+?)\]\((.+?)\)\*\*', line)
-                if match:
-                    title = match.group(1).strip()
-                    url = match.group(2).strip()
-                    
-                    # 메타데이터 수집
-                    metadata = []
-                    i += 1
-                    while i < len(lines) and lines[i].strip().startswith('+'):
-                        meta_line = lines[i].strip().lstrip('+ ').strip()
-                        metadata.append(meta_line)
-                        i += 1
-                    
-                    events.append({
-                        'title': title,
-                        'url': url,
-                        'month': current_month,
-                        'metadata': metadata
-                    })
-                    continue
-            
-            i += 1
-        
+        month_matches = list(cls.MONTH_PATTERN.finditer(content))
+
+        for index, month_match in enumerate(month_matches):
+            current_month = month_match.group(1)
+            section_start = month_match.end()
+            section_end = (
+                month_matches[index + 1].start()
+                if index + 1 < len(month_matches)
+                else len(content)
+            )
+            section = content[section_start:section_end]
+
+            # 지난 행사 기록 이후의 연도별 링크는 행사 목록이 아니므로 제외한다.
+            if '## 지난 행사 기록' in content[month_match.start():month_match.end() + len(section)]:
+                section = section.split('## 지난 행사 기록', 1)[0]
+
+            event_matches = list(cls.EVENT_LINK_PATTERN.finditer(section))
+            for event_index, event_match in enumerate(event_matches):
+                metadata_start = event_match.end()
+                metadata_end = (
+                    event_matches[event_index + 1].start()
+                    if event_index + 1 < len(event_matches)
+                    else len(section)
+                )
+                metadata_text = section[metadata_start:metadata_end]
+
+                events.append({
+                    'title': event_match.group('title').strip(),
+                    'url': event_match.group('url').strip(),
+                    'month': current_month,
+                    'metadata': cls._parse_metadata(metadata_text),
+                })
+
         return events
+
+    @classmethod
+    def _parse_metadata(cls, metadata_text: str) -> List[str]:
+        """인라인/여러 줄 메타데이터를 Discord에 넣기 좋은 목록으로 정리"""
+        normalized = re.sub(r'\s+', ' ', metadata_text).strip()
+        normalized = re.sub(r'^(?:[-+*]\s*)+', '', normalized).strip()
+        if not normalized:
+            return []
+
+        parts = [
+            part.strip(' -')
+            for part in cls.METADATA_PATTERN.split(normalized)
+            if part.strip(' -')
+        ]
+
+        return parts
 
 
 class DiscordSender:
