@@ -39,14 +39,6 @@ jobs:
         run: |
           python dev_event_bot.py
       
-      - name: Upload cache artifact
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: events_cache
-          path: events_cache.json
-          if-no-files-found: error
-      
       - name: Commit and push cache
         if: always()
         run: |
