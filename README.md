@@ -9,6 +9,7 @@
 - Discord Webhook Embed 메시지 전송
 - `events_cache.json` 기반 중복 알림 방지
 - GitHub Actions 스케줄 실행 및 캐시 자동 커밋
+- GitHub Actions Artifact가 아닌 Git 추적 파일로 캐시 유지
 - 네트워크 다운로드 실패 시 로컬 README 폴백 지원
 
 ## 알림 예시
@@ -48,6 +49,8 @@ dev-event-bot/
 3. `events_cache.json`에 없는 신규 행사만 Discord Webhook으로 전송합니다.
 4. 전송 성공한 행사 URL을 캐시에 저장합니다.
 5. GitHub Actions가 변경된 캐시 파일을 현재 브랜치에 커밋/푸시합니다.
+
+> 캐시는 `actions/download-artifact`로 내려받지 않습니다. Artifact는 실행 간 영속 저장소가 아니므로, 첫 실행이나 업로드가 생략된 실행에서 `Artifact not found for name: events_cache` 오류가 날 수 있습니다.
 
 ## 요구 사항
 
@@ -130,10 +133,10 @@ python -m unittest discover -s tests
 
 ## GitHub Actions 설정
 
-이 저장소는 `.github/workflows/dev-event-bot.yml` 워크플로를 사용합니다.
+이 저장소는 `.github/workflows/dev-event-bot.yml` 워크플로를 사용합니다. 캐시는 `events_cache.json`을 Git에 커밋하는 방식으로 유지하므로, `events_cache` Artifact 다운로드 단계가 필요하지 않습니다.
 
 ```yaml
-name: Dev-Event Bot (Git Cache)
+name: Dev-Event Bot (Git-backed Cache)
 
 on:
   schedule:
@@ -143,9 +146,25 @@ on:
 
 permissions:
   contents: write
+
+concurrency:
+  group: dev-event-bot-${{ github.ref }}
+  cancel-in-progress: false
 ```
 
 > 참고: 위 주석에는 `09:00 UTC`라고 적혀 있지만, cron 값 `0 0 * * *`는 실제로 매일 **00:00 UTC / 09:00 KST**에 실행됩니다.
+
+
+### `Artifact not found for name: events_cache` 오류 해결
+
+이 오류는 워크플로에서 `actions/download-artifact`로 `events_cache`를 내려받으려 할 때, 해당 실행에 업로드된 Artifact가 없어서 발생합니다. 이 프로젝트는 실행 간 캐시를 Artifact가 아니라 Git에 커밋된 `events_cache.json`으로 유지합니다.
+
+해결 방법:
+
+1. `.github/workflows/dev-event-bot.yml`에 `actions/download-artifact` 또는 `actions/upload-artifact` 기반 캐시 단계가 남아 있다면 제거합니다.
+2. `events_cache.json` 파일을 저장소에 커밋된 상태로 유지합니다.
+3. 워크플로의 `Initialize git-backed cache` 단계가 파일 누락 또는 JSON 손상을 자동으로 `[]`로 복구하도록 둡니다.
+4. `contents: write` 권한을 켜서 `Commit and push git-backed cache` 단계가 갱신된 캐시를 푸시할 수 있게 합니다.
 
 ### Discord Webhook Secret 등록
 

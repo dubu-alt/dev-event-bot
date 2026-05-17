@@ -1,4 +1,4 @@
-name: Dev-Event Bot (Git Cache)
+name: Dev-Event Bot (Git-backed Cache)
 
 on:
   schedule:
@@ -11,6 +11,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: dev-event-bot-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   run-bot:
     runs-on: ubuntu-latest
@@ -20,7 +24,7 @@ jobs:
         uses: actions/checkout@v4
       
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
       
@@ -29,9 +33,25 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       
-      - name: Ensure cache file exists
+      - name: Initialize git-backed cache
         run: |
-          test -f events_cache.json || printf '[]\n' > events_cache.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          cache_path = Path('events_cache.json')
+          if not cache_path.exists():
+              cache_path.write_text('[]\n', encoding='utf-8')
+              raise SystemExit(0)
+
+          try:
+              data = json.loads(cache_path.read_text(encoding='utf-8'))
+              if not isinstance(data, list):
+                  raise ValueError('events_cache.json must contain a JSON array')
+          except Exception as exc:
+              print(f'Invalid events_cache.json, resetting to []: {exc}')
+              cache_path.write_text('[]\n', encoding='utf-8')
+          PY
       
       - name: Run Dev-Event Bot
         env:
@@ -39,7 +59,7 @@ jobs:
         run: |
           python dev_event_bot.py
       
-      - name: Commit and push cache
+      - name: Commit and push git-backed cache
         if: always()
         run: |
           git config --local user.email "action@github.com"
@@ -47,5 +67,6 @@ jobs:
           git add events_cache.json
           git diff --cached --quiet && exit 0
           git commit -m "Update events cache"
-          git push
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+          git push origin HEAD:"${GITHUB_REF_NAME}"
         continue-on-error: true
