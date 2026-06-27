@@ -19,7 +19,10 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # 설정
-WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL", "")
+WEBHOOK_ENV_NAMES = [
+    "DISCORD_WEBHOOK_URL",
+    "DISCORD_SUMOKJANG_WEBHOOK",
+]
 CACHE_FILE = "events_cache.json"
 MAX_RETRIES = 3
 DISCORD_SUCCESS_CODE = 204
@@ -34,6 +37,16 @@ README_SOURCES = [
 COLOR_INFO = 3447003
 COLOR_SUCCESS = 3066993
 COLOR_WARNING = 15158332
+
+
+def get_webhooks() -> List[Tuple[str, str]]:
+    """환경 변수에서 설정된 Discord Webhook 목록을 가져온다."""
+    webhooks = []
+    for env_name in WEBHOOK_ENV_NAMES:
+        webhook_url = os.environ.get(env_name, "").strip()
+        if webhook_url:
+            webhooks.append((env_name, webhook_url))
+    return webhooks
 
 
 class EventCache:
@@ -162,14 +175,15 @@ class MarkdownParser:
 class DiscordSender:
     """Discord 웹훅 전송"""
     
-    def __init__(self, webhook_url: str, max_retries: int = MAX_RETRIES):
+    def __init__(self, webhook_url: str, webhook_name: str, max_retries: int = MAX_RETRIES):
         self.webhook_url = webhook_url
+        self.webhook_name = webhook_name
         self.max_retries = max_retries
     
     def send_event(self, event: Dict) -> bool:
         """이벤트 정보를 Discord로 전송"""
         if not self.webhook_url:
-            logger.error("DISCORD_WEBHOOK_URL이 설정되지 않았습니다")
+            logger.error(f"{self.webhook_name}이 설정되지 않았습니다")
             return False
         
         embed = self._create_embed(event)
@@ -212,21 +226,21 @@ class DiscordSender:
             )
             
             if response.status_code == DISCORD_SUCCESS_CODE:
-                logger.info(f"✓ Discord 전송 성공: {embed['title'][:50]}")
+                logger.info(f"✓ Discord 전송 성공 ({self.webhook_name}): {embed['title'][:50]}")
                 return True
             
             if response.status_code >= 500 and retry_count < self.max_retries:
                 logger.warning(f"서버 오류 ({response.status_code}), 재시도 {retry_count + 1}/{self.max_retries}")
                 return self._post_webhook(embed, retry_count + 1)
             
-            logger.error(f"Discord 오류 {response.status_code}")
+            logger.error(f"Discord 오류 {response.status_code} ({self.webhook_name})")
             return False
         
         except requests.RequestException as e:
             if retry_count < self.max_retries:
                 logger.warning(f"네트워크 오류, 재시도 {retry_count + 1}/{self.max_retries}")
                 return self._post_webhook(embed, retry_count + 1)
-            logger.error(f"전송 실패 (최대 재시도): {e}")
+            logger.error(f"전송 실패 (최대 재시도, {self.webhook_name}): {e}")
             return False
 
 
@@ -267,7 +281,10 @@ class DevEventBot:
     
     def __init__(self):
         self.cache = EventCache()
-        self.sender = DiscordSender(WEBHOOK_URL)
+        self.senders = [
+            DiscordSender(webhook_url, webhook_name)
+            for webhook_name, webhook_url in get_webhooks()
+        ]
     
     def run(self) -> Tuple[int, int]:
         """봇 실행"""
@@ -276,6 +293,12 @@ class DevEventBot:
         logger.info("=" * 60)
         
         try:
+            if not self.senders:
+                logger.error("설정된 Discord Webhook이 없습니다")
+                return 0, 0
+
+            logger.info(f"Discord Webhook {len(self.senders)}개 설정됨")
+
             # README.md 다운로드
             readme_content = ReadmeDownloader.fetch(
                 sources=README_SOURCES,
@@ -304,9 +327,12 @@ class DevEventBot:
                 
                 logger.info(f"새 행사 발견: {event['title']}")
                 
-                if self.sender.send_event(event):
+                send_results = [sender.send_event(event) for sender in self.senders]
+                if all(send_results):
                     self.cache.mark_sent(event['url'])
                     new_count += 1
+                else:
+                    logger.warning(f"일부 Webhook 전송 실패로 캐시에 기록하지 않음: {event['title']}")
             
             # 캐시 저장
             self.cache.save()
