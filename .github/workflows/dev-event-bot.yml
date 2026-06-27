@@ -56,6 +56,7 @@ jobs:
       - name: Run Dev-Event Bot
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          DISCORD_SUMOKJANG_WEBHOOK: ${{ secrets.DISCORD_SUMOKJANG_WEBHOOK }}
         run: |
           python dev_event_bot.py
       
