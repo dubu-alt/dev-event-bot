@@ -34,9 +34,10 @@ dev-event-bot/
 │   └── workflows/
 │       └── dev-event-bot.yml   # GitHub Actions 자동 실행 워크플로
 ├── tests/
-│   └── test_markdown_parser.py # MarkdownParser 단위 테스트
+│   ├── test_markdown_parser.py # MarkdownParser 단위 테스트
+│   └── test_event_cache.py     # EventCache/정규화/정리 단위 테스트
 ├── dev_event_bot.py            # 봇 메인 코드
-├── events_cache.json           # 이미 전송한 행사 URL 캐시
+├── events_cache.json           # 이미 전송한 행사 캐시 (v2 객체 형식)
 ├── requirements.txt            # Python 의존성
 └── README.md
 ```
@@ -99,10 +100,23 @@ pip install -r requirements.txt
 
 ### 3. 캐시 파일 준비
 
-처음 실행하는 경우 `events_cache.json`을 빈 배열로 준비합니다.
+저장소에 커밋된 `events_cache.json`을 그대로 사용하면 됩니다. 완전히 새로 시작하려면 빈 배열로 초기화합니다 (첫 실행 시 자동으로 v2 형식으로 변환).
 
 ```json
 []
+```
+
+> 캐시를 비운 상태로 실행하면 README의 모든 행사가 신규로 판정되어 한꺼번에 전송됩니다. 알림 없이 현재 행사를 캐시에 기록해두려면 아래 시딩 스크립트를 사용하세요.
+
+```bash
+python - <<'PY'
+from dev_event_bot import EventCache, MarkdownParser, ReadmeDownloader
+cache = EventCache()
+for e in MarkdownParser.parse_events(ReadmeDownloader.fetch()):
+    cache.enrich(e) if cache.is_sent(e) else cache.mark_sent(e)
+cache.prune()
+cache.save()
+PY
 ```
 
 ### 4. Discord Webhook 환경 변수 설정
@@ -135,10 +149,16 @@ DRY_RUN=1 python dev_event_bot.py
 
 ## 테스트
 
-Markdown 파서 단위 테스트를 실행하려면 다음 명령을 사용합니다.
+Markdown 파서와 캐시(마이그레이션/중복 판정/정리) 단위 테스트를 실행합니다.
 
 ```bash
 python -m unittest discover -s tests
+```
+
+실제 README를 대상으로 전송 없이 동작을 확인하려면 DRY RUN을 사용합니다.
+
+```bash
+DRY_RUN=1 python dev_event_bot.py
 ```
 
 ## GitHub Actions 설정
@@ -205,7 +225,8 @@ Settings → Actions → General → Workflow permissions
 
 ### `dev_event_bot.py`
 
-- `EventCache`: 전송된 행사 URL 로드/저장
+- `EventCache`: 전송된 행사 객체 로드/저장, v1→v2 마이그레이션, 중복 판정, 오래된 항목 정리
+- `normalize_url` / `normalize_title`: 중복 판정용 URL·제목 정규화
 - `MarkdownParser`: Dev-Event README Markdown에서 행사 정보 추출
 - `DiscordSender`: Discord Webhook Embed 생성 및 전송
 - `ReadmeDownloader`: README 다운로드 및 로컬 폴백 처리
@@ -241,6 +262,8 @@ v2 형식 (현재):
 - Discord API 또는 네트워크 일시 오류에 대비해 서버 오류와 요청 예외는 최대 3회 재시도합니다.
 - Dev-Event README 형식이 크게 바뀌면 `MarkdownParser`와 `tests/test_markdown_parser.py`를 함께 업데이트하세요.
 - 스케줄을 바꾸려면 `.github/workflows/dev-event-bot.yml`의 `cron` 값을 수정하세요.
+- 캐시 보관 기간을 바꾸려면 `dev_event_bot.py`의 `RETENTION_MONTHS`(기본 3개월)를 수정하세요.
+- Actions 실행 로그의 `Commit and push git-backed cache` 단계가 실패하면 캐시가 갱신되지 않아 다음 실행에서 같은 행사가 다시 전송될 수 있습니다. 주기적으로 확인하세요.
 
 ## 문제 해결
 
