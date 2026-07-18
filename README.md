@@ -25,26 +25,31 @@
 
 ### 전송
 
-- Discord Webhook Embed 메시지 전송 (제목 링크, 분류/주최/접수, 시기 필드)
+- 다이제스트 모드: 새 행사 여러 건을 메시지 1개당 임베드 최대 10개로 묶어 전송 (초과 시 자동 분할)
+- 분류별 임베드 색상: 대회·해커톤=빨강, 세미나·컨퍼런스=초록, 교육·부트캠프=주황, 모임·동아리=파랑, 기타=기본 파랑
+- 구조화된 필드: 분류/주최/접수(또는 일시)/시기를 각각 별도 필드로 표시
 - 웹훅 여러 개 동시 지원 (`DISCORD_WEBHOOK_URL`, `DISCORD_SUMOKJANG_WEBHOOK`)
-- 서버·네트워크 오류 시 최대 3회 재시도, 일부 전송 실패 시 캐시 미기록으로 재전송 보장
+- 서버·네트워크 오류 시 최대 3회 재시도, 전송 실패한 묶음은 캐시 미기록으로 재전송 보장
 
 ### 운영·테스트
 
 - GitHub Actions 매일 09:00 KST 자동 실행 (수동 실행 지원)
 - `DRY_RUN=1` 모드: 전송·캐시 변경 없이 로컬 검증
-- 단위 테스트 22개 (Markdown 파서 / 캐시·정규화·정리)
+- 단위 테스트 35개 (Markdown 파서 / 캐시·정규화·정리 / Discord 전송)
 
 ## 알림 예시
 
-Discord에는 아래와 같은 Embed 형태로 전송됩니다.
+새 행사가 있으면 `📅 새 개발자 행사 N건` 메시지 1개에 행사별 임베드가 묶여 전송됩니다.
 
 ```text
-제목: CloudBro 1주년 행사
-URL: https://ticketa.co/event/dttikon7
-설명: 분류: `오프라인(서울 강남구)`, `유료`, `모임`, `클라우드` | 주최: CloudBro | 접수: 04. 24(목) ~ 05. 12(화)
-필드: 시기 = 26년 05월
-푸터: Dev-Event Bot
+📅 새 개발자 행사 3건
+┌ (빨강) 천하제일 입코딩 대회            ← 제목 클릭 시 행사 페이지로 이동
+│  분류: `오프라인(서울 종로구)`, `무료`, `대회`, `AI`
+│  주최: Microsoft | 접수: 06. 06(토) ~ 06. 08(월) | 시기: 26년 06월
+├ (초록) 스프링캠프 2026
+│  ...
+└ (파랑) AWSKRUG #Beginner 모임
+   ...
 ```
 
 ## 프로젝트 구조
@@ -56,7 +61,8 @@ dev-event-bot/
 │       └── dev-event-bot.yml   # GitHub Actions 자동 실행 워크플로
 ├── tests/
 │   ├── test_markdown_parser.py # MarkdownParser 단위 테스트
-│   └── test_event_cache.py     # EventCache/정규화/정리 단위 테스트
+│   ├── test_event_cache.py     # EventCache/정규화/정리 단위 테스트
+│   └── test_discord_sender.py  # 임베드 생성/색상/다이제스트 단위 테스트
 ├── dev_event_bot.py            # 봇 메인 코드
 ├── events_cache.json           # 이미 전송한 행사 캐시 (v2 객체 형식)
 ├── requirements.txt            # Python 의존성
@@ -70,8 +76,9 @@ dev-event-bot/
    - 2차: GitHub Raw URL
    - 폴백: 로컬 `README.md`
 2. `MarkdownParser`가 ``## `26년 05월` `` 같은 월별 섹션에서 행사 링크와 메타데이터를 추출합니다.
-3. `events_cache.json`에 없는 신규 행사만 Discord Webhook으로 전송합니다.
+3. `events_cache.json`에 없는 신규 행사만 다이제스트로 묶어 Discord Webhook으로 전송합니다.
    - 중복 판정: 정규화된 URL(추적 파라미터·fragment·끝 슬래시 제거) 또는 정규화된 제목+월이 일치하면 중복으로 처리합니다. 같은 행사가 URL만 바꿔 재등록돼도 다시 알리지 않습니다.
+   - 다이제스트: 메시지 1개당 임베드 최대 10개, 초과 시 여러 메시지로 자동 분할합니다.
 4. 전송 성공한 행사를 객체(제목/URL/월/메타데이터/전송일시)로 캐시에 저장합니다.
 5. 현재 월 기준 3개월 이전 행사는 캐시에서 자동 정리합니다.
 6. GitHub Actions가 변경된 캐시 파일을 현재 브랜치에 커밋/푸시합니다.
@@ -249,7 +256,7 @@ Settings → Actions → General → Workflow permissions
 - `EventCache`: 전송된 행사 객체 로드/저장, v1→v2 마이그레이션, 중복 판정, 오래된 항목 정리
 - `normalize_url` / `normalize_title`: 중복 판정용 URL·제목 정규화
 - `MarkdownParser`: Dev-Event README Markdown에서 행사 정보 추출
-- `DiscordSender`: Discord Webhook Embed 생성 및 전송
+- `DiscordSender`: 분류별 색상·구조화 필드 임베드 생성, 다이제스트(최대 10개 묶음) 전송
 - `ReadmeDownloader`: README 다운로드 및 로컬 폴백 처리
 - `DevEventBot`: 전체 실행 흐름 조합
 

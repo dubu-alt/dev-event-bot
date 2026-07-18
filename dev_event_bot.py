@@ -44,9 +44,20 @@ README_SOURCES = [
 ]
 
 # 색상
-COLOR_INFO = 3447003
+COLOR_INFO = 3447003       # 파랑 (기본)
 COLOR_SUCCESS = 3066993
 COLOR_WARNING = 15158332
+
+# 분류별 임베드 색상 (분류 텍스트에 키워드가 포함되면 적용, 위에서부터 우선)
+CATEGORY_COLORS = [
+    (("대회", "해커톤"), 15158332),   # 빨강
+    (("세미나", "컨퍼런스"), 3066993),  # 초록
+    (("교육", "부트캠프"), 15105570),  # 주황
+    (("모임", "동아리"), 3447003),     # 파랑
+]
+
+# 다이제스트 모드: 메시지 1개당 임베드 최대 개수 (Discord 제한 10)
+MAX_EMBEDS_PER_MESSAGE = 10
 
 
 def get_webhooks() -> List[Tuple[str, str]]:
@@ -336,43 +347,97 @@ class DiscordSender:
         self.max_retries = max_retries
     
     def send_event(self, event: Dict) -> bool:
-        """이벤트 정보를 Discord로 전송"""
+        """이벤트 1건을 Discord로 전송"""
         if not self.webhook_url:
             logger.error(f"{self.webhook_name}이 설정되지 않았습니다")
             return False
-        
-        embed = self._create_embed(event)
-        return self._post_webhook(embed)
-    
+
+        payload = {"embeds": [self._create_embed(event)]}
+        success = self._post_webhook(payload)
+        if success:
+            logger.info(f"✓ Discord 전송 성공 ({self.webhook_name}): {event['title'][:50]}")
+        return success
+
+    def send_digest(self, events: List[Dict]) -> List[bool]:
+        """이벤트 여러 건을 메시지당 최대 10개 임베드로 묶어 전송.
+        이벤트별 성공 여부 리스트를 반환한다."""
+        if not self.webhook_url:
+            logger.error(f"{self.webhook_name}이 설정되지 않았습니다")
+            return [False] * len(events)
+
+        results: List[bool] = []
+        chunks = [
+            events[i:i + MAX_EMBEDS_PER_MESSAGE]
+            for i in range(0, len(events), MAX_EMBEDS_PER_MESSAGE)
+        ]
+        for index, chunk in enumerate(chunks):
+            content = f"📅 새 개발자 행사 {len(events)}건"
+            if len(chunks) > 1:
+                content += f" ({index + 1}/{len(chunks)})"
+            payload = {
+                "content": content,
+                "embeds": [self._create_embed(e) for e in chunk],
+            }
+            success = self._post_webhook(payload)
+            if success:
+                logger.info(
+                    f"✓ 다이제스트 전송 성공 ({self.webhook_name}): "
+                    f"{len(chunk)}건 ({index + 1}/{len(chunks)})"
+                )
+            results.extend([success] * len(chunk))
+        return results
+
     @staticmethod
-    def _create_embed(event: Dict) -> Dict:
-        """Discord Embed 생성"""
-        description = ""
-        if event.get('metadata'):
-            description = ' | '.join(event['metadata'])[:4096]
-        
-        return {
+    def _category_color(event: Dict) -> int:
+        """분류 메타데이터 키워드로 임베드 색상 결정"""
+        category_text = ""
+        for part in event.get('metadata', []):
+            if part.startswith('분류'):
+                category_text = part
+                break
+        for keywords, color in CATEGORY_COLORS:
+            if any(keyword in category_text for keyword in keywords):
+                return color
+        return COLOR_INFO
+
+    @classmethod
+    def _create_embed(cls, event: Dict) -> Dict:
+        """Discord Embed 생성 (분류별 색상 + 구조화된 필드)"""
+        fields = []
+        extra_parts = []
+        for part in event.get('metadata', []):
+            name, sep, value = part.partition(':')
+            name = name.strip()
+            value = value.strip()
+            if sep and name in ('분류', '주최', '접수', '일시') and value:
+                fields.append({
+                    "name": name,
+                    "value": value[:1024],
+                    "inline": name != '분류',
+                })
+            elif part.strip():
+                extra_parts.append(part.strip())
+
+        fields.append({
+            "name": "시기",
+            "value": event.get('month') or '미정',
+            "inline": True,
+        })
+
+        embed = {
             "title": event['title'][:256],
             "url": event['url'],
-            "description": description if description else "개발자 행사",
-            "color": COLOR_INFO,
-            "fields": [
-                {
-                    "name": "시기",
-                    "value": event.get('month', '미정'),
-                    "inline": True
-                }
-            ],
-            "footer": {
-                "text": "Dev-Event Bot"
-            },
-            "timestamp": datetime.utcnow().isoformat()
+            "color": cls._category_color(event),
+            "fields": fields[:25],
+            "footer": {"text": "Dev-Event Bot"},
+            "timestamp": datetime.utcnow().isoformat(),
         }
-    
-    def _post_webhook(self, embed: Dict, retry_count: int = 0) -> bool:
+        if extra_parts:
+            embed["description"] = ' | '.join(extra_parts)[:4096]
+        return embed
+
+    def _post_webhook(self, payload: Dict, retry_count: int = 0) -> bool:
         """웹훅 POST 요청 (재시도 로직 포함)"""
-        payload = {"embeds": [embed]}
-        
         try:
             response = requests.post(
                 self.webhook_url,
@@ -380,21 +445,20 @@ class DiscordSender:
                 timeout=10
             )
             
-            if response.status_code == DISCORD_SUCCESS_CODE:
-                logger.info(f"✓ Discord 전송 성공 ({self.webhook_name}): {embed['title'][:50]}")
+            if response.status_code in (DISCORD_SUCCESS_CODE, 200):
                 return True
-            
+
             if response.status_code >= 500 and retry_count < self.max_retries:
                 logger.warning(f"서버 오류 ({response.status_code}), 재시도 {retry_count + 1}/{self.max_retries}")
-                return self._post_webhook(embed, retry_count + 1)
-            
+                return self._post_webhook(payload, retry_count + 1)
+
             logger.error(f"Discord 오류 {response.status_code} ({self.webhook_name})")
             return False
-        
+
         except requests.RequestException as e:
             if retry_count < self.max_retries:
                 logger.warning(f"네트워크 오류, 재시도 {retry_count + 1}/{self.max_retries}")
-                return self._post_webhook(embed, retry_count + 1)
+                return self._post_webhook(payload, retry_count + 1)
             logger.error(f"전송 실패 (최대 재시도, {self.webhook_name}): {e}")
             return False
 
@@ -474,8 +538,8 @@ class DevEventBot:
                 logger.warning("파싱된 이벤트가 없습니다")
                 return 0, 0
             
-            # 신규 이벤트 필터링 및 전송
-            new_count = 0
+            # 신규 이벤트 필터링
+            new_events = []
             enriched_count = 0
             for event in events:
                 if self.cache.is_sent(event):
@@ -483,20 +547,28 @@ class DevEventBot:
                         enriched_count += 1
                     logger.debug(f"중복 이벤트 건너뜀: {event['title'][:40]}")
                     continue
-
                 logger.info(f"새 행사 발견: {event['title']}")
+                new_events.append(event)
 
-                if self.dry_run:
-                    logger.info(f"[DRY RUN] 전송 생략: {event['title'][:60]} | {event['url']}")
-                    new_count += 1
-                    continue
-
-                send_results = [sender.send_event(event) for sender in self.senders]
-                if all(send_results):
-                    self.cache.mark_sent(event)
-                    new_count += 1
-                else:
-                    logger.warning(f"일부 Webhook 전송 실패로 캐시에 기록하지 않음: {event['title']}")
+            # 다이제스트 전송 (메시지당 최대 10개 임베드)
+            new_count = 0
+            if new_events and self.dry_run:
+                message_count = -(-len(new_events) // MAX_EMBEDS_PER_MESSAGE)
+                logger.info(
+                    f"[DRY RUN] 다이제스트 전송 생략: "
+                    f"{len(new_events)}건 → 메시지 {message_count}개"
+                )
+                for event in new_events:
+                    logger.info(f"[DRY RUN]   - {event['title'][:60]} | {event['url']}")
+                new_count = len(new_events)
+            elif new_events:
+                all_results = [sender.send_digest(new_events) for sender in self.senders]
+                for index, event in enumerate(new_events):
+                    if all(results[index] for results in all_results):
+                        self.cache.mark_sent(event)
+                        new_count += 1
+                    else:
+                        logger.warning(f"일부 Webhook 전송 실패로 캐시에 기록하지 않음: {event['title']}")
 
             # 오래된 캐시 정리 후 저장 (DRY RUN에서는 파일 미변경)
             if self.dry_run:
