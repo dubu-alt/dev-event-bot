@@ -4,15 +4,36 @@
 
 ## 주요 기능
 
-- Dev-Event README의 월별 행사 목록 자동 수집
-- 인라인/멀티라인 Markdown 행사 형식 파싱
-- Discord Webhook Embed 메시지 전송
-- `events_cache.json` 기반 중복 알림 방지 (URL 정규화 + 제목/월 병행 판정)
-- 오래된 캐시 항목 자동 정리 (기본 3개월 보관)
-- `DRY_RUN=1` 모드로 전송/캐시 변경 없이 로컬 검증
-- GitHub Actions 스케줄 실행 및 캐시 자동 커밋
-- GitHub Actions Artifact가 아닌 Git 추적 파일로 캐시 유지
-- 네트워크 다운로드 실패 시 로컬 README 폴백 지원
+### 수집·파싱
+
+- Dev-Event README 자동 다운로드 (jsDelivr CDN → GitHub Raw → 로컬 파일 3단계 폴백)
+- 월별 섹션(`## 26년 07월`)에서 행사 제목/링크/분류/주최/접수기간 추출
+- 인라인·멀티라인 Markdown 행사 형식 모두 지원
+
+### 중복 방지
+
+- `events_cache.json` v2: 전송한 행사를 객체(제목/URL/월/메타데이터/전송일시)로 저장
+- URL 정규화 판정: 추적 파라미터(utm 등)·fragment·끝 슬래시·www 차이를 무시하고 동일 행사로 인식
+- 제목+월 병행 판정: 같은 행사가 URL만 바꿔 재등록돼도 중복 차단
+- 구버전(v1) URL 목록 캐시 자동 마이그레이션 및 제목 정보 자동 백필
+
+### 캐시 관리
+
+- 현재 월 기준 3개월 지난 행사 자동 정리 (`RETENTION_MONTHS`로 조정 가능)
+- 손상된 캐시 파일 자동 복구
+- GitHub Actions Artifact가 아닌 Git 추적 파일로 캐시 유지 (실행 후 자동 커밋)
+
+### 전송
+
+- Discord Webhook Embed 메시지 전송 (제목 링크, 분류/주최/접수, 시기 필드)
+- 웹훅 여러 개 동시 지원 (`DISCORD_WEBHOOK_URL`, `DISCORD_SUMOKJANG_WEBHOOK`)
+- 서버·네트워크 오류 시 최대 3회 재시도, 일부 전송 실패 시 캐시 미기록으로 재전송 보장
+
+### 운영·테스트
+
+- GitHub Actions 매일 09:00 KST 자동 실행 (수동 실행 지원)
+- `DRY_RUN=1` 모드: 전송·캐시 변경 없이 로컬 검증
+- 단위 테스트 22개 (Markdown 파서 / 캐시·정규화·정리)
 
 ## 알림 예시
 
