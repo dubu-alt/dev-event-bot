@@ -1,160 +1,1490 @@
-[
-  "https://ictcocpiuda.imweb.me/",
-  "https://www.meetup.com/awskrug/events/314639723/",
-  "https://www.rocketpunch.com/event/iOVlW3GlEr",
-  "https://dev-korea.com/events/dev-korea-8-may-2026",
-  "https://biz.modulabs.co.kr/event/437",
-  "https://cometrue.ai/index.php/con_260519/",
-  "https://aws.amazon.com/ko/events/summits/seoul/",
-  "https://luma.com/ebg1nvg1",
-  "https://api.visitkorea.or.kr/#/cntSearchDetail?no=2",
-  "https://fastcampus.co.kr/gysan_security_infra",
-  "https://www.rocketpunch.com/event/JFXFMmBVfo",
-  "https://lp.jetbrains.com/intellij-idea-conf-2026/",
-  "https://luma.com/cf9nsaef",
-  "https://www.meetup.com/awskrug/events/314686543/",
-  "https://daker.ai/public/hackathons/monthly-hackathon-web-minigame-challenge",
-  "https://seoulwomen.or.kr/sfwf/contents/sfwf-worklifebalance.do?schOpt3=care&schM=view&act=UPDATE&page=1&viewCount=10&id=31058&schBdcode&schGroupCode",
-  "https://www.meetup.com/mongodb-usergroup-seoul/events/314765122/",
-  "https://ticketa.co/event/qpye8cf5",
-  "https://www.meetup.com/awskrug/events/314655727/",
-  "https://onoffmix.com/event/339468",
-  "https://luma.com/luuilxvp",
-  "https://www.rocketpunch.com/event/MOwYYHZ1a6",
-  "https://event-us.kr/datayanolja2020/event/124270",
-  "https://smarttechkorea.com/Main",
-  "https://daker.ai/public/hackathons/jb-fin-ai-challenge",
-  "https://ticketa.co/event/smu6uxm5",
-  "https://2026.pycon.kr",
-  "https://aichallenge4all.or.kr/competitions/public-ai",
-  "https://www.wevity.com/index.php?c=find&s=1&gbn=viewok&gp=1&ix=107135",
-  "https://www.rocketpunch.com/event/wLXO4XRrXO",
-  "https://opendid.org/hackathon/2026/",
-  "http://www.kibwa.org/board/board_view?code=notice&no=1194",
-  "https://smarttechkorea.com/aibigdatashow",
-  "https://dorahacks.io/hackathon/mantleturingtesthackathon2026/detail",
-  "https://www.nextrise.co.kr/ko",
-  "https://ticketa.co/event/7fm5o8fo",
-  "https://www.mongodb.com/ko-kr/events/mongodb-local/seoul",
-  "https://www.megazonesoft.com/260521_next-26-recap-webinar/",
-  "https://tech.goorm.io/2605_commit/",
-  "https://github.registration.goldcast.io/events/6dc10b2c-f650-48b2-b3c7-aa66937e774c",
-  "https://www.rocketpunch.com/event/lA16A0Ghwd",
-  "https://www.meetup.com/awskrug/events/314830108/",
-  "https://oss.kr/pages/10/4511?page=1&pageSize=10&searchKeyword=&searchType=",
-  "https://www.codetree.ai/ko/no-free-lunch-2026",
-  "https://ticketa.co/event/yjp015vu",
-  "https://dnd.ac/",
-  "https://www.megazonesoft.com/gcp_fundamentals_core_infra_20260504/",
-  "https://ticketa.co/event/tufmarzt",
-  "https://ticketa.co/event/z49uyhx8",
-  "https://www.meetup.com/awskrug/events/314907229/",
-  "https://dev-korea.com/events/dev-korea-9-june-2026",
-  "https://www.meetup.com/awskrug/events/314931400/",
-  "https://event-us.kr/kusitsm/event/126748",
-  "https://www.meetup.com/awskrug/events/314979179/",
-  "https://event-us.kr/axarena/event/125135",
-  "https://www.meetup.com/awskrug/events/315009322/",
-  "https://event-us.kr/skintellixhackathon/event/125194",
-  "https://event-us.kr/Pentacle/event/124637",
-  "https://cmit.pnuh.or.kr/cmit/notice/medical-hack.do?mode=view&articleNo=76171&article.offset=0&articleLimit=10",
-  "https://www.meetup.com/awskrug/events/315050299/",
-  "https://www.dxchallenge.co.kr/dive-2026",
-  "https://eduhancom.com/codegate",
-  "https://www.meetup.com/ko-KR/awskrug/events/315039832",
-  "https://www.rocketpunch.com/event/258y9oMGIK",
-  "https://ticketa.co/event/qihrrgnk",
-  "https://www.megazonesoft.com/gcp_fundamentals_core_infra_20260616/",
-  "https://www.meetup.com/awskrug/events/315099275/",
-  "https://www.meetup.com/awskrug/events/315068090/",
-  "https://www.meetup.com/awskrug/events/315082322/",
-  "https://www.meetup.com/awskrug/events/315069046/",
-  "https://ticketa.co/event/m8adkbnl",
-  "https://pvs-studio.com/en/webinar/30/",
-  "https://maplestoryworlds.nexon.com/events/ko/2026globalcontest",
-  "https://www.meetup.com/awskrug/events/312616848/",
-  "https://conference.etnews.com/conf_info.html?uid=494",
-  "https://event-us.kr/2026bcmd/event/124375",
-  "https://www.rocketpunch.com/event/nN9JLuRdbi",
-  "https://www.rocketpunch.com/event/6olOYNWsOR",
-  "https://www.rocketpunch.com/event/fDKPI1TUwR",
-  "https://www.rocketpunch.com/event/evx8Yo8jus",
-  "https://uniteseoul.co.kr/",
-  "https://cyberguardians-cmx.kr/",
-  "https://kisiactf.kr/",
-  "https://event-us.kr/kaag/event/125832",
-  "https://event-us.kr/powerplatform/event/126291",
-  "https://event-us.kr/tangunsoft/event/125617",
-  "https://boostcamp-wm.notion.site/AI-Agent-Challenge-35ab9dd86abe809db232f9d2f5e3f521",
-  "https://new.nypc.co.kr/ko/",
-  "https://www.dicia.or.kr/sub.do?menuIdx=MENU_000000000000056&contentSubMode=view&nttIdx=6qE90w62B1miq4AigeY%2bKyYhx%2fXypYchsFAqnyPCFFs%3d",
-  "https://event-us.kr/asbg/event/126886",
-  "https://forms.gle/Jp5or1t1tohCerdX8",
-  "https://acpc2026.codetree.ai",
-  "https://www.inflearn.com/challenge/free-live-a-story-of",
-  "https://kpaix.kr/page/Invitation",
-  "https://biz.modulabs.co.kr/event/480",
-  "https://www.meetup.com/awskrug/events/315222389/",
-  "https://aicampus.goorm.io/",
-  "https://luma.com/xej0o2jr",
-  "https://www.rocketpunch.com/event/T42oNQmVqq",
-  "https://www.meetup.com/awskrug/events/315352674/",
-  "https://honam-is-hackathon.com/",
-  "https://xai.kaist.ac.kr/AI-Factory-Capability-Seminar/2026/",
-  "https://weatherhackathon.kr/",
-  "https://luma.com/2js3bisk",
-  "https://www.oss.kr/pages/2",
-  "https://github.com/ts-backend-meetup-ts/meetup",
-  "https://event-us.kr/sipe/event/128290",
-  "https://event-us.kr/FKH3nHkjmPGh/event/127632",
-  "https://www.meetup.com/awskrug/events/315380582/",
-  "https://ticketa.co/event/zbj22eqq",
-  "https://hackathon.jocodingax.ai/",
-  "https://www.aisummit.co.kr/",
-  "https://www.allforyoung.com/posts/83827",
-  "https://ticketa.co/event/j6qfe3id",
-  "https://am-expo.co.kr/sub-5-1",
-  "https://ticketa.co/event/26hfzu4p",
-  "https://www.allforyoung.com/posts/83834",
-  "https://jungle.krafton.com/schedule/all",
-  "https://luma.com/pd7uf8d8",
-  "https://connect.or.kr/ai-hae",
-  "https://www.allforyoung.com/posts/83891",
-  "https://biz.modulabs.co.kr/event/487",
-  "https://ticketa.co/event/4abv3eo7",
-  "https://www.rocketpunch.com/event/Wei7HtwOby",
-  "https://event-us.kr/susc/event/129323",
-  "https://www.rocketpunch.com/event/LAG9BenD0o",
-  "https://okky.kr/articles/1560073",
-  "https://www.rocketpunch.com/event/lROAEQtTgE",
-  "https://ticketa.co/event/fsdukhi4",
-  "https://www.meetup.com/awskrug/events/315581938/",
-  "https://www.meetup.com/awskrug/events/315582897/",
-  "https://ticketa.co/event/jxxdbwmn",
-  "https://crowdacademyofc.imweb.me/ai-expert",
-  "https://nerd.aviss.kr/archive/5",
-  "https://cofathon.getcofa.com/",
-  "https://event-us.kr/incunext/event/130440",
-  "https://www.seoulwomen.or.kr/sfwf/contents/sfwf-event.do?schM=view&id=31236",
-  "https://www.meetup.com/awskrug/events/315596565/",
-  "https://www.meetup.com/awskrug/events/315611077/",
-  "https://www.meetup.com/awskrug/events/315596174/",
-  "https://www.meetup.com/awskrug/events/315607999/",
-  "https://ticketa.co/event/vcp5wmp4",
-  "https://nan2026.nhn.com/",
-  "https://www.meetup.com/awskrug/events/315649011/",
-  "https://www.meetup.com/awskrug/events/315639045/",
-  "https://event-us.kr/nccf/event/129466",
-  "https://pvs-studio.com/en/webinar/31/",
-  "https://developeracademy.postech.ac.kr/event/ideaplayground",
-  "https://ticketa.co/event/f5dgdhms",
-  "https://daker.ai/public/hackathons/4th-jump-ai-agentic-drug-challenge",
-  "https://event-us.kr/zigzag/event/129917",
-  "https://daker.ai/public/hackathons/2026-finance-ai-challenge",
-  "https://ticketa.co/event/d9l39gwt",
-  "https://ticketa.co/event/8m4j5s2j",
-  "https://learncle.com/event/sCgsj",
-  "https://www.meetup.com/awskrug/events/315678453/",
-  "https://aivle.kt.co.kr/home/main/applyMain?mcd=MC00000051",
-  "https://financejobfair.co.kr/info/info_01"
-]
+{
+  "version": 2,
+  "updated_at": "2026-07-19T01:10:35.179075",
+  "events": [
+    {
+      "title": "",
+      "url": "https://ictcocpiuda.imweb.me/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.meetup.com/awskrug/events/314639723/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.rocketpunch.com/event/iOVlW3GlEr",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://dev-korea.com/events/dev-korea-8-may-2026",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://biz.modulabs.co.kr/event/437",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://cometrue.ai/index.php/con_260519/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://aws.amazon.com/ko/events/summits/seoul/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://luma.com/ebg1nvg1",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://api.visitkorea.or.kr/#/cntSearchDetail?no=2",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://fastcampus.co.kr/gysan_security_infra",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.rocketpunch.com/event/JFXFMmBVfo",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://lp.jetbrains.com/intellij-idea-conf-2026/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://luma.com/cf9nsaef",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.meetup.com/awskrug/events/314686543/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://daker.ai/public/hackathons/monthly-hackathon-web-minigame-challenge",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://seoulwomen.or.kr/sfwf/contents/sfwf-worklifebalance.do?schOpt3=care&schM=view&act=UPDATE&page=1&viewCount=10&id=31058&schBdcode&schGroupCode",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.meetup.com/mongodb-usergroup-seoul/events/314765122/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://ticketa.co/event/qpye8cf5",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.meetup.com/awskrug/events/314655727/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://onoffmix.com/event/339468",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://luma.com/luuilxvp",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.rocketpunch.com/event/MOwYYHZ1a6",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://event-us.kr/datayanolja2020/event/124270",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://smarttechkorea.com/Main",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://daker.ai/public/hackathons/jb-fin-ai-challenge",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://ticketa.co/event/smu6uxm5",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "PyCon Korea 2026",
+      "url": "https://2026.pycon.kr",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인`, `유료`, `기술일반`",
+        "주최: 파이콘 코리아",
+        "접수: 08. 15(토) ~ 08. 17(월)"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "2026 공공기관 AI 혁신 챌린지 (Gov-AI Innovation 2026)",
+      "url": "https://aichallenge4all.or.kr/competitions/public-ai",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `대회`, `AI`",
+        "주최: 과학기술정보통신부",
+        "접수: 05. 11(월) ~ 08. 31(월) <br />"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "제24회 임베디드SW경진대회",
+      "url": "https://www.wevity.com/index.php?c=find&s=1&gbn=viewok&gp=1&ix=107135",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `대회`",
+        "주최: 산업통상자원부 / 임베디드SW·System산업협회",
+        "접수: 05. 06(수) ~ 09. 03(수)"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.rocketpunch.com/event/wLXO4XRrXO",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://opendid.org/hackathon/2026/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "http://www.kibwa.org/board/board_view?code=notice&no=1194",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://smarttechkorea.com/aibigdatashow",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://dorahacks.io/hackathon/mantleturingtesthackathon2026/detail",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.nextrise.co.kr/ko",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "UbuCon Korea X MiniDebConf Korea 2026",
+      "url": "https://ticketa.co/event/7fm5o8fo",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 종로구)`, `유료`, `세미나`, `기술일반`",
+        "주최: Ubuntu Korea Community / Debian Korea",
+        "일시: 08. 29(토)"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "MongoDB .local Seoul",
+      "url": "https://www.mongodb.com/ko-kr/events/mongodb-local/seoul",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인`, `무료`, `기술일반`",
+        "주최: mongodb",
+        "접수: 03. 21(토) ~ 09. 01(화)"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.megazonesoft.com/260521_next-26-recap-webinar/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://tech.goorm.io/2605_commit/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://github.registration.goldcast.io/events/6dc10b2c-f650-48b2-b3c7-aa66937e774c",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.rocketpunch.com/event/lA16A0Ghwd",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.meetup.com/awskrug/events/314830108/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://oss.kr/pages/10/4511?page=1&pageSize=10&searchKeyword=&searchType=",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.codetree.ai/ko/no-free-lunch-2026",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://ticketa.co/event/yjp015vu",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://dnd.ac/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.megazonesoft.com/gcp_fundamentals_core_infra_20260504/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://ticketa.co/event/tufmarzt",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://ticketa.co/event/z49uyhx8",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.meetup.com/awskrug/events/314907229/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://dev-korea.com/events/dev-korea-9-june-2026",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.meetup.com/awskrug/events/314931400/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://event-us.kr/kusitsm/event/126748",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.meetup.com/awskrug/events/314979179/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://event-us.kr/axarena/event/125135",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.meetup.com/awskrug/events/315009322/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://event-us.kr/skintellixhackathon/event/125194",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://event-us.kr/Pentacle/event/124637",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://cmit.pnuh.or.kr/cmit/notice/medical-hack.do?mode=view&articleNo=76171&article.offset=0&articleLimit=10",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.meetup.com/awskrug/events/315050299/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.dxchallenge.co.kr/dive-2026",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://eduhancom.com/codegate",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.meetup.com/ko-KR/awskrug/events/315039832",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.rocketpunch.com/event/258y9oMGIK",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://ticketa.co/event/qihrrgnk",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.megazonesoft.com/gcp_fundamentals_core_infra_20260616/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.meetup.com/awskrug/events/315099275/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.meetup.com/awskrug/events/315068090/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.meetup.com/awskrug/events/315082322/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.meetup.com/awskrug/events/315069046/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://ticketa.co/event/m8adkbnl",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://pvs-studio.com/en/webinar/30/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "MapleStory Worlds 글로벌 개발 콘테스트 2026",
+      "url": "https://maplestoryworlds.nexon.com/events/ko/2026globalcontest",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `대회`",
+        "주최: 넥슨코리아",
+        "접수: 06. 04(목) ~ 10. 07(수) <br /> ---------------- <br />"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.meetup.com/awskrug/events/312616848/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://conference.etnews.com/conf_info.html?uid=494",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://event-us.kr/2026bcmd/event/124375",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.rocketpunch.com/event/nN9JLuRdbi",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.rocketpunch.com/event/6olOYNWsOR",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.rocketpunch.com/event/fDKPI1TUwR",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.rocketpunch.com/event/evx8Yo8jus",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "Unite Seoul 2026",
+      "url": "https://uniteseoul.co.kr/",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `세미나`, `기술일반`",
+        "주최: Unity",
+        "접수: 06. 09(화) ~ 07. 21(화)"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "2026 사이버 가디언즈 CMX 대회",
+      "url": "https://cyberguardians-cmx.kr/",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `온라인`, `오프라인`, `무료`, `대회`, `기술일반`",
+        "주최: 과학기술정보통신부",
+        "접수: 06. 01(월) ~ 08. 05(수)"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "KISIA CTF",
+      "url": "https://kisiactf.kr/",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `온라인`, `오프라인`, `무료`, `대회`, `기술일반`",
+        "주최: 한국정보보호산업협회 (KISIA)",
+        "접수: 06. 01(월) ~ 08. 05(수)"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://event-us.kr/kaag/event/125832",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://event-us.kr/powerplatform/event/126291",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://event-us.kr/tangunsoft/event/125617",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://boostcamp-wm.notion.site/AI-Agent-Challenge-35ab9dd86abe809db232f9d2f5e3f521",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "NYPC 2026",
+      "url": "https://new.nypc.co.kr/ko/",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `대회`",
+        "주최: 넥슨코리아",
+        "접수: 06. 04(목) ~ 07. 19(일) 22:00"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "2026년 물류데이터·AI 활용 및 분석 아이디어 공모전",
+      "url": "https://www.dicia.or.kr/sub.do?menuIdx=MENU_000000000000056&contentSubMode=view&nttIdx=6qE90w62B1miq4AigeY%2bKyYhx%2fXypYchsFAqnyPCFFs%3d",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `대회`, `AI`",
+        "주최: 대전정보문화산업진흥원",
+        "접수: 06. 12(금) ~ 08. 04(화)"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://event-us.kr/asbg/event/126886",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://forms.gle/Jp5or1t1tohCerdX8",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "ACPC 2026 · AWS × 코드트리 대학생 프로그래밍 경진대회",
+      "url": "https://acpc2026.codetree.ai",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `온라인`, `오프라인(서울 강남구)`, `무료`, `대회`",
+        "주최: AWS / 코드트리",
+        "접수: 06. 12(금) ~ 07. 21(화)"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.inflearn.com/challenge/free-live-a-story-of",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://kpaix.kr/page/Invitation",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://biz.modulabs.co.kr/event/480",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.meetup.com/awskrug/events/315222389/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://aicampus.goorm.io/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://luma.com/xej0o2jr",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "AXIS 2026 (Asia eXperience & Innovation Summit)",
+      "url": "https://www.rocketpunch.com/event/T42oNQmVqq",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `오프라인`, `무료`, `세미나`, `AI`",
+        "주최: 한국능률협회컨설팅",
+        "일시: 07. 14(화) ~ 07. 16(목)"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.meetup.com/awskrug/events/315352674/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://honam-is-hackathon.com/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://xai.kaist.ac.kr/AI-Factory-Capability-Seminar/2026/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://weatherhackathon.kr/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://luma.com/2js3bisk",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "2026 오픈소스 개발자대회",
+      "url": "https://www.oss.kr/pages/2",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `대회`, `기술일반`",
+        "주최: 과학기술정보통신부 / 정보통신산업진흥원 / 한국오픈소스협회",
+        "접수: 06. 15(월) ~ 07. 17(금)"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://github.com/ts-backend-meetup-ts/meetup",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://event-us.kr/sipe/event/128290",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://event-us.kr/FKH3nHkjmPGh/event/127632",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.meetup.com/awskrug/events/315380582/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://ticketa.co/event/zbj22eqq",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://hackathon.jocodingax.ai/",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "AI Summit Seoul & Expo 2026",
+      "url": "https://www.aisummit.co.kr/",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `세미나`, `AI`",
+        "주최: AI Summit",
+        "일시: 08. 19(수) ~ 08. 21(금)"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.allforyoung.com/posts/83827",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "맞다AI가 7월 밋업 - 하네스 엔지니어링의 모든 것",
+      "url": "https://ticketa.co/event/j6qfe3id",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `오프라인(대구)`, `무료`, `모임`, `AI`",
+        "주최: 맞다AI가",
+        "접수: 06. 29(월) ~ 07. 22(수) 19:00"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "자율주행모빌리티산업전(AME) 2026 컨퍼런스",
+      "url": "https://am-expo.co.kr/sub-5-1",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `세미나`, `AI`",
+        "주최: 코엑스(COEX)",
+        "접수: 06. 22(월) ~ 08. 14(금)"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "2026년 제5회 QA 코리아 컨퍼런스",
+      "url": "https://ticketa.co/event/26hfzu4p",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `온라인`, `유료`, `세미나`, `기술일반`",
+        "주최: QA Korea",
+        "접수: 07. 01(수) ~ 09. 05(토)"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "2026 Big Data 활용 대회",
+      "url": "https://www.allforyoung.com/posts/83834",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `대회`, `AI`",
+        "주최: 부산광역시 / 부산테크노파크",
+        "접수: 06. 25(목) ~ 09. 18(금) 17:00 <br />"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://jungle.krafton.com/schedule/all",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://luma.com/pd7uf8d8",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "AI 챌린지 해",
+      "url": "https://connect.or.kr/ai-hae",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `온라인`, `오프라인`, `무료`, `대회`, `AI`",
+        "주최: 네이버 커넥트재단",
+        "접수: 06. 08(월) ~ 07. 24(금)"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "[KB국민은행] 제8회 FUTURE FINANCE A.I. CHALLENGE",
+      "url": "https://www.allforyoung.com/posts/83891",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `온라인`, `오프라인(서울 서대문구)`, `무료`, `대회`, `AI`",
+        "주최: KB국민은행",
+        "접수: 07. 06(월) ~ 08. 03(월) 16:00"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "모두의 ICML: 저자들과 함께하는 논문리뷰 & 비하인드",
+      "url": "https://biz.modulabs.co.kr/event/487",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `세미나`, `AI`",
+        "주최: 모두의연구소",
+        "접수: 07. 02(목) ~ 07. 20(월)"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "AX 시대를 위한 AWS AI 활용 전략: 서버리스 아키텍처와 AI 보안 실전 가이드",
+      "url": "https://ticketa.co/event/4abv3eo7",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `오프라인(서울 마포구)`, `유료`, `세미나`, `AI`, `클라우드`",
+        "주최: CloudBro Community",
+        "접수: 07. 03(금) ~ 07. 25(토) 10:00"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.rocketpunch.com/event/Wei7HtwOby",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://event-us.kr/susc/event/129323",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "",
+      "url": "https://www.rocketpunch.com/event/LAG9BenD0o",
+      "month": "",
+      "metadata": [],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "[무료 라이브] 백엔드는 하나다 — Node.js와 .NET Core를 동시에 만들어봅니다",
+      "url": "https://okky.kr/articles/1560073",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `기술일반`",
+        "주최: 이창현코딩연구소",
+        "일시: 07. 16(목) 20:20"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "하네스 부터 자동화 루프 설계까지 에이전틱 엔지니어링 핸즈온 : AI 주도 개발 A-Z",
+      "url": "https://www.rocketpunch.com/event/lROAEQtTgE",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `오프라인(서울 서초구)`, `유료`, `세미나`, `AI`",
+        "주최: 모자이크넷",
+        "접수: 07. 07(화) ~ 07. 20(월) 14:00"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "Dot4 7월 meetup",
+      "url": "https://ticketa.co/event/fsdukhi4",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `오프라인(서울 종로구)`, `무료`, `모임`, `기술일반`",
+        "주최: Dot4",
+        "접수: 07. 06(월) ~ 07. 21(화) 12:08"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "AWSKRUG #부산 지역 소모임 7월 30일 (목) With BIPA",
+      "url": "https://www.meetup.com/awskrug/events/315581938/",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `오프라인(부산)`, `무료`, `모임`, `클라우드`",
+        "주최: AWSKRUG",
+        "접수: 07. 07(화) ~ 07. 30(목) 19:00"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "AWSKRUG Women In Cloud 22nd: 누구나 혼자 서는 순간이 온다",
+      "url": "https://www.meetup.com/awskrug/events/315582897/",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `모임`, `클라우드`",
+        "주최: AWSKRUG",
+        "접수: 07. 07(화) ~ 07. 30(목) 19:00"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "맞다톤 | 바이브 코딩으로 하루 만에 AI 서비스 MVP 완성",
+      "url": "https://ticketa.co/event/jxxdbwmn",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(대구)`, `유료`, `대회`, `AI`",
+        "주최: 맞다AI가",
+        "접수: 07. 07(화) ~ 08. 22(토) 09:00"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "NIPA 지원사업 건설기계 데이터 기반 AI 융합 전문가 무료교육 모집",
+      "url": "https://crowdacademyofc.imweb.me/ai-expert",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `교육`, `AI`",
+        "주최: 크라우드아카데미",
+        "접수: 06. 29(월) 14:00 ~ 07. 19(일)"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "제5회 너드콘 - AI와 현업노하우",
+      "url": "https://nerd.aviss.kr/archive/5",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울)`, `유료`, `세미나`, `AI`",
+        "주최: 너드콘",
+        "접수: 07. 07(화) ~ 08. 22(토) 14:00"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "코파톤 Cofathon - 크래프톤 × 올리브영 AI Native 해커톤",
+      "url": "https://cofathon.getcofa.com/",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `오프라인(서울 성동구)`, `무료`, `대회`, `AI`",
+        "주최: 크래프톤 / 올리브영",
+        "접수: 07. 08(수) ~ 07. 17(금)"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "멋쟁이사자처럼 x 고용노동부 Campus AX Ton",
+      "url": "https://event-us.kr/incunext/event/130440",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `오프라인`, `무료`, `세미나`, `AI`",
+        "주최: 멋쟁이사자처럼 / 고용노동부",
+        "접수: 07. 10(금) ~ 07. 19(일) 18:00"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "우먼잇츠 AX 세미나 7월 프로그램 : AI시대의 문제 해결 역량",
+      "url": "https://www.seoulwomen.or.kr/sfwf/contents/sfwf-event.do?schM=view&id=31236",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `오프라인(서울 동작구)`, `무료`, `세미나`, `AI`",
+        "주최: 서울시여성가족재단",
+        "접수: 07. 07(화) ~ 07. 21(화)"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "AWSKRUG #magok 마곡 소모임 (7월 21일)",
+      "url": "https://www.meetup.com/awskrug/events/315596565/",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `오프라인(서울 강서구)`, `유료`, `모임`, `클라우드`",
+        "주최: AWSKRUG",
+        "접수: 07. 11(토) ~ 07. 21(화) 19:00"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "AWSKRUG #Beginner 모임 (7월 22일)",
+      "url": "https://www.meetup.com/awskrug/events/315611077/",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `모임`, `클라우드`",
+        "주최: AWSKRUG",
+        "접수: 07. 11(토) ~ 07. 22(수) 19:00"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "AWSKRUG 데브옵스 #DevOps 소모임 24번째 밋업 (7월 23일)",
+      "url": "https://www.meetup.com/awskrug/events/315596174/",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `모임`, `클라우드`",
+        "주최: AWSKRUG",
+        "접수: 07. 11(토) ~ 07. 23(목) 19:00"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "AWSKRUG 아키텍처 #architecture 57번째 소모임 (7월 23일)",
+      "url": "https://www.meetup.com/awskrug/events/315607999/",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `모임`, `클라우드`",
+        "주최: AWSKRUG",
+        "접수: 07. 11(토) ~ 07. 23(목) 19:00"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "2026 Google I/O Extended - GDG Korea Android",
+      "url": "https://ticketa.co/event/vcp5wmp4",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `세미나`, `기술일반`",
+        "주최: GDG Korea Android",
+        "접수: 07. 09(목) ~ 07. 25(토)"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "NAN 2026 - NHN Game × AI Hackathon",
+      "url": "https://nan2026.nhn.com/",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(경기 성남)`, `무료`, `대회`, `AI`",
+        "주최: NHN",
+        "접수: 07. 10(금) ~ 08. 10(월)"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "AWSKRUG 집현전 #jiphyeonjeon 온라인 소모임 - 7월 18일(토)",
+      "url": "https://www.meetup.com/awskrug/events/315649011/",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `모임`, `클라우드`",
+        "주최: AWSKRUG",
+        "접수: 07. 13(월) ~ 07. 18(토) 10:00"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "AWSKRUG 보안 #Security 소모임 /w Beaver Dam - 7월 21일 (화)",
+      "url": "https://www.meetup.com/awskrug/events/315639045/",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `모임`, `클라우드`",
+        "주최: AWSKRUG",
+        "접수: 07. 13(월) ~ 07. 21(화) 19:00"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "시니어와 AI 기술, 우리의 미래를 보다",
+      "url": "https://event-us.kr/nccf/event/129466",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `오프라인(서울 종로구)`, `유료`, `세미나`, `AI`",
+        "주최: NC문화재단",
+        "접수: 06. 29(월) ~ 07. 21(화) 21:00"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "Let's make a programming language. Variables",
+      "url": "https://pvs-studio.com/en/webinar/31/",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `기술일반`",
+        "주최: PVS-Studio",
+        "일시: 07. 23(목) 21:00"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "Apple 디벨로퍼 아카데미 - 아이디어 플레이그라운드 @ 올리브영N 성수",
+      "url": "https://developeracademy.postech.ac.kr/event/ideaplayground",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `오프라인(서울 성동구)`, `무료`, `세미나`, `기술일반`",
+        "주최: Apple Developer Academy @ POSTECH",
+        "일시: 07. 24(금)"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "K-DEVCON x C++ Korea - DEVCORE | THE LEGEND : Beyond the code",
+      "url": "https://ticketa.co/event/f5dgdhms",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `세미나`, `기술일반`",
+        "주최: K-DEVCON / C++ Korea",
+        "접수: 07. 13(월) ~ 07. 29(화) 09:00"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "제4회 인공지능(AI) 신약개발 경진대회 (4th JUMP AI) 예선",
+      "url": "https://daker.ai/public/hackathons/4th-jump-ai-agentic-drug-challenge",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `대회`, `AI`",
+        "주최: 보건복지부 / 한국보건산업진흥원 / 고려대학교의과대학 / 한국제약바이오협회",
+        "접수: 06. 29(월) ~ 08. 07(금) 16:00"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "지그재그 세미나 5회 - 온톨로지로 만나는 휴먼 네트워킹",
+      "url": "https://event-us.kr/zigzag/event/129917",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 성동구)`, `유료`, `세미나`, `AI`",
+        "주최: 지그재그",
+        "접수: 07. 06(월) ~ 08. 07(금) 23:00"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "2026 금융 AI Challenge",
+      "url": "https://daker.ai/public/hackathons/2026-finance-ai-challenge",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `온라인`, `오프라인`, `무료`, `대회`, `AI`",
+        "주최: 금융보안원",
+        "접수: 07. 13(월) ~ 09. 07(월) 10:00"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "🌊 After Tech Club: vol 2. 모바일 앱 수익화의 A to Z",
+      "url": "https://ticketa.co/event/d9l39gwt",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `모임`, `기술일반`",
+        "주최: After Tech Club",
+        "접수: 07. 14(화) ~ 07. 20(월) 18:30"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "Vibe, Dive! (7월 미니 컨퍼런스)",
+      "url": "https://ticketa.co/event/8m4j5s2j",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `오프라인(인천)`, `유료`, `세미나`, `AI`",
+        "주최: VibeDive",
+        "접수: 07. 10(금) ~ 07. 25(토) 13:00"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "2026년 충청권 ICT이노베이션스퀘어 개발 역량 강화 멘토링",
+      "url": "https://learncle.com/event/sCgsj",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `온라인`, `오프라인(충북 청주시)`, `무료`, `대회`, `AI`",
+        "주최: 과학기술정보통신부 / 세종테크노파크",
+        "접수: 07. 16(목) ~ 07. 26(일) 13:15"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "AWSKRUG #AIEngineering 소모임 - 실전 GenAI 애플리케이션 만들기",
+      "url": "https://www.meetup.com/awskrug/events/315678453/",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `모임`, `AI`",
+        "주최: AWSKRUG",
+        "접수: 07. 16(목) ~ 07. 29(수) 19:00"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "KT AIVLE School(에이블스쿨) 10기 AI 개발자/DX 컨설턴트 교육생 모집",
+      "url": "https://aivle.kt.co.kr/home/main/applyMain?mcd=MC00000051",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인`, `무료`, `교육`, `AI`",
+        "주최: KT",
+        "접수: 07. 07(화) ~ 08. 10(월)"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    },
+    {
+      "title": "2026 금융권 공동채용 박람회",
+      "url": "https://financejobfair.co.kr/info/info_01",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 중구)`, `무료`, `세미나`",
+        "주최: 은행연합회 등 금융권 82개사",
+        "일시: 08. 19(수) ~ 08. 20(목)"
+      ],
+      "sent_at": "2026-07-19T01:10:35.179075",
+      "migrated": true
+    }
+  ]
+}

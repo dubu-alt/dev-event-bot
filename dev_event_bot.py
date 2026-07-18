@@ -7,8 +7,9 @@ import requests
 import json
 import os
 import re
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import List, Dict, Tuple, Optional
+from urllib.parse import urlparse, urlunparse, parse_qsl, urlencode
 import logging
 
 # 로깅 설정
@@ -24,8 +25,17 @@ WEBHOOK_ENV_NAMES = [
     "DISCORD_SUMOKJANG_WEBHOOK",
 ]
 CACHE_FILE = "events_cache.json"
+CACHE_VERSION = 2
 MAX_RETRIES = 3
 DISCORD_SUCCESS_CODE = 204
+
+# 캐시 정리 정책
+RETENTION_MONTHS = 3          # 현재 월 기준 N개월 이전 행사는 캐시에서 정리
+MIGRATED_RETENTION_DAYS = 180  # 월 정보가 없는(구버전 마이그레이션) 항목의 보관 일수
+
+# URL 정규화 시 제거할 추적용 쿼리 파라미터
+TRACKING_PARAM_PREFIXES = ("utm_",)
+TRACKING_PARAM_NAMES = {"fbclid", "gclid", "igshid"}
 
 # README 다운로드 옵션
 README_SOURCES = [
@@ -49,43 +59,188 @@ def get_webhooks() -> List[Tuple[str, str]]:
     return webhooks
 
 
+def normalize_url(url: str) -> str:
+    """중복 판정을 위한 URL 정규화 (스킴/호스트 소문자, 추적 파라미터·fragment·끝 슬래시 제거)"""
+    if not url:
+        return ""
+    try:
+        parsed = urlparse(url.strip())
+    except ValueError:
+        return url.strip().lower()
+
+    netloc = parsed.netloc.lower()
+    if netloc.startswith("www."):
+        netloc = netloc[4:]
+
+    query_pairs = [
+        (key, value)
+        for key, value in parse_qsl(parsed.query, keep_blank_values=True)
+        if not key.lower().startswith(TRACKING_PARAM_PREFIXES)
+        and key.lower() not in TRACKING_PARAM_NAMES
+    ]
+
+    path = parsed.path.rstrip("/")
+    return urlunparse((
+        parsed.scheme.lower(),
+        netloc,
+        path,
+        parsed.params,
+        urlencode(query_pairs),
+        "",  # fragment 제거
+    ))
+
+
+def normalize_title(title: str) -> str:
+    """중복 판정을 위한 제목 정규화 (소문자화, 공백 정리)"""
+    return re.sub(r"\s+", " ", (title or "")).strip().lower()
+
+
+def parse_month(month: str) -> Optional[Tuple[int, int]]:
+    """'26년 05월' → (2026, 5). 파싱 불가 시 None"""
+    match = re.search(r"(\d{2,4})년\s*(\d{1,2})월", month or "")
+    if not match:
+        return None
+    year = int(match.group(1))
+    if year < 100:
+        year += 2000
+    return year, int(match.group(2))
+
+
 class EventCache:
-    """이벤트 캐시 관리"""
-    
-    def __init__(self, cache_file: str = CACHE_FILE):
+    """이벤트 캐시 관리 (v2: 이벤트 객체 저장, v1 URL 목록 자동 마이그레이션)"""
+
+    def __init__(self, cache_file: str = CACHE_FILE, now: Optional[datetime] = None):
         self.cache_file = cache_file
-        self.sent_urls = self._load()
-    
-    def _load(self) -> List[str]:
-        """캐시 파일 로드"""
-        if os.path.exists(self.cache_file):
-            try:
-                with open(self.cache_file, "r", encoding="utf-8") as f:
-                    data = json.load(f)
-                    logger.info(f"캐시 로드 완료: {len(data)}개 이벤트")
-                    return data
-            except (json.JSONDecodeError, IOError) as e:
-                logger.warning(f"캐시 파일 손상: {e}, 초기화")
-                return []
+        self.now = now or datetime.now()
+        self.events = self._load()
+        self._url_keys = {
+            normalize_url(e["url"]) for e in self.events if e.get("url")
+        }
+        self._title_keys = {
+            (normalize_title(e["title"]), e.get("month", ""))
+            for e in self.events
+            if e.get("title")
+        }
+
+    def _load(self) -> List[Dict]:
+        """캐시 파일 로드 (v1 목록/v2 객체 형식 모두 지원)"""
+        if not os.path.exists(self.cache_file):
+            return []
+        try:
+            with open(self.cache_file, "r", encoding="utf-8") as f:
+                data = json.load(f)
+        except (json.JSONDecodeError, IOError) as e:
+            logger.warning(f"캐시 파일 손상: {e}, 초기화")
+            return []
+
+        # v1: URL 문자열 배열 → v2 객체로 마이그레이션
+        if isinstance(data, list):
+            migrated = [
+                {
+                    "title": "",
+                    "url": url,
+                    "month": "",
+                    "metadata": [],
+                    "sent_at": self.now.isoformat(),
+                    "migrated": True,
+                }
+                for url in data
+                if isinstance(url, str)
+            ]
+            logger.info(f"v1 캐시 마이그레이션: {len(migrated)}개 이벤트")
+            return migrated
+
+        # v2: {"version": 2, "events": [...]}
+        if isinstance(data, dict) and isinstance(data.get("events"), list):
+            events = [e for e in data["events"] if isinstance(e, dict) and e.get("url")]
+            logger.info(f"캐시 로드 완료: {len(events)}개 이벤트")
+            return events
+
+        logger.warning("알 수 없는 캐시 형식, 초기화")
         return []
-    
+
     def save(self) -> None:
         """캐시 파일 저장"""
+        payload = {
+            "version": CACHE_VERSION,
+            "updated_at": self.now.isoformat(),
+            "events": self.events,
+        }
         try:
             with open(self.cache_file, "w", encoding="utf-8") as f:
-                json.dump(self.sent_urls, f, ensure_ascii=False, indent=2)
-            logger.info(f"캐시 저장 완료: {len(self.sent_urls)}개 이벤트")
+                json.dump(payload, f, ensure_ascii=False, indent=2)
+            logger.info(f"캐시 저장 완료: {len(self.events)}개 이벤트")
         except IOError as e:
             logger.error(f"캐시 저장 실패: {e}")
-    
-    def is_sent(self, url: str) -> bool:
-        """이벤트가 이미 전송되었는지 확인"""
-        return url in self.sent_urls
-    
-    def mark_sent(self, url: str) -> None:
+
+    def is_sent(self, event: Dict) -> bool:
+        """이미 전송된 이벤트인지 확인 (정규화 URL 또는 제목+월 일치 시 중복)"""
+        if normalize_url(event.get("url", "")) in self._url_keys:
+            return True
+        title_key = (normalize_title(event.get("title", "")), event.get("month", ""))
+        return bool(title_key[0]) and title_key in self._title_keys
+
+    def mark_sent(self, event: Dict) -> None:
         """이벤트를 전송됨으로 표시"""
-        if url not in self.sent_urls:
-            self.sent_urls.append(url)
+        if self.is_sent(event):
+            return
+        self.events.append({
+            "title": event.get("title", ""),
+            "url": event.get("url", ""),
+            "month": event.get("month", ""),
+            "metadata": event.get("metadata", []),
+            "sent_at": self.now.isoformat(),
+        })
+        self._url_keys.add(normalize_url(event.get("url", "")))
+        if event.get("title"):
+            self._title_keys.add(
+                (normalize_title(event["title"]), event.get("month", ""))
+            )
+
+    def enrich(self, event: Dict) -> bool:
+        """URL이 일치하는 캐시 항목에 제목/월/메타데이터가 비어 있으면 백필.
+        v1 마이그레이션 항목도 이후 제목 기반 중복 판정이 가능해진다."""
+        url_key = normalize_url(event.get("url", ""))
+        if not url_key or not event.get("title"):
+            return False
+        for cached in self.events:
+            if normalize_url(cached.get("url", "")) == url_key and not cached.get("title"):
+                cached["title"] = event["title"]
+                cached["month"] = event.get("month", "")
+                cached["metadata"] = event.get("metadata", [])
+                self._title_keys.add(
+                    (normalize_title(event["title"]), event.get("month", ""))
+                )
+                return True
+        return False
+
+    def prune(self) -> int:
+        """오래된 캐시 항목 정리. 제거된 개수 반환"""
+        cutoff_index = (
+            self.now.year * 12 + (self.now.month - 1) - RETENTION_MONTHS
+        )
+        migrated_cutoff = self.now - timedelta(days=MIGRATED_RETENTION_DAYS)
+
+        kept = []
+        for event in self.events:
+            month = parse_month(event.get("month", ""))
+            if month:
+                if month[0] * 12 + (month[1] - 1) >= cutoff_index:
+                    kept.append(event)
+                continue
+            # 월 정보가 없으면 sent_at 기준으로 보관
+            try:
+                sent_at = datetime.fromisoformat(event.get("sent_at", ""))
+                if sent_at >= migrated_cutoff:
+                    kept.append(event)
+            except ValueError:
+                kept.append(event)  # 판단 불가 항목은 안전하게 보관
+
+        removed = len(self.events) - len(kept)
+        if removed:
+            logger.info(f"오래된 캐시 정리: {removed}개 제거")
+            self.events = kept
+        return removed
 
 
 class MarkdownParser:
@@ -281,19 +436,20 @@ class DevEventBot:
     
     def __init__(self):
         self.cache = EventCache()
+        self.dry_run = os.environ.get("DRY_RUN", "").strip().lower() in ("1", "true", "yes")
         self.senders = [
             DiscordSender(webhook_url, webhook_name)
             for webhook_name, webhook_url in get_webhooks()
         ]
-    
+
     def run(self) -> Tuple[int, int]:
         """봇 실행"""
         logger.info("=" * 60)
-        logger.info("Dev-Event 봇 실행 시작")
+        logger.info("Dev-Event 봇 실행 시작" + (" [DRY RUN]" if self.dry_run else ""))
         logger.info("=" * 60)
-        
+
         try:
-            if not self.senders:
+            if not self.senders and not self.dry_run:
                 logger.error("설정된 Discord Webhook이 없습니다")
                 return 0, 0
 
@@ -320,22 +476,36 @@ class DevEventBot:
             
             # 신규 이벤트 필터링 및 전송
             new_count = 0
+            enriched_count = 0
             for event in events:
-                if self.cache.is_sent(event['url']):
+                if self.cache.is_sent(event):
+                    if self.cache.enrich(event):
+                        enriched_count += 1
                     logger.debug(f"중복 이벤트 건너뜀: {event['title'][:40]}")
                     continue
-                
+
                 logger.info(f"새 행사 발견: {event['title']}")
-                
+
+                if self.dry_run:
+                    logger.info(f"[DRY RUN] 전송 생략: {event['title'][:60]} | {event['url']}")
+                    new_count += 1
+                    continue
+
                 send_results = [sender.send_event(event) for sender in self.senders]
                 if all(send_results):
-                    self.cache.mark_sent(event['url'])
+                    self.cache.mark_sent(event)
                     new_count += 1
                 else:
                     logger.warning(f"일부 Webhook 전송 실패로 캐시에 기록하지 않음: {event['title']}")
-            
-            # 캐시 저장
-            self.cache.save()
+
+            # 오래된 캐시 정리 후 저장 (DRY RUN에서는 파일 미변경)
+            if self.dry_run:
+                logger.info("[DRY RUN] 캐시 저장 생략")
+            else:
+                if enriched_count:
+                    logger.info(f"마이그레이션 항목 백필: {enriched_count}개")
+                self.cache.prune()
+                self.cache.save()
             
             logger.info("=" * 60)
             logger.info(f"봇 실행 완료 | 새 행사: {new_count}개, 총: {len(events)}개")

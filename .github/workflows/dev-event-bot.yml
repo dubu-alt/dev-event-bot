@@ -46,8 +46,11 @@ jobs:
 
           try:
               data = json.loads(cache_path.read_text(encoding='utf-8'))
-              if not isinstance(data, list):
-                  raise ValueError('events_cache.json must contain a JSON array')
+              # v1: URL 문자열 배열, v2: {"version": 2, "events": [...]}
+              is_v1 = isinstance(data, list)
+              is_v2 = isinstance(data, dict) and isinstance(data.get('events'), list)
+              if not (is_v1 or is_v2):
+                  raise ValueError('events_cache.json must be a JSON array (v1) or {"events": [...]} (v2)')
           except Exception as exc:
               print(f'Invalid events_cache.json, resetting to []: {exc}')
               cache_path.write_text('[]\n', encoding='utf-8')

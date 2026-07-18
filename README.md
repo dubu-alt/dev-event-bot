@@ -7,7 +7,9 @@
 - Dev-Event README의 월별 행사 목록 자동 수집
 - 인라인/멀티라인 Markdown 행사 형식 파싱
 - Discord Webhook Embed 메시지 전송
-- `events_cache.json` 기반 중복 알림 방지
+- `events_cache.json` 기반 중복 알림 방지 (URL 정규화 + 제목/월 병행 판정)
+- 오래된 캐시 항목 자동 정리 (기본 3개월 보관)
+- `DRY_RUN=1` 모드로 전송/캐시 변경 없이 로컬 검증
 - GitHub Actions 스케줄 실행 및 캐시 자동 커밋
 - GitHub Actions Artifact가 아닌 Git 추적 파일로 캐시 유지
 - 네트워크 다운로드 실패 시 로컬 README 폴백 지원
@@ -47,8 +49,10 @@ dev-event-bot/
    - 폴백: 로컬 `README.md`
 2. `MarkdownParser`가 ``## `26년 05월` `` 같은 월별 섹션에서 행사 링크와 메타데이터를 추출합니다.
 3. `events_cache.json`에 없는 신규 행사만 Discord Webhook으로 전송합니다.
-4. 전송 성공한 행사 URL을 캐시에 저장합니다.
-5. GitHub Actions가 변경된 캐시 파일을 현재 브랜치에 커밋/푸시합니다.
+   - 중복 판정: 정규화된 URL(추적 파라미터·fragment·끝 슬래시 제거) 또는 정규화된 제목+월이 일치하면 중복으로 처리합니다. 같은 행사가 URL만 바꿔 재등록돼도 다시 알리지 않습니다.
+4. 전송 성공한 행사를 객체(제목/URL/월/메타데이터/전송일시)로 캐시에 저장합니다.
+5. 현재 월 기준 3개월 이전 행사는 캐시에서 자동 정리합니다.
+6. GitHub Actions가 변경된 캐시 파일을 현재 브랜치에 커밋/푸시합니다.
 
 > 캐시는 `actions/download-artifact`로 내려받지 않습니다. Artifact는 실행 간 영속 저장소가 아니므로, 첫 실행이나 업로드가 생략된 실행에서 `Artifact not found for name: events_cache` 오류가 날 수 있습니다.
 
@@ -121,6 +125,12 @@ $env:DISCORD_WEBHOOK_URL="https://discord.com/api/webhooks/xxxxx/xxxxx"
 
 ```bash
 python dev_event_bot.py
+```
+
+Webhook 없이 파싱/중복 판정만 검증하려면 DRY RUN 모드를 사용합니다. 전송과 캐시 파일 변경이 모두 생략됩니다.
+
+```bash
+DRY_RUN=1 python dev_event_bot.py
 ```
 
 ## 테스트
@@ -203,13 +213,27 @@ Settings → Actions → General → Workflow permissions
 
 ### `events_cache.json`
 
-이미 Discord로 전송한 행사 URL 목록입니다. GitHub Actions가 이 파일을 커밋해 다음 실행에서 중복 알림을 막습니다.
+이미 Discord로 전송한 행사 목록입니다. GitHub Actions가 이 파일을 커밋해 다음 실행에서 중복 알림을 막습니다.
+
+v2 형식 (현재):
 
 ```json
-[
-  "https://example.com/event"
-]
+{
+  "version": 2,
+  "updated_at": "2026-07-19T09:00:00",
+  "events": [
+    {
+      "title": "행사명",
+      "url": "https://example.com/event",
+      "month": "26년 07월",
+      "metadata": ["분류: `온라인`, `무료`"],
+      "sent_at": "2026-07-19T09:00:00"
+    }
+  ]
+}
 ```
+
+구버전(v1) URL 문자열 배열 형식도 로드 시 자동으로 v2로 마이그레이션됩니다. 마이그레이션된 항목은 제목 정보가 없으므로, 이후 실행에서 README와 URL이 일치하면 제목/월을 자동 백필합니다.
 
 ## 운영 팁
 
