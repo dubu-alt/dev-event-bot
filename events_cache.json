@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-07-21T01:25:40.081699",
+  "updated_at": "2026-07-22T01:24:38.535618",
   "events": [
     {
       "title": "",
@@ -1485,6 +1485,39 @@
       ],
       "sent_at": "2026-07-19T01:10:35.179075",
       "migrated": true
+    },
+    {
+      "title": "Kickoff & Tech Session: Google Cloud X Solana AI Agentic Hackathon",
+      "url": "https://luma.com/gcp-solana-tech-session",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `AI`, `블록체인`",
+        "주최: Four Pillars / Google Cloud / Solana",
+        "접수: 07. 20(월) ~ 07. 21(화) 19:00"
+      ],
+      "sent_at": "2026-07-22T01:24:38.535618"
+    },
+    {
+      "title": "AWSKRUG 집현전 #jiphyeonjeon 온라인 소모임 - 7월 25일(토)",
+      "url": "https://www.meetup.com/awskrug/events/315744192/",
+      "month": "26년 07월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `모임`, `클라우드`",
+        "주최: AWSKRUG",
+        "접수: 07. 20(월) ~ 07. 25(토) 10:00"
+      ],
+      "sent_at": "2026-07-22T01:24:38.535618"
+    },
+    {
+      "title": "멀티 에이전트 워크샵 with GitHub Copilot",
+      "url": "https://ticketa.co/event/c99wxzdg",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 종로구)`, `유료`, `세미나`, `AI`, `클라우드`",
+        "주최: Microsoft 커뮤니티 이벤트",
+        "접수: 07. 17(금) ~ 08. 14(금) 10:00"
+      ],
+      "sent_at": "2026-07-22T01:24:38.535618"
     }
   ]
 }
