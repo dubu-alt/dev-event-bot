@@ -60,6 +60,8 @@ jobs:
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           DISCORD_SUMOKJANG_WEBHOOK: ${{ secrets.DISCORD_SUMOKJANG_WEBHOOK }}
+          # 비워두면 compact(임베드 1개 목록). rich로 두면 행사 1건당 임베드 1개
+          DIGEST_STYLE: ${{ vars.DIGEST_STYLE }}
         run: |
           python dev_event_bot.py
       

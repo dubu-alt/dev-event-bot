@@ -7,7 +7,7 @@ import requests
 import json
 import os
 import re
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from typing import List, Dict, Tuple, Optional
 from urllib.parse import urlparse, urlunparse, parse_qsl, urlencode
 import logging
@@ -48,16 +48,39 @@ COLOR_INFO = 3447003       # 파랑 (기본)
 COLOR_SUCCESS = 3066993
 COLOR_WARNING = 15158332
 
-# 분류별 임베드 색상 (분류 텍스트에 키워드가 포함되면 적용, 위에서부터 우선)
-CATEGORY_COLORS = [
-    (("대회", "해커톤"), 15158332),   # 빨강
-    (("세미나", "컨퍼런스"), 3066993),  # 초록
-    (("교육", "부트캠프"), 15105570),  # 주황
-    (("모임", "동아리"), 3447003),     # 파랑
+# 분류별 스타일 (분류 텍스트에 키워드가 포함되면 적용, 위에서부터 우선)
+# (키워드, 임베드 색상, 컴팩트 모드 말머리)
+CATEGORY_STYLES = [
+    (("대회", "해커톤"), 15158332, "🔴"),   # 빨강
+    (("세미나", "컨퍼런스"), 3066993, "🟢"),  # 초록
+    (("교육", "부트캠프"), 15105570, "🟠"),  # 주황
+    (("모임", "동아리"), 3447003, "🔵"),     # 파랑
 ]
+CATEGORY_COLORS = [(keywords, color) for keywords, color, _ in CATEGORY_STYLES]
+DEFAULT_CATEGORY_EMOJI = "⚪"
 
-# 다이제스트 모드: 메시지 1개당 임베드 최대 개수 (Discord 제한 10)
+# 다이제스트 스타일
+DIGEST_STYLE_COMPACT = "compact"  # 전체를 임베드 1개 목록으로 압축 (기본)
+DIGEST_STYLE_RICH = "rich"        # 행사 1건당 임베드 1개 (구버전)
+DEFAULT_DIGEST_STYLE = DIGEST_STYLE_COMPACT
+
+# rich 모드: 메시지 1개당 임베드 최대 개수 (Discord 제한 10)
 MAX_EMBEDS_PER_MESSAGE = 10
+
+# compact 모드: 메시지 1개당 행사 최대 개수 / description 문자 예산 (Discord 제한 4096)
+MAX_EVENTS_PER_COMPACT_MESSAGE = 20
+MAX_COMPACT_DESCRIPTION_CHARS = 3800
+MAX_COMPACT_SUMMARY_CHARS = 180
+
+
+def get_digest_style() -> str:
+    """DIGEST_STYLE 환경변수로 다이제스트 표현 방식 결정"""
+    style = os.environ.get("DIGEST_STYLE", "").strip().lower()
+    if style in (DIGEST_STYLE_COMPACT, DIGEST_STYLE_RICH):
+        return style
+    if style:
+        logger.warning(f"알 수 없는 DIGEST_STYLE '{style}', 기본값({DEFAULT_DIGEST_STYLE}) 사용")
+    return DEFAULT_DIGEST_STYLE
 
 
 def get_webhooks() -> List[Tuple[str, str]]:
@@ -341,11 +364,18 @@ class MarkdownParser:
 class DiscordSender:
     """Discord 웹훅 전송"""
     
-    def __init__(self, webhook_url: str, webhook_name: str, max_retries: int = MAX_RETRIES):
+    def __init__(
+        self,
+        webhook_url: str,
+        webhook_name: str,
+        max_retries: int = MAX_RETRIES,
+        style: Optional[str] = None,
+    ):
         self.webhook_url = webhook_url
         self.webhook_name = webhook_name
         self.max_retries = max_retries
-    
+        self.style = style or get_digest_style()
+
     def send_event(self, event: Dict) -> bool:
         """이벤트 1건을 Discord로 전송"""
         if not self.webhook_url:
@@ -359,46 +389,74 @@ class DiscordSender:
         return success
 
     def send_digest(self, events: List[Dict]) -> List[bool]:
-        """이벤트 여러 건을 메시지당 최대 10개 임베드로 묶어 전송.
+        """이벤트 여러 건을 다이제스트로 전송.
         이벤트별 성공 여부 리스트를 반환한다."""
         if not self.webhook_url:
             logger.error(f"{self.webhook_name}이 설정되지 않았습니다")
             return [False] * len(events)
 
         results: List[bool] = []
-        chunks = [
-            events[i:i + MAX_EMBEDS_PER_MESSAGE]
-            for i in range(0, len(events), MAX_EMBEDS_PER_MESSAGE)
-        ]
+        chunks = chunk_events(events, self.style)
         for index, chunk in enumerate(chunks):
             content = f"📅 새 개발자 행사 {len(events)}건"
             if len(chunks) > 1:
                 content += f" ({index + 1}/{len(chunks)})"
-            payload = {
-                "content": content,
-                "embeds": [self._create_embed(e) for e in chunk],
-            }
+            if self.style == DIGEST_STYLE_RICH:
+                embeds = [self._create_embed(e) for e in chunk]
+            else:
+                embeds = [self._create_compact_embed(chunk)]
+            payload = {"content": content, "embeds": embeds}
             success = self._post_webhook(payload)
             if success:
                 logger.info(
-                    f"✓ 다이제스트 전송 성공 ({self.webhook_name}): "
+                    f"✓ 다이제스트 전송 성공 ({self.webhook_name}, {self.style}): "
                     f"{len(chunk)}건 ({index + 1}/{len(chunks)})"
                 )
             results.extend([success] * len(chunk))
         return results
 
     @staticmethod
-    def _category_color(event: Dict) -> int:
-        """분류 메타데이터 키워드로 임베드 색상 결정"""
-        category_text = ""
+    def _category_text(event: Dict) -> str:
+        """'분류' 메타데이터 원문 조각 반환"""
         for part in event.get('metadata', []):
             if part.startswith('분류'):
-                category_text = part
-                break
+                return part
+        return ""
+
+    @classmethod
+    def _category_color(cls, event: Dict) -> int:
+        """분류 메타데이터 키워드로 임베드 색상 결정"""
+        category_text = cls._category_text(event)
         for keywords, color in CATEGORY_COLORS:
             if any(keyword in category_text for keyword in keywords):
                 return color
         return COLOR_INFO
+
+    @classmethod
+    def _category_emoji(cls, event: Dict) -> str:
+        """분류 메타데이터 키워드로 컴팩트 목록 말머리 결정"""
+        category_text = cls._category_text(event)
+        for keywords, _, emoji in CATEGORY_STYLES:
+            if any(keyword in category_text for keyword in keywords):
+                return emoji
+        return DEFAULT_CATEGORY_EMOJI
+
+    @staticmethod
+    def _metadata_value(event: Dict, name: str) -> str:
+        """'주최: 값' 형태 메타데이터에서 값만 추출"""
+        for part in event.get('metadata', []):
+            key, sep, value = part.partition(':')
+            if sep and key.strip() == name:
+                return value.strip()
+        return ""
+
+    @staticmethod
+    def _escape_link_text(text: str) -> str:
+        """Markdown 링크 라벨을 깨뜨리는 대괄호 이스케이프
+
+        Dev-Event 제목에는 '[온라인] 7월 …'처럼 대괄호가 자주 들어간다.
+        """
+        return text.replace('[', r'\[').replace(']', r'\]')
 
     @classmethod
     def _create_embed(cls, event: Dict) -> Dict:
@@ -430,11 +488,68 @@ class DiscordSender:
             "color": cls._category_color(event),
             "fields": fields[:25],
             "footer": {"text": "Dev-Event Bot"},
-            "timestamp": datetime.utcnow().isoformat(),
+            "timestamp": datetime.now(timezone.utc).isoformat(),
         }
         if extra_parts:
             embed["description"] = ' | '.join(extra_parts)[:4096]
         return embed
+
+    @classmethod
+    def _compact_summary(cls, event: Dict) -> str:
+        """행사 1건을 '날짜 · 분류 · 주최' 한 줄로 요약"""
+        segments: List[str] = []
+
+        held_at = cls._metadata_value(event, '일시')
+        apply_at = cls._metadata_value(event, '접수')
+        if held_at:
+            segments.append(held_at)
+        elif apply_at:
+            segments.append(f"접수 {apply_at}")
+        elif event.get('month'):
+            segments.append(event['month'])
+
+        category = cls._metadata_value(event, '분류')
+        if category:
+            segments.extend(
+                tag.strip(' `') for tag in category.split(',') if tag.strip(' `')
+            )
+
+        host = cls._metadata_value(event, '주최')
+        if host:
+            segments.append(host)
+
+        return ' · '.join(segments)[:MAX_COMPACT_SUMMARY_CHARS]
+
+    @classmethod
+    def _compact_line(cls, event: Dict) -> str:
+        """컴팩트 목록의 행사 1건 블록 (제목 링크 + 요약)"""
+        title = cls._escape_link_text(event['title'][:256])
+        line = f"{cls._category_emoji(event)} **[{title}]({event['url']})**"
+        summary = cls._compact_summary(event)
+        if summary:
+            line += f"\n　{summary}"
+        return line
+
+    @classmethod
+    def _create_compact_embed(cls, events: List[Dict]) -> Dict:
+        """여러 행사를 임베드 1개의 목록으로 압축"""
+        description = '\n'.join(cls._compact_line(e) for e in events)
+        return {
+            "description": description[:4096],
+            "color": cls._digest_color(events),
+            "footer": {"text": "Dev-Event Bot"},
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+        }
+
+    @staticmethod
+    def _digest_color(events: List[Dict]) -> int:
+        """묶음 전체를 대표하는 색상 (분류 우선순위가 가장 높은 행사 기준)"""
+        category_texts = [DiscordSender._category_text(e) for e in events]
+        for keywords, color in CATEGORY_COLORS:
+            for text in category_texts:
+                if any(keyword in text for keyword in keywords):
+                    return color
+        return COLOR_INFO
 
     def _post_webhook(self, payload: Dict, retry_count: int = 0) -> bool:
         """웹훅 POST 요청 (재시도 로직 포함)"""
@@ -461,6 +576,35 @@ class DiscordSender:
                 return self._post_webhook(payload, retry_count + 1)
             logger.error(f"전송 실패 (최대 재시도, {self.webhook_name}): {e}")
             return False
+
+
+def chunk_events(events: List[Dict], style: str) -> List[List[Dict]]:
+    """다이제스트 스타일에 맞춰 이벤트를 메시지 단위로 분할"""
+    if not events:
+        return []
+
+    if style == DIGEST_STYLE_RICH:
+        return [
+            events[i:i + MAX_EMBEDS_PER_MESSAGE]
+            for i in range(0, len(events), MAX_EMBEDS_PER_MESSAGE)
+        ]
+
+    chunks: List[List[Dict]] = []
+    current: List[Dict] = []
+    used = 0
+    for event in events:
+        cost = len(DiscordSender._compact_line(event)) + 1  # 줄바꿈 포함
+        exceeds_count = len(current) >= MAX_EVENTS_PER_COMPACT_MESSAGE
+        exceeds_chars = used + cost > MAX_COMPACT_DESCRIPTION_CHARS
+        if current and (exceeds_count or exceeds_chars):
+            chunks.append(current)
+            current = []
+            used = 0
+        current.append(event)
+        used += cost
+    if current:
+        chunks.append(current)
+    return chunks
 
 
 class ReadmeDownloader:
@@ -501,8 +645,9 @@ class DevEventBot:
     def __init__(self):
         self.cache = EventCache()
         self.dry_run = os.environ.get("DRY_RUN", "").strip().lower() in ("1", "true", "yes")
+        self.style = get_digest_style()
         self.senders = [
-            DiscordSender(webhook_url, webhook_name)
+            DiscordSender(webhook_url, webhook_name, style=self.style)
             for webhook_name, webhook_url in get_webhooks()
         ]
 
@@ -517,7 +662,7 @@ class DevEventBot:
                 logger.error("설정된 Discord Webhook이 없습니다")
                 return 0, 0
 
-            logger.info(f"Discord Webhook {len(self.senders)}개 설정됨")
+            logger.info(f"Discord Webhook {len(self.senders)}개 설정됨 (다이제스트: {self.style})")
 
             # README.md 다운로드
             readme_content = ReadmeDownloader.fetch(
@@ -550,13 +695,13 @@ class DevEventBot:
                 logger.info(f"새 행사 발견: {event['title']}")
                 new_events.append(event)
 
-            # 다이제스트 전송 (메시지당 최대 10개 임베드)
+            # 다이제스트 전송
             new_count = 0
             if new_events and self.dry_run:
-                message_count = -(-len(new_events) // MAX_EMBEDS_PER_MESSAGE)
+                chunks = chunk_events(new_events, self.style)
                 logger.info(
                     f"[DRY RUN] 다이제스트 전송 생략: "
-                    f"{len(new_events)}건 → 메시지 {message_count}개"
+                    f"{len(new_events)}건 → 메시지 {len(chunks)}개 ({self.style})"
                 )
                 for event in new_events:
                     logger.info(f"[DRY RUN]   - {event['title'][:60]} | {event['url']}")

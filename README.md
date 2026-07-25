@@ -25,9 +25,10 @@
 
 ### 전송
 
-- 다이제스트 모드: 새 행사 여러 건을 메시지 1개당 임베드 최대 10개로 묶어 전송 (초과 시 자동 분할)
-- 분류별 임베드 색상: 대회·해커톤=빨강, 세미나·컨퍼런스=초록, 교육·부트캠프=주황, 모임·동아리=파랑, 기타=기본 파랑
-- 구조화된 필드: 분류/주최/접수(또는 일시)/시기를 각각 별도 필드로 표시
+- 컴팩트 다이제스트(기본): 새 행사 여러 건을 임베드 1개 안의 목록으로 압축해 전송 (메시지당 최대 20건)
+- 리치 다이제스트(`DIGEST_STYLE=rich`): 행사 1건당 임베드 1개인 구버전 표현 (메시지당 최대 10개)
+- 분류별 색상/말머리: 대회·해커톤=빨강 🔴, 세미나·컨퍼런스=초록 🟢, 교육·부트캠프=주황 🟠, 모임·동아리=파랑 🔵, 기타=⚪
+- 행사별 한 줄 요약: 일시(없으면 접수 기간, 그것도 없으면 시기) · 분류 태그 · 주최
 - 웹훅 여러 개 동시 지원 (`DISCORD_WEBHOOK_URL`, `DISCORD_SUMOKJANG_WEBHOOK`)
 - 서버·네트워크 오류 시 최대 3회 재시도, 전송 실패한 묶음은 캐시 미기록으로 재전송 보장
 
@@ -35,22 +36,25 @@
 
 - GitHub Actions 매일 09:00 KST 자동 실행 (수동 실행 지원)
 - `DRY_RUN=1` 모드: 전송·캐시 변경 없이 로컬 검증
-- 단위 테스트 35개 (Markdown 파서 / 캐시·정규화·정리 / Discord 전송)
+- 단위 테스트 51개 (Markdown 파서 / 캐시·정규화·정리 / Discord 전송·다이제스트 표현)
 
 ## 알림 예시
 
-새 행사가 있으면 `📅 새 개발자 행사 N건` 메시지 1개에 행사별 임베드가 묶여 전송됩니다.
+새 행사가 있으면 `📅 새 개발자 행사 N건` 메시지 1개에 전체 목록이 임베드 1개로 묶여 전송됩니다. 제목을 클릭하면 행사 페이지로 이동합니다.
 
 ```text
 📅 새 개발자 행사 3건
-┌ (빨강) 천하제일 입코딩 대회            ← 제목 클릭 시 행사 페이지로 이동
-│  분류: `오프라인(서울 종로구)`, `무료`, `대회`, `AI`
-│  주최: Microsoft | 접수: 06. 06(토) ~ 06. 08(월) | 시기: 26년 06월
-├ (초록) 스프링캠프 2026
-│  ...
-└ (파랑) AWSKRUG #Beginner 모임
-   ...
+┌ (분류 대표 색상)
+│ 🔵 7월 바이브 코드 러시
+│ 　 7. 25(토) 14:00 - 18:00 · 온라인 · 무료 · 모임 · AI · 바이브 코딩 클럽
+│ 🔵 2026 AI SPARK in Yonsei
+│ 　 8. 01(토) · 오프라인(서울 강남구) · 무료 · 모임 · AI · CREAI+IT
+│ 🔴 [Google Cloud X Solana] AI 에이전틱 해커톤
+│ 　 접수 7. 17(금) ~ 08. 03(월) · 온라인 · 오프라인(서울 강남구) · 무료 · 대회 · AI · 슈퍼팀 코리아
+└ Dev-Event Bot
 ```
+
+행사 1건당 임베드 1개였던 기존 표현이 필요하면 `DIGEST_STYLE=rich`로 되돌릴 수 있습니다.
 
 ## 프로젝트 구조
 
@@ -78,7 +82,7 @@ dev-event-bot/
 2. `MarkdownParser`가 ``## `26년 05월` `` 같은 월별 섹션에서 행사 링크와 메타데이터를 추출합니다.
 3. `events_cache.json`에 없는 신규 행사만 다이제스트로 묶어 Discord Webhook으로 전송합니다.
    - 중복 판정: 정규화된 URL(추적 파라미터·fragment·끝 슬래시 제거) 또는 정규화된 제목+월이 일치하면 중복으로 처리합니다. 같은 행사가 URL만 바꿔 재등록돼도 다시 알리지 않습니다.
-   - 다이제스트: 메시지 1개당 임베드 최대 10개, 초과 시 여러 메시지로 자동 분할합니다.
+   - 다이제스트: 기본(compact)은 메시지 1개당 행사 최대 20건을 임베드 1개 목록으로, `rich`는 메시지 1개당 임베드 최대 10개로 묶습니다. 한도를 넘으면 여러 메시지로 자동 분할합니다.
 4. 전송 성공한 행사를 객체(제목/URL/월/메타데이터/전송일시)로 캐시에 저장합니다.
 5. 현재 월 기준 3개월 이전 행사는 캐시에서 자동 정리합니다.
 6. GitHub Actions가 변경된 캐시 파일을 현재 브랜치에 커밋/푸시합니다.
@@ -110,12 +114,16 @@ cd dev-event-bot
 
 ### 2. 가상환경 생성 및 의존성 설치
 
+macOS·Linux에서는 `python`이 아니라 `python3`로 가상환경을 만듭니다. macOS에는 `python` 명령이 없어 `command not found: python`이 납니다.
+
 ```bash
-python -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
+
+> 가상환경을 활성화하면 그 셸에서는 `python`이 `.venv/bin/python`을 가리키므로, 이후 명령은 `python`으로 실행합니다. 활성화하지 않은 채 시스템 `python3`로 실행하면 `requests`가 없어 `ModuleNotFoundError`가 납니다.
 
 Windows PowerShell에서는 다음처럼 활성화합니다.
 
@@ -175,13 +183,27 @@ Webhook 없이 파싱/중복 판정만 검증하려면 DRY RUN 모드를 사용�
 DRY_RUN=1 python dev_event_bot.py
 ```
 
-## 테스트
-
-Markdown 파서와 캐시(마이그레이션/중복 판정/정리) 단위 테스트를 실행합니다.
+알림이 너무 길게 느껴지지 않도록 기본 표현은 컴팩트 다이제스트입니다. 행사 1건당 임베드 1개였던 기존 표현으로 되돌리려면 `DIGEST_STYLE=rich`를 설정합니다.
 
 ```bash
-python -m unittest discover -s tests
+DIGEST_STYLE=rich python dev_event_bot.py
 ```
+
+## 테스트
+
+Markdown 파서·캐시(마이그레이션/중복 판정/정리)·Discord 전송 단위 테스트를 실행합니다. **가상환경을 활성화한 뒤** 실행하세요.
+
+```bash
+source .venv/bin/activate && python -m unittest discover -s tests
+```
+
+활성화가 번거로우면 가상환경 인터프리터를 직접 지정해도 됩니다.
+
+```bash
+.venv/bin/python -m unittest discover -s tests
+```
+
+`-s tests`에 `-t .`를 함께 주면 `Start directory is not importable` 오류가 납니다. `tests/`에 `__init__.py`가 없으므로 위 형태 그대로 쓰세요.
 
 실제 README를 대상으로 전송 없이 동작을 확인하려면 DRY RUN을 사용합니다.
 
@@ -256,7 +278,8 @@ Settings → Actions → General → Workflow permissions
 - `EventCache`: 전송된 행사 객체 로드/저장, v1→v2 마이그레이션, 중복 판정, 오래된 항목 정리
 - `normalize_url` / `normalize_title`: 중복 판정용 URL·제목 정규화
 - `MarkdownParser`: Dev-Event README Markdown에서 행사 정보 추출
-- `DiscordSender`: 분류별 색상·구조화 필드 임베드 생성, 다이제스트(최대 10개 묶음) 전송
+- `DiscordSender`: 컴팩트 목록 임베드(기본) 또는 분류별 색상·구조화 필드 임베드(`rich`) 생성 및 전송
+- `chunk_events` / `get_digest_style`: 다이제스트 스타일 결정과 메시지 단위 분할
 - `ReadmeDownloader`: README 다운로드 및 로컬 폴백 처리
 - `DevEventBot`: 전체 실행 흐름 조합
 
