@@ -58,6 +58,19 @@ class MarkdownParserTest(unittest.TestCase):
             ],
         )
 
+    def test_strips_html_tags_in_metadata(self):
+        content = (
+            "## `26년 08월`\n"
+            "- __[HTML 섞인 행사](https://example.com/e)__\n"
+            "  - 분류: `온라인`, `무료`\n"
+            "  - 접수: 05. 11(월) ~ 08. 31(월) <br />\n"
+        )
+
+        events = MarkdownParser.parse_events(content)
+
+        self.assertEqual(events[0]["metadata"][-1], "접수: 05. 11(월) ~ 08. 31(월)")
+        self.assertNotIn("<br", ' '.join(events[0]["metadata"]))
+
     def test_parse_compacted_live_readme_format_with_nested_brackets(self):
         content = (
             "## `26년 05월` "

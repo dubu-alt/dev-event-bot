@@ -412,8 +412,13 @@ class MarkdownParser:
 
     @staticmethod
     def _normalize_text(value: str) -> str:
-        """줄바꿈으로 분리된 제목/메타데이터 조각을 한 줄 텍스트로 정리"""
-        return re.sub(r'\s+', ' ', value).strip()
+        """줄바꿈으로 분리된 제목/메타데이터 조각을 한 줄 텍스트로 정리
+
+        Dev-Event README에는 '접수: 05. 11(월) ~ 08. 31(월) <br />'처럼
+        HTML 태그가 섞여 있는 경우가 있어 함께 제거한다.
+        """
+        without_tags = re.sub(r'<[^<>]{0,80}?>', ' ', value)
+        return re.sub(r'\s+', ' ', without_tags).strip()
 
     @classmethod
     def _parse_metadata(cls, metadata_text: str) -> List[str]:
