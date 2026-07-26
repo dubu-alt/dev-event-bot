@@ -5,6 +5,7 @@ import unittest
 from datetime import datetime
 
 from dev_event_bot import (
+    CACHE_VERSION,
     EventCache,
     normalize_title,
     normalize_url,
@@ -81,7 +82,7 @@ class EventCacheMigrationTest(TempCacheMixin, unittest.TestCase):
         cache = EventCache(cache_file=path, now=NOW)
         self.assertEqual(cache.events, [])
 
-    def test_save_writes_v2_format(self):
+    def test_save_writes_current_version_format(self):
         path = self.make_cache_file([])
         cache = EventCache(cache_file=path, now=NOW)
         cache.mark_sent(make_event())
@@ -89,7 +90,7 @@ class EventCacheMigrationTest(TempCacheMixin, unittest.TestCase):
 
         with open(path, encoding="utf-8") as f:
             data = json.load(f)
-        self.assertEqual(data["version"], 2)
+        self.assertEqual(data["version"], CACHE_VERSION)
         self.assertEqual(len(data["events"]), 1)
         self.assertEqual(data["events"][0]["title"], "테스트 행사")
 

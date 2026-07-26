@@ -32,6 +32,13 @@
 - 웹훅 여러 개 동시 지원 (`DISCORD_WEBHOOK_URL`, `DISCORD_SUMOKJANG_WEBHOOK`)
 - 서버·네트워크 오류 시 최대 3회 재시도, 전송 실패한 묶음은 캐시 미기록으로 재전송 보장
 
+### 마감 행사 자동 정리
+
+- 접수 마감일이 지난 행사를 이미 보낸 메시지에서 자동 제거 (마감일 다음 날부터)
+- 메시지에 유효한 행사가 남아 있으면 그 행사들만으로 메시지 수정, 전부 마감이면 메시지 삭제
+- 봇 계정 없이 웹훅 API(`PATCH`/`DELETE /webhooks/{id}/{token}/messages/{message_id}`)만 사용
+- 마감일을 판별할 수 없는 행사는 안전하게 그대로 유지
+
 ### 운영·테스트
 
 - GitHub Actions 매일 09:00 KST 자동 실행 (수동 실행 지원)
@@ -68,7 +75,8 @@ dev-event-bot/
 ├── tests/
 │   ├── test_markdown_parser.py # MarkdownParser 단위 테스트
 │   ├── test_event_cache.py     # EventCache/정규화/정리 단위 테스트
-│   └── test_discord_sender.py  # 임베드 생성/색상/다이제스트 단위 테스트
+│   ├── test_discord_sender.py  # 임베드 생성/색상/다이제스트 단위 테스트
+│   └── test_expiry_cleanup.py  # 마감일 파싱/만료 판정/메시지 수정·삭제 테스트
 ├── dev_event_bot.py            # 봇 메인 코드
 ├── events_cache.json           # 이미 전송한 행사 캐시 (v2 객체 형식)
 ├── requirements.txt            # Python 의존성
@@ -85,9 +93,11 @@ dev-event-bot/
 3. `events_cache.json`에 없는 신규 행사만 다이제스트로 묶어 Discord Webhook으로 전송합니다.
    - 중복 판정: 정규화된 URL(추적 파라미터·fragment·끝 슬래시 제거) 또는 정규화된 제목+월이 일치하면 중복으로 처리합니다. 같은 행사가 URL만 바꿔 재등록돼도 다시 알리지 않습니다.
    - 다이제스트: 기본(compact)은 메시지 1개당 행사 최대 20건을 임베드 1개 목록으로, `rich`는 메시지 1개당 임베드 최대 10개로 묶습니다. 한도를 넘으면 여러 메시지로 자동 분할합니다.
-4. 전송 성공한 행사를 객체(제목/URL/월/메타데이터/전송일시)로 캐시에 저장합니다.
-5. 현재 월 기준 3개월 이전 행사는 캐시에서 자동 정리합니다.
-6. GitHub Actions가 변경된 캐시 파일을 현재 브랜치에 커밋/푸시합니다.
+4. 전송 성공한 행사를 객체(제목/URL/월/메타데이터/전송일시/마감일/메시지 ID)로 캐시에 저장합니다.
+   - 전송 시 `?wait=true`로 메시지 ID를 받아두어야 이후 수정·삭제가 가능합니다.
+5. 접수 마감일이 지난 행사를 기존 메시지에서 제거합니다. 남은 행사가 있으면 메시지 수정(PATCH), 전부 마감이면 메시지 삭제(DELETE)입니다.
+6. 현재 월 기준 3개월 이전 행사는 캐시에서 자동 정리합니다. (마감 정리 후에도 중복 방지를 위해 캐시 기록 자체는 유지됩니다)
+7. GitHub Actions가 변경된 캐시 파일을 현재 브랜치에 커밋/푸시합니다.
 
 > 캐시는 `actions/download-artifact`로 내려받지 않습니다. Artifact는 실행 간 영속 저장소가 아니므로, 첫 실행이나 업로드가 생략된 실행에서 `Artifact not found for name: events_cache` 오류가 날 수 있습니다.
 
@@ -289,25 +299,32 @@ Settings → Actions → General → Workflow permissions
 
 이미 Discord로 전송한 행사 목록입니다. GitHub Actions가 이 파일을 커밋해 다음 실행에서 중복 알림을 막습니다.
 
-v2 형식 (현재):
+v3 형식 (현재):
 
 ```json
 {
-  "version": 2,
-  "updated_at": "2026-07-19T09:00:00",
+  "version": 3,
+  "updated_at": "2026-07-26T09:00:00",
   "events": [
     {
       "title": "행사명",
       "url": "https://example.com/event",
       "month": "26년 07월",
-      "metadata": ["분류: `온라인`, `무료`"],
-      "sent_at": "2026-07-19T09:00:00"
+      "metadata": ["분류: `온라인`, `무료`", "접수: 07. 01(수) ~ 07. 20(월)"],
+      "sent_at": "2026-07-26T09:00:00",
+      "deadline": "2026-07-20",
+      "messages": [
+        { "webhook": "DISCORD_WEBHOOK_URL", "id": "1398...", "style": "compact" }
+      ]
     }
   ]
 }
 ```
 
-구버전(v1) URL 문자열 배열 형식도 로드 시 자동으로 v2로 마이그레이션됩니다. 마이그레이션된 항목은 제목 정보가 없으므로, 이후 실행에서 README와 URL이 일치하면 제목/월을 자동 백필합니다.
+- `deadline`: 접수 마감일(없으면 행사 종료일). 판별 불가 시 `null`이며 자동 정리 대상에서 제외됩니다.
+- `messages`: 이 행사가 실린 Discord 메시지 참조. 마감 정리 후에는 비워지지만, 중복 방지를 위해 행사 기록 자체는 남습니다.
+
+구버전(v1 URL 배열, v2 객체) 형식도 로드 시 자동 마이그레이션됩니다. v1 마이그레이션 항목은 제목이 없으므로, 이후 실행에서 URL이 일치하면 제목/월을 자동 백필합니다. v2에서 넘어온 항목은 `messages`가 없어 기존 메시지를 정리할 수 없고, 새로 보내는 행사부터 정리 대상이 됩니다.
 
 ## 운영 팁
 

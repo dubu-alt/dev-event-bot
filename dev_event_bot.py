@@ -25,7 +25,7 @@ WEBHOOK_ENV_NAMES = [
     "DISCORD_SUMOKJANG_WEBHOOK",
 ]
 CACHE_FILE = "events_cache.json"
-CACHE_VERSION = 2
+CACHE_VERSION = 3  # v3: 마감일(deadline) + 전송 메시지 참조(messages) 추가
 MAX_RETRIES = 3
 DISCORD_SUCCESS_CODE = 204
 
@@ -129,6 +129,70 @@ def normalize_title(title: str) -> str:
     return re.sub(r"\s+", " ", (title or "")).strip().lower()
 
 
+def parse_deadline(event: Dict) -> Optional[datetime]:
+    """행사의 마감일(접수 마감일, 없으면 행사 종료일)을 추출한다.
+
+    Dev-Event 표기 예시:
+      접수: 06. 06(토) ~ 06. 08(월)     → 06. 08
+      접수: 05. 12(화) ~ 06. 14(일) 23:59 → 06. 14
+      일시: 08. 29(토)                  → 08. 29
+    연도는 표기에 없으므로 'month'(예: '26년 07월')의 연도를 기준으로 추론하되,
+    12월 → 1월처럼 연말을 넘기는 구간이면 다음 해로 보정한다.
+    판별할 수 없으면 None.
+    """
+    # '접수'가 있으면 그것을, 없으면 '일시'를 마감 기준으로 삼는다.
+    # (접수 마감이 지난 행사는 더 이상 신청할 수 없으므로 알림 가치가 없다)
+    text = ""
+    for name in ('접수', '일시'):
+        for part in event.get('metadata', []):
+            key, sep, value = part.partition(':')
+            if sep and key.strip() == name and value.strip():
+                text = value.strip()
+                break
+        if text:
+            break
+    if not text:
+        return None  # 날짜 정보 자체가 없음
+
+    # 'MM. DD' 형태를 모두 찾는다. 구분자는 '.', '-', '/' 모두 허용.
+    # '06. 06(토) ~ 06. 08(월)' → [('06','06'), ('06','08')]
+    # 뒤에 붙는 시각('23:59')은 ':' 구분이라 이 패턴에 걸리지 않는다.
+    matches = re.findall(r'(\d{1,2})\s*[.\-/]\s*(\d{1,2})', text)
+    if not matches:
+        return None
+    # 마지막 날짜 = 기간의 끝 = 마감일 (단일 날짜면 그 날짜가 곧 마감일)
+    month_str, day_str = matches[-1]
+    month_num, day_num = int(month_str), int(day_str)
+    if not (1 <= month_num <= 12 and 1 <= day_num <= 31):
+        return None  # '13. 45' 같은 오탐 방어
+
+    # 원문에 연도가 없으므로 섹션 제목('26년 07월')의 연도를 빌려온다.
+    parsed_month = parse_month(event.get('month', ''))
+    year = parsed_month[0] if parsed_month else datetime.now().year
+    # 시작 월(12월)보다 마감 월(1월)이 작으면 해를 넘긴 구간이므로 +1년
+    if len(matches) > 1 and int(matches[0][0]) > month_num:
+        year += 1
+
+    try:
+        return datetime(year, month_num, day_num)
+    except ValueError:
+        return None  # 2월 30일처럼 달력에 없는 날짜
+
+
+def is_expired(event: Dict, now: Optional[datetime] = None) -> bool:
+    """마감일 다음 날부터 만료로 본다. 마감일을 알 수 없으면 만료로 보지 않는다."""
+    deadline = parse_deadline(event)
+    if deadline is None:
+        # 날짜를 못 읽은 행사를 지워버리면 정보 손실이 크므로 보수적으로 유지
+        return False
+    # 시각을 0시로 맞춰 '날짜' 단위로만 비교한다.
+    # 마감일 당일(reference == deadline)은 아직 신청 가능하므로 만료가 아니다.
+    reference = (now or datetime.now()).replace(
+        hour=0, minute=0, second=0, microsecond=0
+    )
+    return reference > deadline
+
+
 def parse_month(month: str) -> Optional[Tuple[int, int]]:
     """'26년 05월' → (2026, 5). 파싱 불가 시 None"""
     match = re.search(r"(\d{2,4})년\s*(\d{1,2})월", month or "")
@@ -214,16 +278,23 @@ class EventCache:
         title_key = (normalize_title(event.get("title", "")), event.get("month", ""))
         return bool(title_key[0]) and title_key in self._title_keys
 
-    def mark_sent(self, event: Dict) -> None:
-        """이벤트를 전송됨으로 표시"""
+    def mark_sent(self, event: Dict, messages: Optional[List[Dict]] = None) -> None:
+        """이벤트를 전송됨으로 표시
+
+        messages: [{"webhook": 이름, "id": 메시지ID, "style": 다이제스트 스타일}]
+        나중에 마감된 행사를 메시지에서 지우거나 메시지를 삭제할 때 사용한다.
+        """
         if self.is_sent(event):
             return
+        deadline = parse_deadline(event)
         self.events.append({
             "title": event.get("title", ""),
             "url": event.get("url", ""),
             "month": event.get("month", ""),
             "metadata": event.get("metadata", []),
             "sent_at": self.now.isoformat(),
+            "deadline": deadline.date().isoformat() if deadline else None,
+            "messages": messages or [],
         })
         self._url_keys.add(normalize_url(event.get("url", "")))
         if event.get("title"):
@@ -388,31 +459,56 @@ class DiscordSender:
             logger.info(f"✓ Discord 전송 성공 ({self.webhook_name}): {event['title'][:50]}")
         return success
 
+    def build_payload(
+        self,
+        events: List[Dict],
+        style: Optional[str] = None,
+        total: Optional[int] = None,
+        index: Optional[int] = None,
+        count: Optional[int] = None,
+    ) -> Dict:
+        """다이제스트 메시지 payload 생성 (전송·수정 공용)"""
+        style = style or self.style
+        content = f"📅 새 개발자 행사 {total if total is not None else len(events)}건"
+        if count and count > 1 and index is not None:
+            content += f" ({index + 1}/{count})"
+        if style == DIGEST_STYLE_RICH:
+            embeds = [self._create_embed(e) for e in events]
+        else:
+            embeds = [self._create_compact_embed(events)]
+        return {"content": content, "embeds": embeds}
+
     def send_digest(self, events: List[Dict]) -> List[bool]:
         """이벤트 여러 건을 다이제스트로 전송.
         이벤트별 성공 여부 리스트를 반환한다."""
+        return [success for success, _ in self.send_digest_detailed(events)]
+
+    def send_digest_detailed(
+        self, events: List[Dict]
+    ) -> List[Tuple[bool, Optional[str]]]:
+        """send_digest와 동일하되 이벤트별 (성공 여부, 메시지 ID)를 반환한다.
+
+        메시지 ID는 나중에 마감된 행사를 지우거나 메시지를 삭제할 때 쓴다.
+        """
         if not self.webhook_url:
             logger.error(f"{self.webhook_name}이 설정되지 않았습니다")
-            return [False] * len(events)
+            return [(False, None)] * len(events)
 
-        results: List[bool] = []
+        results: List[Tuple[bool, Optional[str]]] = []
         chunks = chunk_events(events, self.style)
         for index, chunk in enumerate(chunks):
-            content = f"📅 새 개발자 행사 {len(events)}건"
-            if len(chunks) > 1:
-                content += f" ({index + 1}/{len(chunks)})"
-            if self.style == DIGEST_STYLE_RICH:
-                embeds = [self._create_embed(e) for e in chunk]
-            else:
-                embeds = [self._create_compact_embed(chunk)]
-            payload = {"content": content, "embeds": embeds}
-            success = self._post_webhook(payload)
+            payload = self.build_payload(
+                chunk, total=len(events), index=index, count=len(chunks)
+            )
+            message = self._post_webhook_message(payload)
+            success = message is not None
+            message_id = str(message.get("id")) if message and message.get("id") else None
             if success:
                 logger.info(
                     f"✓ 다이제스트 전송 성공 ({self.webhook_name}, {self.style}): "
                     f"{len(chunk)}건 ({index + 1}/{len(chunks)})"
                 )
-            results.extend([success] * len(chunk))
+            results.extend([(success, message_id)] * len(chunk))
         return results
 
     @staticmethod
@@ -553,28 +649,85 @@ class DiscordSender:
 
     def _post_webhook(self, payload: Dict, retry_count: int = 0) -> bool:
         """웹훅 POST 요청 (재시도 로직 포함)"""
+        return self._post_webhook_message(payload, retry_count) is not None
+
+    def _post_webhook_message(
+        self, payload: Dict, retry_count: int = 0
+    ) -> Optional[Dict]:
+        """웹훅 POST 요청. 성공 시 생성된 메시지 정보(Dict)를 반환한다.
+
+        ?wait=true를 붙이면 Discord가 메시지 객체를 돌려주므로 message id를
+        확보할 수 있다. 나중에 이 id로 메시지를 수정·삭제한다.
+        """
         try:
             response = requests.post(
                 self.webhook_url,
+                params={"wait": "true"},  # 응답 본문으로 메시지 객체를 받기 위해 필수
                 json=payload,
-                timeout=10
+                timeout=10,
             )
-            
+
             if response.status_code in (DISCORD_SUCCESS_CODE, 200):
-                return True
+                try:
+                    return response.json() or {}
+                except ValueError:
+                    # wait=true인데도 본문이 비어 오는 경우.
+                    # 전송 자체는 성공이므로 빈 dict로 성공을 알리되 ID는 없다.
+                    return {}
 
             if response.status_code >= 500 and retry_count < self.max_retries:
                 logger.warning(f"서버 오류 ({response.status_code}), 재시도 {retry_count + 1}/{self.max_retries}")
-                return self._post_webhook(payload, retry_count + 1)
+                return self._post_webhook_message(payload, retry_count + 1)
 
             logger.error(f"Discord 오류 {response.status_code} ({self.webhook_name})")
-            return False
+            return None
 
         except requests.RequestException as e:
             if retry_count < self.max_retries:
                 logger.warning(f"네트워크 오류, 재시도 {retry_count + 1}/{self.max_retries}")
-                return self._post_webhook(payload, retry_count + 1)
+                return self._post_webhook_message(payload, retry_count + 1)
             logger.error(f"전송 실패 (최대 재시도, {self.webhook_name}): {e}")
+            return None
+
+    def edit_message(self, message_id: str, payload: Dict) -> bool:
+        """이미 보낸 웹훅 메시지를 수정 (PATCH)"""
+        if not (self.webhook_url and message_id):
+            return False
+        # PATCH /webhooks/{id}/{token}/messages/{message_id}
+        # 웹훅 URL 자체가 '/webhooks/{id}/{token}' 이므로 뒤에 경로만 붙이면 된다.
+        url = f"{self.webhook_url.rstrip('/')}/messages/{message_id}"
+        try:
+            response = requests.patch(url, json=payload, timeout=10)
+            if response.status_code in (200, DISCORD_SUCCESS_CODE):
+                return True
+            if response.status_code == 404:
+                # 사람이 이미 지운 메시지. 재시도해도 의미 없으므로 성공으로 처리해
+                # 캐시의 메시지 참조를 정리하고 넘어간다.
+                logger.info(f"메시지 없음(이미 삭제됨): {message_id}")
+                return True
+            logger.warning(f"메시지 수정 실패 {response.status_code} ({self.webhook_name})")
+            return False
+        except requests.RequestException as e:
+            # 정리는 부가 기능이므로 실패해도 봇 전체를 멈추지 않는다.
+            # 참조를 남겨두면 다음 실행에서 다시 시도한다.
+            logger.warning(f"메시지 수정 오류 ({self.webhook_name}): {e}")
+            return False
+
+    def delete_message(self, message_id: str) -> bool:
+        """이미 보낸 웹훅 메시지를 삭제 (DELETE)"""
+        if not (self.webhook_url and message_id):
+            return False
+        # DELETE /webhooks/{id}/{token}/messages/{message_id}
+        url = f"{self.webhook_url.rstrip('/')}/messages/{message_id}"
+        try:
+            response = requests.delete(url, timeout=10)
+            # 404(이미 없음)도 '지워진 상태'라는 목적은 달성했으므로 성공 취급
+            if response.status_code in (DISCORD_SUCCESS_CODE, 200, 404):
+                return True
+            logger.warning(f"메시지 삭제 실패 {response.status_code} ({self.webhook_name})")
+            return False
+        except requests.RequestException as e:
+            logger.warning(f"메시지 삭제 오류 ({self.webhook_name}): {e}")
             return False
 
 
@@ -651,6 +804,103 @@ class DevEventBot:
             for webhook_name, webhook_url in get_webhooks()
         ]
 
+    def _grouped_messages(self) -> Dict[Tuple[str, str], Dict]:
+        """캐시된 이벤트를 (웹훅, 메시지 ID) 단위로 묶는다
+
+        정리는 '메시지' 단위로 이뤄지는데 캐시는 '행사' 단위로 저장돼 있어
+        역방향 인덱스가 필요하다. 웹훅이 여러 개면 같은 행사가 여러 메시지에
+        들어가므로 웹훅 이름까지 키에 포함한다.
+        """
+        groups: Dict[Tuple[str, str], Dict] = {}
+        for cached in self.cache.events:
+            for ref in cached.get('messages') or []:
+                webhook_name = ref.get('webhook')
+                message_id = ref.get('id')
+                if not (webhook_name and message_id):
+                    continue
+                group = groups.setdefault(
+                    (webhook_name, message_id),
+                    {"style": ref.get('style') or DEFAULT_DIGEST_STYLE, "events": []},
+                )
+                group["events"].append(cached)
+        return groups
+
+    @staticmethod
+    def _drop_message_ref(event: Dict, webhook_name: str, message_id: str) -> None:
+        """캐시 이벤트에서 특정 메시지 참조만 제거 (중복 방지용 기록은 유지)
+
+        주의: 이벤트 자체를 캐시에서 지우면 다음 실행에서 신규 행사로 오인해
+        다시 알림을 보내게 된다. 그래서 'messages'만 비운다.
+        """
+        event['messages'] = [
+            ref for ref in event.get('messages') or []
+            if not (ref.get('webhook') == webhook_name and ref.get('id') == message_id)
+        ]
+
+    def cleanup_expired_messages(self) -> Tuple[int, int]:
+        """접수 마감된 행사를 기존 메시지에서 제거한다.
+
+        메시지에 남은 행사가 있으면 그 행사들만으로 메시지를 수정(PATCH)하고,
+        전부 마감되었으면 메시지를 삭제(DELETE)한다.
+        반환값은 (수정한 메시지 수, 삭제한 메시지 수).
+        """
+        senders_by_name = {sender.webhook_name: sender for sender in self.senders}
+        edited = deleted = 0
+
+        for (webhook_name, message_id), group in self._grouped_messages().items():
+            # 지금 설정에 없는 웹훅(환경변수 제거 등)의 메시지는 건드릴 수 없다
+            sender = senders_by_name.get(webhook_name)
+            if not sender:
+                continue
+
+            expired = [e for e in group["events"] if is_expired(e, self.cache.now)]
+            if not expired:
+                continue  # 마감된 게 없으면 API 호출 자체를 하지 않는다
+            remaining = [e for e in group["events"] if e not in expired]
+
+            if remaining:
+                # 살아 있는 행사만으로 메시지를 다시 만들어 덮어쓴다.
+                # 캐시에 제목·URL·메타데이터가 그대로 있으므로 재구성이 가능하다.
+                payload = sender.build_payload(remaining, style=group["style"])
+                if sender.edit_message(message_id, payload):
+                    edited += 1
+                    # 성공했을 때만 참조를 지운다. 실패하면 참조가 남아
+                    # 다음 실행에서 자동으로 재시도된다.
+                    for event in expired:
+                        self._drop_message_ref(event, webhook_name, message_id)
+                    logger.info(
+                        f"메시지 수정 ({webhook_name}): 마감 {len(expired)}건 제거, "
+                        f"{len(remaining)}건 유지"
+                    )
+            else:
+                # 남는 행사가 없으면 메시지를 통째로 지운다
+                if sender.delete_message(message_id):
+                    deleted += 1
+                    for event in group["events"]:
+                        self._drop_message_ref(event, webhook_name, message_id)
+                    logger.info(
+                        f"메시지 삭제 ({webhook_name}): {len(expired)}건 전부 마감"
+                    )
+
+        if edited or deleted:
+            logger.info(f"마감 정리 완료 | 수정 {edited}건, 삭제 {deleted}건")
+        return edited, deleted
+
+    def _log_dry_run_cleanup(self) -> None:
+        """DRY RUN에서 마감 정리 대상만 로그로 출력"""
+        for (webhook_name, message_id), group in self._grouped_messages().items():
+            expired = [e for e in group["events"] if is_expired(e, self.cache.now)]
+            if not expired:
+                continue
+            remaining = len(group["events"]) - len(expired)
+            action = "수정" if remaining else "삭제"
+            logger.info(
+                f"[DRY RUN] 마감 정리 {action} 대상 ({webhook_name}/{message_id}): "
+                f"마감 {len(expired)}건, 유지 {remaining}건"
+            )
+            for event in expired:
+                logger.info(f"[DRY RUN]   - 마감: {event.get('title', '')[:60]}")
+
     def run(self) -> Tuple[int, int]:
         """봇 실행"""
         logger.info("=" * 60)
@@ -707,13 +957,31 @@ class DevEventBot:
                     logger.info(f"[DRY RUN]   - {event['title'][:60]} | {event['url']}")
                 new_count = len(new_events)
             elif new_events:
-                all_results = [sender.send_digest(new_events) for sender in self.senders]
+                all_results = [
+                    (sender, sender.send_digest_detailed(new_events))
+                    for sender in self.senders
+                ]
                 for index, event in enumerate(new_events):
-                    if all(results[index] for results in all_results):
-                        self.cache.mark_sent(event)
+                    if all(results[index][0] for _, results in all_results):
+                        messages = [
+                            {
+                                "webhook": sender.webhook_name,
+                                "id": results[index][1],
+                                "style": sender.style,
+                            }
+                            for sender, results in all_results
+                            if results[index][1]
+                        ]
+                        self.cache.mark_sent(event, messages=messages)
                         new_count += 1
                     else:
                         logger.warning(f"일부 Webhook 전송 실패로 캐시에 기록하지 않음: {event['title']}")
+
+            # 접수 마감된 행사를 기존 메시지에서 정리
+            if self.dry_run:
+                self._log_dry_run_cleanup()
+            else:
+                self.cleanup_expired_messages()
 
             # 오래된 캐시 정리 후 저장 (DRY RUN에서는 파일 미변경)
             if self.dry_run:
