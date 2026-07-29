@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-07-28T01:24:18.178803",
+  "updated_at": "2026-07-29T01:24:41.279881",
   "events": [
     {
       "title": "",
@@ -1573,6 +1573,174 @@
         "접수: 07. 17(금) ~ 08. 03(월)"
       ],
       "sent_at": "2026-07-25T01:28:21.046428"
+    },
+    {
+      "title": "AWSKRUG 집현전 #jiphyeonjeon 온라인 소모임 - 8월 1일(토)",
+      "url": "https://www.meetup.com/awskrug/events/315828955/",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `모임`, `클라우드`",
+        "주최: AWSKRUG",
+        "접수: 07. 28(화) ~ 08. 01(토) 10:00"
+      ],
+      "sent_at": "2026-07-29T01:24:41.279881",
+      "deadline": "2026-08-01",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1531834823021170730",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1531834824632045700",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "[코레일X인천국제공항공사] 내일路(로) 해커톤 2026",
+      "url": "https://www.campuspick.com/contest/view?id=35221",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `온라인`, `오프라인(인천)`, `무료`, `대회`, `AI`",
+        "주최: 한국철도공사 / 인천국제공항공사",
+        "접수: 07. 16(목) ~ 08. 05(수) 14:00"
+      ],
+      "sent_at": "2026-07-29T01:24:41.279881",
+      "deadline": "2026-08-05",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1531834823021170730",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1531834824632045700",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "제3회 풍력발전량 예측 AI 경진대회 - BARAM 2026",
+      "url": "https://dacon.io/competitions/official/236727/overview/",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `온라인`, `오프라인`, `무료`, `대회`, `AI`",
+        "주최: 한국동서발전 / GS E&R / 태백가덕산풍력발전",
+        "접수: 06. 12(금) ~ 08. 14(금)"
+      ],
+      "sent_at": "2026-07-29T01:24:41.279881",
+      "deadline": "2026-08-14",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1531834823021170730",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1531834824632045700",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "KotlinConf Extended South Korea",
+      "url": "https://ticketa.co/event/ic97nj1c",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 서대문구)`, `유료`, `세미나`, `기술일반`",
+        "주최: Kotlin User Groups Seoul",
+        "접수: 07. 26(일) ~ 08. 15(토) 22:00"
+      ],
+      "sent_at": "2026-07-29T01:24:41.279881",
+      "deadline": "2026-08-15",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1531834823021170730",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1531834824632045700",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "[NIPA] 2026년도 SaaS 전환지원센터 제6회 세미나 - AI SaaS 도입, 어떻게 활용하고 통제할 것인가?",
+      "url": "https://kcloud.or.kr/board/read.php?M2_IDX=25869&B_IDX=178743",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(대구)`, `무료`, `세미나`, `AI`, `클라우드`",
+        "주최: 정보통신산업진흥원(NIPA) / SaaS 전환지원센터",
+        "접수: 07. 28(화) ~ 08. 18(화)"
+      ],
+      "sent_at": "2026-07-29T01:24:41.279881",
+      "deadline": "2026-08-18",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1531834823021170730",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1531834824632045700",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "GDG Busan Google I/O Extended 2026 - Builder & Maker Networking",
+      "url": "https://ticketa.co/event/qenoc6he",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(부산)`, `유료`, `세미나`, `기술일반`",
+        "주최: GDG Busan",
+        "접수: 07. 09(목) ~ 08. 22(토) 14:00"
+      ],
+      "sent_at": "2026-07-29T01:24:41.279881",
+      "deadline": "2026-08-22",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1531834823021170730",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1531834824632045700",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AWSKRUG 아키텍처 #architecture 58번째 소모임 8월 26일 (목)",
+      "url": "https://www.meetup.com/awskrug/events/315869898/",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `모임`, `클라우드`",
+        "주최: AWSKRUG",
+        "접수: 07. 28(화) ~ 08. 26(수) 19:00"
+      ],
+      "sent_at": "2026-07-29T01:24:41.279881",
+      "deadline": "2026-08-26",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1531834823021170730",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1531834824632045700",
+          "style": "compact"
+        }
+      ]
     }
   ]
 }
