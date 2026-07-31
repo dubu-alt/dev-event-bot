@@ -71,6 +71,8 @@ MAX_EMBEDS_PER_MESSAGE = 10
 MAX_EVENTS_PER_COMPACT_MESSAGE = 20
 MAX_COMPACT_DESCRIPTION_CHARS = 3800
 MAX_COMPACT_SUMMARY_CHARS = 180
+# 행사 블록 사이 구분 (빈 줄을 넣어야 목록이 뭉쳐 보이지 않는다)
+COMPACT_BLOCK_SEPARATOR = "\n\n"
 
 
 def get_digest_style() -> str:
@@ -553,11 +555,13 @@ class DiscordSender:
 
     @staticmethod
     def _escape_link_text(text: str) -> str:
-        """Markdown 링크 라벨을 깨뜨리는 대괄호 이스케이프
+        """Markdown 링크 라벨을 깨뜨리는 대괄호를 전각 괄호로 치환
 
         Dev-Event 제목에는 '[온라인] 7월 …'처럼 대괄호가 자주 들어간다.
+        백슬래시 이스케이프(`\\[`)는 Discord가 링크 라벨 안에서 해석하지 않고
+        백슬래시를 그대로 보여주므로, 겉보기가 거의 같은 전각 괄호로 바꾼다.
         """
-        return text.replace('[', r'\[').replace(']', r'\]')
+        return text.replace('[', '［').replace(']', '］')
 
     @classmethod
     def _create_embed(cls, event: Dict) -> Dict:
@@ -628,13 +632,17 @@ class DiscordSender:
         line = f"{cls._category_emoji(event)} **[{title}]({event['url']})**"
         summary = cls._compact_summary(event)
         if summary:
-            line += f"\n　{summary}"
+            # '-# '는 Discord의 subtext 문법. 요약을 작고 흐리게 표시해
+            # 제목과 시각적으로 구분한다. 반드시 줄 맨 앞에 와야 한다.
+            line += f"\n-# {summary}"
         return line
 
     @classmethod
     def _create_compact_embed(cls, events: List[Dict]) -> Dict:
         """여러 행사를 임베드 1개의 목록으로 압축"""
-        description = '\n'.join(cls._compact_line(e) for e in events)
+        description = COMPACT_BLOCK_SEPARATOR.join(
+            cls._compact_line(e) for e in events
+        )
         return {
             "description": description[:4096],
             "color": cls._digest_color(events),
@@ -751,7 +759,7 @@ def chunk_events(events: List[Dict], style: str) -> List[List[Dict]]:
     current: List[Dict] = []
     used = 0
     for event in events:
-        cost = len(DiscordSender._compact_line(event)) + 1  # 줄바꿈 포함
+        cost = len(DiscordSender._compact_line(event)) + len(COMPACT_BLOCK_SEPARATOR)
         exceeds_count = len(current) >= MAX_EVENTS_PER_COMPACT_MESSAGE
         exceeds_chars = used + cost > MAX_COMPACT_DESCRIPTION_CHARS
         if current and (exceeds_count or exceeds_chars):

@@ -118,10 +118,27 @@ class CompactEmbedTest(unittest.TestCase):
         month_only = make_event(metadata=[], month="26년 07월")
         self.assertEqual(DiscordSender._compact_summary(month_only), "26년 07월")
 
-    def test_line_escapes_brackets_in_title(self):
+    def test_line_replaces_brackets_in_title_with_fullwidth(self):
         event = make_event(title="[온라인] 7월 바이브 코드 러시")
         line = DiscordSender._compact_line(event)
-        self.assertIn(r"**[\[온라인\] 7월 바이브 코드 러시](https://example.com/event/1)**", line)
+
+        self.assertIn("**[［온라인］ 7월 바이브 코드 러시](https://example.com/event/1)**", line)
+        # 백슬래시는 Discord가 그대로 보여주므로 절대 넣지 않는다
+        self.assertNotIn("\\", line)
+
+    def test_summary_uses_subtext_markup(self):
+        line = DiscordSender._compact_line(make_event())
+        title_line, summary_line = line.split("\n", 1)
+
+        self.assertTrue(summary_line.startswith("-# "))
+        self.assertNotIn("\n", summary_line)
+
+    def test_events_separated_by_blank_line(self):
+        events = [make_event(title=f"행사{i}") for i in range(2)]
+        description = DiscordSender._create_compact_embed(events)["description"]
+
+        self.assertIn("\n\n", description)
+        self.assertEqual(len(description.split("\n\n")), 2)
 
     def test_line_has_emoji_by_category(self):
         self.assertTrue(DiscordSender._compact_line(make_event()).startswith("🔴"))
