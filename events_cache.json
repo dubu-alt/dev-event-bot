@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-07-30T01:17:55.646962",
+  "updated_at": "2026-07-31T01:44:21.231663",
   "events": [
     {
       "title": "",
@@ -1738,6 +1738,54 @@
         {
           "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
           "id": "1531834824632045700",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Dev Korea #12",
+      "url": "https://dev-korea.com/events/dev-korea-12-august-2026",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 마포구)`, `무료`, `모임`, `기술일반`",
+        "주최: Dev Korea",
+        "접수: 07. 20(월) ~ 08. 11(화)"
+      ],
+      "sent_at": "2026-07-31T01:44:21.231663",
+      "deadline": "2026-08-11",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1532564548169498757",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1532564551550374171",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Qwen Meetup Seoul #4 (Dev Korea #13)",
+      "url": "https://dev-korea.com/events/dev-korea-13-august-2026",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `모임`, `AI`",
+        "주최: Dev Korea / Qwen",
+        "접수: 07. 27(월) ~ 08. 19(수)"
+      ],
+      "sent_at": "2026-07-31T01:44:21.231663",
+      "deadline": "2026-08-19",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1532564548169498757",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1532564551550374171",
           "style": "compact"
         }
       ]
