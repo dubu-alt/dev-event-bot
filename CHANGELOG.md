@@ -15,8 +15,11 @@
 - 제목의 대괄호 처리 방식을 바꿨습니다. 기존 백슬래시 이스케이프는 Discord가 링크 라벨 안에서 해석하지 않고 `\[코레일X인천국제공항공사\]`처럼 백슬래시를 그대로 노출했습니다. 겉보기가 거의 같은 전각 괄호(`［］`)로 치환합니다.
 
 빈 줄이 늘었지만 메시지 분할 결과는 그대로입니다(41건 기준 20/20/1).
-
 > 이 개선은 이미 보낸 메시지에도 적용됩니다. 마감 정리로 메시지를 수정할 때 새 형식으로 다시 그려집니다.
+
+<div align = "center">
+  <img width="50%" alt="image" src="https://github.com/user-attachments/assets/1431590f-25a2-44ab-bbc6-7648ef5f6514"/>
+</div>
 
 ---
 
@@ -50,6 +53,9 @@ Dev-Event README에 `접수: 05. 11(월) ~ 08. 31(월) <br />`처럼 HTML 태그
 - 임베드 색상은 묶음 내 우선순위가 가장 높은 분류 기준
 - 메시지 분할은 건수(20)와 description 문자 예산(3800) 양쪽 기준 — Discord 4096자 제한 대응
 - 기존 표현은 `DIGEST_STYLE=rich`로 유지. 워크플로 Variables로 코드 수정 없이 되돌릴 수 있습니다.
+<div align = "center">
+<img width="50%" height="942" alt="image" src="https://github.com/user-attachments/assets/400b6864-86d1-47c9-af63-cdd07401e7ec"/>
+</div>
 
 ### 수정: 제목의 대괄호가 Markdown 링크를 깨뜨림
 
