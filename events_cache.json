@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-08-01T01:45:09.049382",
+  "updated_at": "2026-08-02T01:30:34.450462",
   "events": [
     {
       "title": "",
@@ -1585,18 +1585,7 @@
       ],
       "sent_at": "2026-07-29T01:24:41.279881",
       "deadline": "2026-08-01",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1531834823021170730",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1531834824632045700",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "[코레일X인천국제공항공사] 내일路(로) 해커톤 2026",
@@ -1801,18 +1790,7 @@
       ],
       "sent_at": "2026-08-01T01:45:09.049382",
       "deadline": "2026-08-01",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1532927139496857793",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1532927140901683201",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "Snowflake CoCo CLI Hackathon 2026",
