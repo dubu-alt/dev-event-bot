@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-08-02T01:30:34.450462",
+  "updated_at": "2026-08-03T01:44:28.899223",
   "events": [
     {
       "title": "",
@@ -1803,18 +1803,7 @@
       ],
       "sent_at": "2026-08-01T01:45:09.049382",
       "deadline": "2026-08-02",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1532927139496857793",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1532927140901683201",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     }
   ]
 }
