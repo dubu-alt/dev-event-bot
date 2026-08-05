@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-08-04T01:20:33.875749",
+  "updated_at": "2026-08-05T01:25:22.441819",
   "events": [
     {
       "title": "",
@@ -1804,6 +1804,246 @@
       "sent_at": "2026-08-01T01:45:09.049382",
       "deadline": "2026-08-02",
       "messages": []
+    },
+    {
+      "title": "AWSKRUG 집현전 #jiphyeonjeon 온라인 소모임 - 8월 8일(토)",
+      "url": "https://www.meetup.com/awskrug/events/315954361/",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `모임`, `클라우드`",
+        "주최: AWSKRUG",
+        "접수: 08. 03(월) ~ 08. 08(토) 10:00"
+      ],
+      "sent_at": "2026-08-05T01:25:22.441819",
+      "deadline": "2026-08-08",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1534371711397396553",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1534371713679097857",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Prometheus 5th Demo Day: 프메의 숲",
+      "url": "https://event-us.kr/prometheus0513/event/130839",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 서초구)`, `무료`, `모임`, `AI`",
+        "주최: 프로메테우스 인공지능 동아리",
+        "접수: 07. 19(일) ~ 08. 08(토) 17:00"
+      ],
+      "sent_at": "2026-08-05T01:25:22.441819",
+      "deadline": "2026-08-08",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1534371711397396553",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1534371713679097857",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AWSKRUG #AIEngineering 소모임 - OpenClaw on AWS Workshop [8월 20일]",
+      "url": "https://www.meetup.com/awskrug/events/315786451/",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `모임`, `AI`",
+        "주최: AWSKRUG",
+        "접수: 08. 03(월) ~ 08. 14(금) 09:00"
+      ],
+      "sent_at": "2026-08-05T01:25:22.441819",
+      "deadline": "2026-08-14",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1534371711397396553",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1534371713679097857",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "mobilgene 26",
+      "url": "https://event-us.kr/hyundaiautoever/event/130543",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 서초구)`, `무료`, `세미나`, `기술일반`",
+        "주최: 현대오토에버",
+        "접수: 07. 29(수) ~ 08. 15(토) 00:00"
+      ],
+      "sent_at": "2026-08-05T01:25:22.441819",
+      "deadline": "2026-08-15",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1534371711397396553",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1534371713679097857",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AWSKRUG 데브옵스 #DevOps 소모임 25번째 밋업 - 8월 19일 (수)",
+      "url": "https://www.meetup.com/awskrug/events/315941240/",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `모임`, `클라우드`",
+        "주최: AWSKRUG",
+        "접수: 08. 03(월) ~ 08. 16(일)"
+      ],
+      "sent_at": "2026-08-05T01:25:22.441819",
+      "deadline": "2026-08-16",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1534371711397396553",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1534371713679097857",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AX Meetup #3 - AX의 다음 챕터",
+      "url": "https://luma.com/og0pgr5v",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `모임`, `AI`",
+        "주최: 그란데클립",
+        "접수: 08. 03(월) ~ 08. 19(수)"
+      ],
+      "sent_at": "2026-08-05T01:25:22.441819",
+      "deadline": "2026-08-19",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1534371711397396553",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1534371713679097857",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Let's make a programming language. Functions",
+      "url": "https://pvs-studio.com/en/webinar/32/",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `기술일반`",
+        "주최: pvs studio",
+        "접수: 08. 04(화) ~ 08. 19(수)"
+      ],
+      "sent_at": "2026-08-05T01:25:22.441819",
+      "deadline": "2026-08-19",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1534371711397396553",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1534371713679097857",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "마케터를 위한 AX 실전: 아는 만큼 누리는 API와 MCP, 지표 정의부터 대시보드 자동화까지",
+      "url": "https://biz.modulabs.co.kr/event/491",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `세미나`, `AI`",
+        "주최: 모두의연구소",
+        "일시: 08. 25(화)"
+      ],
+      "sent_at": "2026-08-05T01:25:22.441819",
+      "deadline": "2026-08-25",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1534371711397396553",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1534371713679097857",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Grafana & Friends Seoul #2",
+      "url": "https://www.meetup.com/grafana-friends-seoul/events/315663768/",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `모임`, `기술일반`",
+        "주최: Grafana & Friends Seoul",
+        "접수: 08. 03(월) ~ 08. 30(일) 13:00"
+      ],
+      "sent_at": "2026-08-05T01:25:22.441819",
+      "deadline": "2026-08-30",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1534371711397396553",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1534371713679097857",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AWSKRUG 구로디지털 #gudi 소모임 - 09월 03일 (목)",
+      "url": "https://www.meetup.com/awskrug/events/315946905/",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 동작구)`, `유료`, `모임`, `클라우드`",
+        "주최: AWSKRUG",
+        "접수: 08. 03(월) ~ 09. 03(목) 19:00"
+      ],
+      "sent_at": "2026-08-05T01:25:22.441819",
+      "deadline": "2026-09-03",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1534371711397396553",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1534371713679097857",
+          "style": "compact"
+        }
+      ]
     }
   ]
 }
