@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-08-05T01:25:22.441819",
+  "updated_at": "2026-08-06T01:22:28.158074",
   "events": [
     {
       "title": "",
@@ -1598,18 +1598,7 @@
       ],
       "sent_at": "2026-07-29T01:24:41.279881",
       "deadline": "2026-08-05",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1531834823021170730",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1531834824632045700",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "제3회 풍력발전량 예측 AI 경진대회 - BARAM 2026",
@@ -2041,6 +2030,54 @@
         {
           "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
           "id": "1534371713679097857",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 사이버공격방어대회 (CCE)",
+      "url": "https://cce.cstec.kr/",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `온라인`, `오프라인(서울 강남구)`, `무료`, `대회`, `기술일반`",
+        "주최: 국가정보원 / 국가보안기술연구소",
+        "접수: 07. 24(금) ~ 08. 12(수) 23:59"
+      ],
+      "sent_at": "2026-08-06T01:22:28.158074",
+      "deadline": "2026-08-12",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1534733367617261619",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1534733369307435142",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "JNPMEDI Tech Meetup 2026",
+      "url": "https://tech-meetup.jnpmedi.com/2026",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(인천)`, `무료`, `세미나`, `AI`",
+        "주최: 제이앤피메디",
+        "접수: 08. 05(수) ~ 09. 11(금)"
+      ],
+      "sent_at": "2026-08-06T01:22:28.158074",
+      "deadline": "2026-09-11",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1534733367617261619",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1534733369307435142",
           "style": "compact"
         }
       ]
