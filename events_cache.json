@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-08-08T00:45:11.264341",
+  "updated_at": "2026-08-09T00:48:55.310785",
   "events": [
     {
       "title": "",
@@ -1805,18 +1805,7 @@
       ],
       "sent_at": "2026-08-05T01:25:22.441819",
       "deadline": "2026-08-08",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1534371711397396553",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1534371713679097857",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "Prometheus 5th Demo Day: 프메의 숲",
@@ -1829,18 +1818,7 @@
       ],
       "sent_at": "2026-08-05T01:25:22.441819",
       "deadline": "2026-08-08",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1534371711397396553",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1534371713679097857",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AWSKRUG #AIEngineering 소모임 - OpenClaw on AWS Workshop [8월 20일]",
