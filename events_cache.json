@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-08-10T00:51:22.425076",
+  "updated_at": "2026-08-11T00:50:50.285829",
   "events": [
     {
       "title": "",
@@ -2056,6 +2056,294 @@
         {
           "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
           "id": "1534733369307435142",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "x402 on XRPL: AI Builders Night Korea",
+      "url": "https://luma.com/r5zuc03f",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `모임`, `AI`, `블록체인`",
+        "주최: t54 Labs / Catalyze / XRPL Korea",
+        "접수: 08. 08(토) ~ 08. 13(목)"
+      ],
+      "sent_at": "2026-08-11T00:50:50.285829",
+      "deadline": "2026-08-13",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1536537346185498719",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1536537353697624107",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AWSKRUG 집현전 #jiphyeonjeon 온라인 소모임 - 8월 15일(토)",
+      "url": "https://www.meetup.com/awskrug/events/316053582/",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `모임`, `클라우드`",
+        "주최: AWSKRUG",
+        "접수: 08. 10(월) ~ 08. 15(토) 10:00"
+      ],
+      "sent_at": "2026-08-11T00:50:50.285829",
+      "deadline": "2026-08-15",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1536537346185498719",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1536537353697624107",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Codex Community Hackathon - Seoul for Students",
+      "url": "https://codex-community-korea.skysplit.chatgpt.site/hackathon/seoul-2026",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `대회`, `AI`",
+        "주최: Codex Community Korea",
+        "접수: 08. 08(토) ~ 08. 16(일)"
+      ],
+      "sent_at": "2026-08-11T00:50:50.285829",
+      "deadline": "2026-08-16",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1536537346185498719",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1536537353697624107",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Qwen AI Build Day in Seoul with TFM",
+      "url": "https://luma.com/y5zmk4mo",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `모임`, `AI`",
+        "주최: TFM / Alibaba Cloud Korea",
+        "접수: 08. 08(토) ~ 08. 20(목)"
+      ],
+      "sent_at": "2026-08-11T00:50:50.285829",
+      "deadline": "2026-08-20",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1536537346185498719",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1536537353697624107",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "DynamoDB Tech Talk",
+      "url": "https://luma.com/18vxh2cy",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `모임`, `클라우드`",
+        "주최: 채널톡",
+        "접수: 08. 10(월) ~ 08. 21(금) 17:00"
+      ],
+      "sent_at": "2026-08-11T00:50:50.285829",
+      "deadline": "2026-08-21",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1536537346185498719",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1536537353697624107",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Kiro 한국 사용자 모임 (2026-08)",
+      "url": "https://luma.com/jjd10nb6",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `모임`, `AI`",
+        "주최: Kiro 한국 사용자 모임 / AWSKRUG",
+        "접수: 08. 10(월) ~ 08. 25(화) 10:00"
+      ],
+      "sent_at": "2026-08-11T00:50:50.285829",
+      "deadline": "2026-08-25",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1536537346185498719",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1536537353697624107",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "비용 통제부터 사내 에이전트까지, 멀티 AI 운영 전략 웨비나",
+      "url": "https://event-us.kr/webinar/event/131559",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `AI`",
+        "주최: 몬드리안에이아이",
+        "접수: 08. 01(토) ~ 08. 26(수) 14:00"
+      ],
+      "sent_at": "2026-08-11T00:50:50.285829",
+      "deadline": "2026-08-26",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1536537346185498719",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1536537353697624107",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 I/O Extended: Hack the Beat",
+      "url": "https://event-us.kr/gdgcampuskorea/event/131744",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `대회`, `AI`",
+        "주최: GDG Campus Korea",
+        "접수: 08. 05(수) ~ 08. 26(수) 23:30"
+      ],
+      "sent_at": "2026-08-11T00:50:50.285829",
+      "deadline": "2026-08-26",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1536537346185498719",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1536537353697624107",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Dot4 밋업 8월 27일 @마이크로소프트코리아",
+      "url": "https://ticketa.co/event/ee3aykrj",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 종로구)`, `무료`, `모임`, `기술일반`",
+        "주최: DOT4 커뮤니티",
+        "접수: 08. 07(금) ~ 08. 27(목)"
+      ],
+      "sent_at": "2026-08-11T00:50:50.285829",
+      "deadline": "2026-08-27",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1536537346185498719",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1536537353697624107",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AWSKRUG #partner 소모임 1번째 - AWSKRUG x Ambassadors Meetup - 9월 10일 (목)",
+      "url": "https://www.meetup.com/awskrug/events/316051935/",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `모임`, `클라우드`",
+        "주최: AWSKRUG",
+        "접수: 08. 10(월) ~ 09. 08(화) 18:00"
+      ],
+      "sent_at": "2026-08-11T00:50:50.285829",
+      "deadline": "2026-09-08",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1536537346185498719",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1536537353697624107",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 NAIS AI 해커톤 (AI4Sci Korea 2026)",
+      "url": "https://ai4scikorea.org/#competition",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(서울 용산구)`, `무료`, `대회`, `AI`",
+        "주최: 국가과학기술연구회(NST) / 국가과학기술연구센터(NAIS)",
+        "일시: 09. 30(수) ~ 10. 01(목)"
+      ],
+      "sent_at": "2026-08-11T00:50:50.285829",
+      "deadline": "2026-10-01",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1536537346185498719",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1536537353697624107",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "GitHub Copilot Dev Days | Seoul",
+      "url": "https://ticketa.co/event/xzch6c1g",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(서울 종로구)`, `무료`, `세미나`, `AI`",
+        "주최: Microsoft 커뮤니티 이벤트",
+        "일시: 10. 24(토)"
+      ],
+      "sent_at": "2026-08-11T00:50:50.285829",
+      "deadline": "2026-10-24",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1536537346185498719",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1536537353697624107",
           "style": "compact"
         }
       ]
