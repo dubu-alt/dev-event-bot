@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-08-11T00:50:50.285829",
+  "updated_at": "2026-08-12T00:57:33.202305",
   "events": [
     {
       "title": "",
@@ -1731,18 +1731,7 @@
       ],
       "sent_at": "2026-07-31T01:44:21.231663",
       "deadline": "2026-08-11",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1532564548169498757",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1532564551550374171",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "Qwen Meetup Seoul #4 (Dev Korea #13)",
@@ -2344,6 +2333,54 @@
         {
           "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
           "id": "1536537353697624107",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Open AGI 빌더스 데이 at KDD",
+      "url": "https://www.rocketpunch.com/event/8A2KPAjh3O",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(제주)`, `무료`, `세미나`, `AI`",
+        "주최: Sentient Labs",
+        "일시: 08. 13(목)"
+      ],
+      "sent_at": "2026-08-12T00:57:33.202305",
+      "deadline": "2026-08-13",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1536901424729034864",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1536901425970290810",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AUSGCON 2026",
+      "url": "https://2026.ausg.me/",
+      "month": "26년 08월",
+      "metadata": [
+        "`오프라인(서울)`, `유료`, `컨퍼런스`, `클라우드`",
+        "주최: AUSG",
+        "접수: 08. 05(수) ~ 08. 30(일)"
+      ],
+      "sent_at": "2026-08-12T00:57:33.202305",
+      "deadline": "2026-08-30",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1536901424729034864",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1536901425970290810",
           "style": "compact"
         }
       ]
