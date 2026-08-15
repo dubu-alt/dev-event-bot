@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-08-14T00:58:32.332962",
+  "updated_at": "2026-08-15T00:34:12.384502",
   "events": [
     {
       "title": "",
@@ -1611,18 +1611,7 @@
       ],
       "sent_at": "2026-07-29T01:24:41.279881",
       "deadline": "2026-08-14",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1531834823021170730",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1531834824632045700",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "KotlinConf Extended South Korea",
@@ -1820,18 +1809,7 @@
       ],
       "sent_at": "2026-08-05T01:25:22.441819",
       "deadline": "2026-08-14",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1534371711397396553",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1534371713679097857",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "mobilgene 26",
@@ -2348,6 +2326,270 @@
         {
           "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
           "id": "1536901425970290810",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "[네트워킹] 개인 툴에서 조직 표준으로: 시리즈 D CTO의 3단계 AI 개발 토대 구축법",
+      "url": "https://event-us.kr/findy/event/131589",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `모임`, `AI`",
+        "주최: Findy Korea",
+        "접수: 07. 31(금) 11:30 ~ 08. 17(월) 23:30"
+      ],
+      "sent_at": "2026-08-15T00:34:12.384502",
+      "deadline": "2026-08-17",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1537982715771490406",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1537982718678142987",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "처음 만나는 믹스패널 MCP: 대화로 시작하는 데이터 분석",
+      "url": "https://event-us.kr/mfitlab/event/131854",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `AI`",
+        "주최: 마켓핏랩 솔루션즈",
+        "접수: 08. 04(화) 11:00 ~ 08. 17(월) 23:30"
+      ],
+      "sent_at": "2026-08-15T00:34:12.384502",
+      "deadline": "2026-08-17",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1537982715771490406",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1537982718678142987",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "[AI로 세상을 바꾸다] 제4회 부산 너디너리 페스티벌",
+      "url": "https://event-us.kr/neordinaryfestival/event/132023",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(부산)`, `유료`, `모임`, `AI`",
+        "주최: 너디너리",
+        "접수: 08. 05(수) 10:00 ~ 08. 20(목) 18:00"
+      ],
+      "sent_at": "2026-08-15T00:34:12.384502",
+      "deadline": "2026-08-20",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1537982715771490406",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1537982718678142987",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "vLLM.KR Community Meetup 2026/08",
+      "url": "https://event-us.kr/pytorchkr/event/132012",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `모임`, `AI`",
+        "주최: PyTorchKR",
+        "접수: 08. 05(수) 11:30 ~ 08. 23(일) 00:00"
+      ],
+      "sent_at": "2026-08-15T00:34:12.384502",
+      "deadline": "2026-08-23",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1537982715771490406",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1537982718678142987",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AWSKRUG 인천 지역 #incheon 소모임 - 08월 24일 (월)",
+      "url": "https://www.meetup.com/awskrug/events/316081735/",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(인천)`, `무료`, `모임`, `클라우드`",
+        "주최: AWSKRUG",
+        "접수: 08. 12(수) ~ 08. 24(월) 19:00"
+      ],
+      "sent_at": "2026-08-15T00:34:12.384502",
+      "deadline": "2026-08-24",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1537982715771490406",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1537982718678142987",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AWSKRUG 보안 #Security 소모임 - 8월 27일 (목)",
+      "url": "https://www.meetup.com/awskrug/events/316081956/",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `모임`, `클라우드`",
+        "주최: AWSKRUG",
+        "접수: 08. 12(수) ~ 08. 25(화) 23:59"
+      ],
+      "sent_at": "2026-08-15T00:34:12.384502",
+      "deadline": "2026-08-25",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1537982715771490406",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1537982718678142987",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "개발자 생존 토크쇼: AI Agent로 만드는 나의 첫 비즈니스",
+      "url": "https://www.pathfinder.camp/event-details/survival-talkshow",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(부산)`, `무료`, `세미나`, `AI`",
+        "주최: 패스파인더",
+        "접수: 08. 10(월) ~ 08. 26(수) 23:50"
+      ],
+      "sent_at": "2026-08-15T00:34:12.384502",
+      "deadline": "2026-08-26",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1537982715771490406",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1537982718678142987",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "OpenAI Game Builders Seoul",
+      "url": "https://openaigame2026.com/",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `온라인`, `오프라인(서울)`, `무료`, `대회`, `AI`",
+        "주최: OpenAI / 컴투스홀딩스",
+        "접수: 08. 04(화) ~ 08. 26(수)"
+      ],
+      "sent_at": "2026-08-15T00:34:12.384502",
+      "deadline": "2026-08-26",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1537982715771490406",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1537982718678142987",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AWSKRUG #부산 지역 소모임 - 8월 28일 (금)",
+      "url": "https://www.meetup.com/awskrug/events/316079433/",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(부산)`, `무료`, `모임`, `클라우드`",
+        "주최: AWSKRUG",
+        "접수: 08. 12(수) ~ 08. 28(금) 19:00"
+      ],
+      "sent_at": "2026-08-15T00:34:12.384502",
+      "deadline": "2026-08-28",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1537982715771490406",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1537982718678142987",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "KCD x Ceph x OpenInfra Day Korea 2026",
+      "url": "https://community2.cncf.io/events/details/cncf-kcd-south-korea-presents-kcd-x-ceph-x-openinfra-day-korea-2026/",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 용산구)`, `유료`, `세미나`, `클라우드`",
+        "주최: Kubernetes Korea Group / Korea Ceph User Group / OpenInfra Korea User Group",
+        "접수: 07. 01(수) ~ 08. 31(월)"
+      ],
+      "sent_at": "2026-08-15T00:34:12.384502",
+      "deadline": "2026-08-31",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1537982715771490406",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1537982718678142987",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "(서울)AI와 Digital Engineering으로 완성하는 Mission-Critical Software 개발 전략 세미나",
+      "url": "https://event-us.kr/mdsit/event/131366",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 서초구)`, `무료`, `세미나`, `기술일반`",
+        "주최: MDS인텔리전스",
+        "접수: 07. 28(화) 07:00 ~ 09. 07(월) 23:30"
+      ],
+      "sent_at": "2026-08-15T00:34:12.384502",
+      "deadline": "2026-09-07",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1537982715771490406",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1537982718678142987",
           "style": "compact"
         }
       ]
