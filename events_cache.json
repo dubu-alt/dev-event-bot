@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-08-15T00:34:12.384502",
+  "updated_at": "2026-08-16T00:35:18.930227",
   "events": [
     {
       "title": "",
@@ -1624,18 +1624,7 @@
       ],
       "sent_at": "2026-07-29T01:24:41.279881",
       "deadline": "2026-08-15",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1531834823021170730",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1531834824632045700",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "[NIPA] 2026년도 SaaS 전환지원센터 제6회 세미나 - AI SaaS 도입, 어떻게 활용하고 통제할 것인가?",
@@ -1822,18 +1811,7 @@
       ],
       "sent_at": "2026-08-05T01:25:22.441819",
       "deadline": "2026-08-15",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1534371711397396553",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1534371713679097857",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AWSKRUG 데브옵스 #DevOps 소모임 25번째 밋업 - 8월 19일 (수)",
@@ -2040,18 +2018,7 @@
       ],
       "sent_at": "2026-08-11T00:50:50.285829",
       "deadline": "2026-08-15",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1536537346185498719",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1536537353697624107",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "Codex Community Hackathon - Seoul for Students",
@@ -2590,6 +2557,30 @@
         {
           "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
           "id": "1537982718678142987",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Build for the Real World (BUIDL CTC 2026 Fall)",
+      "url": "https://buidl.creditcoin.org/",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `온라인`, `대회`, `블록체인`, `Web3`",
+        "주최: Creditcoin",
+        "접수: 08. 13(목) ~ 09. 06(일)"
+      ],
+      "sent_at": "2026-08-16T00:35:18.930227",
+      "deadline": "2026-09-06",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1538345382629871628",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1538345384223572019",
           "style": "compact"
         }
       ]
