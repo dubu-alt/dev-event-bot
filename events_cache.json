@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-08-17T00:34:02.199897",
+  "updated_at": "2026-08-18T00:33:58.411915",
   "events": [
     {
       "title": "",
@@ -2286,18 +2286,7 @@
       ],
       "sent_at": "2026-08-15T00:34:12.384502",
       "deadline": "2026-08-17",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1537982715771490406",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1537982718678142987",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "처음 만나는 믹스패널 MCP: 대화로 시작하는 데이터 분석",
@@ -2310,18 +2299,7 @@
       ],
       "sent_at": "2026-08-15T00:34:12.384502",
       "deadline": "2026-08-17",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1537982715771490406",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1537982718678142987",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "[AI로 세상을 바꾸다] 제4회 부산 너디너리 페스티벌",
