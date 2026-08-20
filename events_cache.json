@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-08-19T00:34:04.231237",
+  "updated_at": "2026-08-20T00:33:49.023209",
   "events": [
     {
       "title": "",
@@ -1711,18 +1711,7 @@
       ],
       "sent_at": "2026-07-31T01:44:21.231663",
       "deadline": "2026-08-19",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1532564548169498757",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1532564551550374171",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "코드프레소 [AX 실전] : 비개발자 AI 입문 5기",
@@ -1826,18 +1815,7 @@
       ],
       "sent_at": "2026-08-05T01:25:22.441819",
       "deadline": "2026-08-19",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1534371711397396553",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1534371713679097857",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "Let's make a programming language. Functions",
@@ -1850,18 +1828,7 @@
       ],
       "sent_at": "2026-08-05T01:25:22.441819",
       "deadline": "2026-08-19",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1534371711397396553",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1534371713679097857",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "마케터를 위한 AX 실전: 아는 만큼 누리는 API와 MCP, 지표 정의부터 대시보드 자동화까지",
@@ -2541,18 +2508,7 @@
       ],
       "sent_at": "2026-08-19T00:34:04.231237",
       "deadline": "2026-08-19",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1539432232119173132",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1539432235424292875",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "Loop:Talk - 빅테크 멘토님들과 함께하는 오프라인 개발자 밋업!",
