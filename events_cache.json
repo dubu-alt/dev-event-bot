@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-08-20T00:33:49.023209",
+  "updated_at": "2026-08-21T00:36:10.588942",
   "events": [
     {
       "title": "",
@@ -1989,18 +1989,7 @@
       ],
       "sent_at": "2026-08-11T00:50:50.285829",
       "deadline": "2026-08-20",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1536537346185498719",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1536537353697624107",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "DynamoDB Tech Talk",
@@ -2268,18 +2257,7 @@
       ],
       "sent_at": "2026-08-15T00:34:12.384502",
       "deadline": "2026-08-20",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1537982715771490406",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1537982718678142987",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "vLLM.KR Community Meetup 2026/08",
@@ -2521,18 +2499,7 @@
       ],
       "sent_at": "2026-08-19T00:34:04.231237",
       "deadline": "2026-08-20",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1539432232119173132",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1539432235424292875",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 블록체인 밋업데이 (18회차)",
@@ -2818,6 +2785,632 @@
         {
           "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
           "id": "1539432235424292875",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AX 다음 — 구독은 했는데 아무도 말 안 해준 5가지",
+      "url": "https://event-us.kr/schift/event/132139",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `AI`",
+        "주최: Schift",
+        "접수: 08. 06(목) ~ 08. 20(목) 12:00"
+      ],
+      "sent_at": "2026-08-21T00:36:10.588942",
+      "deadline": "2026-08-20",
+      "messages": []
+    },
+    {
+      "title": "[멋쟁이사자처럼] AI 바이브톤",
+      "url": "https://event-us.kr/careerlikelion/event/132121",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 중구)`, `무료`, `대회`, `AI`",
+        "주최: 멋쟁이사자처럼",
+        "접수: 08. 06(목) ~ 08. 20(목) 23:59"
+      ],
+      "sent_at": "2026-08-21T00:36:10.588942",
+      "deadline": "2026-08-20",
+      "messages": []
+    },
+    {
+      "title": "AWSKRUG 집현전 #jiphyeonjeon 온라인 소모임 - 8월 22일(토)",
+      "url": "https://www.meetup.com/awskrug/events/316175545/",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `모임`, `클라우드`",
+        "주최: AWSKRUG",
+        "접수: 08. 19(수) ~ 08. 22(토) 10:00"
+      ],
+      "sent_at": "2026-08-21T00:36:10.588942",
+      "deadline": "2026-08-22",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540157537217945644",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540157542854955100",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "[무료·발표자료 제공] 정책부터 Physical AI까지, 기업 AX 실행전략 웨비나",
+      "url": "https://event-us.kr/ax/event/131858",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `AI`",
+        "주최: 벤처기업협회 AX브릿지위원회",
+        "접수: 08. 03(월) ~ 08. 24(월) 17:00"
+      ],
+      "sent_at": "2026-08-21T00:36:10.588942",
+      "deadline": "2026-08-24",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540157537217945644",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540157542854955100",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "델 테크놀로지스 포럼 2026",
+      "url": "https://event-us.kr/dtf2026/event/130951",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `세미나`, `AI`",
+        "주최: 델 테크놀로지스",
+        "접수: 07. 21(화) ~ 08. 25(화) 09:00"
+      ],
+      "sent_at": "2026-08-21T00:36:10.588942",
+      "deadline": "2026-08-25",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540157537217945644",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540157542854955100",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "탈(脫) 오라클, 고객 가치를 실현하는 맞춤형 마이그레이션 전략",
+      "url": "https://event-us.kr/itsman/event/131764",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `기술일반`",
+        "주최: 잇츠맨",
+        "접수: 08. 01(토) ~ 08. 25(화) 14:00"
+      ],
+      "sent_at": "2026-08-21T00:36:10.588942",
+      "deadline": "2026-08-25",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540157537217945644",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540157542854955100",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "에이전틱 엔지니어링 핸즈온 : AI 주도 개발 실습 A to Z",
+      "url": "https://event-us.kr/datanet/event/131919",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 서초구)`, `유료`, `세미나`, `AI`",
+        "주최: 데브멘토",
+        "접수: 08. 04(화) 10:00 ~ 08. 25(화) 22:00"
+      ],
+      "sent_at": "2026-08-21T00:36:10.588942",
+      "deadline": "2026-08-25",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540157537217945644",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540157542854955100",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "[VESSL AI 웨비나] 2027년 GPU 예산, 품의서를 통과하는 TCO 설계법",
+      "url": "https://event-us.kr/vesslai/event/132200",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `AI`",
+        "주최: 베슬에이아이",
+        "접수: 08. 06(목) ~ 08. 25(화) 23:30"
+      ],
+      "sent_at": "2026-08-21T00:36:10.588942",
+      "deadline": "2026-08-25",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540157537217945644",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540157542854955100",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "스마트클라우드쇼 2026",
+      "url": "https://event-us.kr/chosunbiz/event/130679",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 중구)`, `유료`, `세미나`, `클라우드`, `AI`",
+        "주최: 조선비즈",
+        "접수: 07. 15(수) ~ 08. 26(수) 00:00"
+      ],
+      "sent_at": "2026-08-21T00:36:10.588942",
+      "deadline": "2026-08-26",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540157537217945644",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540157542854955100",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AI 시대에 하드 드라이브 바로 알기 : 씨게이트가 제시하는 차세대 스토리지 인클로저",
+      "url": "https://event-us.kr/itsman/event/132367",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `기술일반`",
+        "주최: 잇츠맨",
+        "접수: 08. 10(월) ~ 08. 26(수) 14:00"
+      ],
+      "sent_at": "2026-08-21T00:36:10.588942",
+      "deadline": "2026-08-26",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540157537217945644",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540157542854955100",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "성과를 만드는 AI 에이전트 운영 전략 및 사례",
+      "url": "https://event-us.kr/etnewsinternet/event/131521",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 송파구)`, `유료`, `세미나`, `AI`",
+        "주최: 전자신문인터넷",
+        "접수: 07. 29(수) ~ 08. 26(수) 15:00"
+      ],
+      "sent_at": "2026-08-21T00:36:10.588942",
+      "deadline": "2026-08-26",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540157537217945644",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540157542854955100",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Physical AI 시연을 넘어, 운영으로 — Physical AI 실전 전략",
+      "url": "https://event-us.kr/advantechseminar/event/132284",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `AI`",
+        "주최: 어드밴텍",
+        "접수: 08. 07(금) ~ 08. 27(목) 14:00"
+      ],
+      "sent_at": "2026-08-21T00:36:10.588942",
+      "deadline": "2026-08-27",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540157537217945644",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540157542854955100",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 블록체인 밋업데이 (19회차)",
+      "url": "https://event-us.kr/2026bcmd/event/129777",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 송파구)`, `무료`, `세미나`, `블록체인`",
+        "주최: 과학기술정보통신부 / 한국인터넷진흥원(KISA)",
+        "접수: 07. 27(월) ~ 08. 28(금) 18:00"
+      ],
+      "sent_at": "2026-08-21T00:36:10.588942",
+      "deadline": "2026-08-28",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540157537217945644",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540157542854955100",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 대구 블록체인 밋업데이 [1회차 블록체인 과정]",
+      "url": "https://event-us.kr/ConventionSOOP/event/131013",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(대구)`, `무료`, `세미나`, `블록체인`",
+        "주최: 과학기술정보통신부 / 한국인터넷진흥원(KISA) / 대구광역시",
+        "접수: 07. 31(금) ~ 08. 28(금) 18:00"
+      ],
+      "sent_at": "2026-08-21T00:36:10.588942",
+      "deadline": "2026-08-28",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540157537217945644",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540157542854955100",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "ATTENTION 2026",
+      "url": "https://event-us.kr/makinarocks/event/132375",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `세미나`, `AI`",
+        "주최: 마키나락스",
+        "접수: 08. 10(월) 14:00 ~ 08. 28(금) 23:30"
+      ],
+      "sent_at": "2026-08-21T00:36:10.588942",
+      "deadline": "2026-08-28",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540157537217945644",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540157542854955100",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AWSKRUG 주니어 #junior 첫 번째 밋업 - 9월 3일 (목)",
+      "url": "https://www.meetup.com/awskrug/events/316167655/",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `모임`, `클라우드`",
+        "주최: AWSKRUG",
+        "접수: 08. 18(화) ~ 08. 29(토)"
+      ],
+      "sent_at": "2026-08-21T00:36:10.588942",
+      "deadline": "2026-08-29",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540157537217945644",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540157542854955100",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "MABC 2026 (Making AI Beneficial Challenge)",
+      "url": "https://event-us.kr/mabc2026/event/130808",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `대회`, `AI`",
+        "주최: Upstage",
+        "접수: 07. 16(목) ~ 08. 31(월) 19:00"
+      ],
+      "sent_at": "2026-08-21T00:36:10.588942",
+      "deadline": "2026-08-31",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540157537217945644",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540157542854955100",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "[인포그랩] 3rd 유저 컨퍼런스 Next Delivery Stack 2026",
+      "url": "https://event-us.kr/infograb/event/131501",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 서초구)`, `무료`, `세미나`, `기술일반`",
+        "주최: 인포그랩",
+        "접수: 07. 29(수) ~ 08. 31(월) 23:30"
+      ],
+      "sent_at": "2026-08-21T00:36:10.588942",
+      "deadline": "2026-08-31",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540157537217945644",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540157542854955100",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "re:Build your Data 차세대 Data Platform 운영 전략 세미나",
+      "url": "https://event-us.kr/gsneotek/event/132338",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `세미나`, `AI`, `클라우드`",
+        "주최: GS네오텍",
+        "접수: 08. 10(월) 09:00 ~ 09. 01(화) 14:00"
+      ],
+      "sent_at": "2026-08-21T00:36:10.588942",
+      "deadline": "2026-09-01",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540157537217945644",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540157542854955100",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 판교 퇴근길밋업 7회차",
+      "url": "https://event-us.kr/iqnnhuzl/event/133189",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(경기 성남)`, `무료`, `모임`, `기술일반`",
+        "주최: 퇴근길 밋업",
+        "접수: 08. 20(목) 15:00 ~ 09. 02(수) 15:00"
+      ],
+      "sent_at": "2026-08-21T00:36:10.588942",
+      "deadline": "2026-09-02",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540157537217945644",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540157542854955100",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AWSKRUG 자격증 소모임 9월 2일 AIF 자격증 취득!",
+      "url": "https://www.meetup.com/awskrug/events/316192838/",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `모임`, `클라우드`",
+        "주최: AWSKRUG",
+        "접수: 08. 20(목) ~ 09. 02(수) 19:00"
+      ],
+      "sent_at": "2026-08-21T00:36:10.588942",
+      "deadline": "2026-09-02",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540157541516841073",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540157548328386713",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AI Risk Conference Seoul 2026",
+      "url": "https://event-us.kr/aimairisk/event/132861",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 서초구)`, `무료`, `세미나`, `AI`",
+        "주최: AIM Intelligence",
+        "접수: 08. 19(수) 09:00 ~ 09. 03(목) 18:00"
+      ],
+      "sent_at": "2026-08-21T00:36:10.588942",
+      "deadline": "2026-09-03",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540157541516841073",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540157548328386713",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 블록체인 밋업데이 (20회차)",
+      "url": "https://event-us.kr/2026bcmd/event/129781",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 송파구)`, `무료`, `세미나`, `블록체인`",
+        "주최: 과학기술정보통신부 / 한국인터넷진흥원(KISA)",
+        "접수: 08. 03(월) ~ 09. 04(금) 18:00"
+      ],
+      "sent_at": "2026-08-21T00:36:10.588942",
+      "deadline": "2026-09-04",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540157541516841073",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540157548328386713",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "OpenAI DevDay Exchange 2026 - 서울",
+      "url": "https://events.openai.com/devdayexchange2026/",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울)`, `무료`, `세미나`, `AI`",
+        "주최: OpenAI",
+        "접수: 08. 19(수) ~ 09. 04(금)"
+      ],
+      "sent_at": "2026-08-21T00:36:10.588942",
+      "deadline": "2026-09-04",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540157541516841073",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540157548328386713",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Agent Field Trip 2026: Incheon",
+      "url": "https://ticketa.co/event/xnhamniu",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(인천)`, `유료`, `대회`, `AI`",
+        "주최: GDG Incheon",
+        "접수: 08. 03(월) ~ 09. 05(토) 11:59"
+      ],
+      "sent_at": "2026-08-21T00:36:10.588942",
+      "deadline": "2026-09-05",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540157541516841073",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540157548328386713",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AI와 Digital Engineering으로 완성하는 Mission-Critical Software 개발 전략 세미나 (대전)",
+      "url": "https://www.rocketpunch.com/event/eLOJKAPZKP",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(대전)`, `무료`, `세미나`, `기술일반`",
+        "주최: 엠디에스인텔리전스",
+        "일시: 09. 08(화)"
+      ],
+      "sent_at": "2026-08-21T00:36:10.588942",
+      "deadline": "2026-09-08",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540157541516841073",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540157548328386713",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Docker Community 9월 밋업",
+      "url": "https://ticketa.co/event/196djvgj",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 종로구)`, `무료`, `모임`, `클라우드`",
+        "주최: Docker User Group Korea",
+        "접수: 08. 17(월) ~ 09. 16(수) 00:00"
+      ],
+      "sent_at": "2026-08-21T00:36:10.588942",
+      "deadline": "2026-09-16",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540157541516841073",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540157548328386713",
           "style": "compact"
         }
       ]
