@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-08-22T00:33:34.097316",
+  "updated_at": "2026-08-23T00:36:26.972193",
   "events": [
     {
       "title": "",
@@ -1650,18 +1650,7 @@
       ],
       "sent_at": "2026-07-29T01:24:41.279881",
       "deadline": "2026-08-22",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1531834823021170730",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1531834824632045700",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AWSKRUG 아키텍처 #architecture 58번째 소모임 8월 26일 (목)",
@@ -2527,18 +2516,7 @@
       ],
       "sent_at": "2026-08-19T00:34:04.231237",
       "deadline": "2026-08-22",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1539432232119173132",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1539432235424292875",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "[웨비나] VS Code에서 임베디드 개발, 어디까지 가능할까?",
@@ -2793,18 +2771,7 @@
       ],
       "sent_at": "2026-08-21T00:36:10.588942",
       "deadline": "2026-08-22",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1540157537217945644",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1540157542854955100",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "[무료·발표자료 제공] 정책부터 Physical AI까지, 기업 AX 실행전략 웨비나",
@@ -3378,6 +3345,270 @@
         {
           "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
           "id": "1540157548328386713",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "무신사 패턴 '26 테크 컨퍼런스",
+      "url": "https://pattern.musinsa.com",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 광진구)`, `무료`, `세미나`, `AI`",
+        "주최: 무신사",
+        "접수: 08. 19(수) ~ 08. 31(월)"
+      ],
+      "sent_at": "2026-08-23T00:36:26.972193",
+      "deadline": "2026-08-31",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540882381228212245",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540882383681626233",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "게임인(人)을 위한 네트워킹 파티 '2026년 구구야(99夜)'",
+      "url": "https://event-us.kr/doverunner/event/131565",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `모임`, `기술일반`",
+        "주최: 도브러너",
+        "접수: 08. 13(목) 09:00 ~ 09. 01(화) 23:30"
+      ],
+      "sent_at": "2026-08-23T00:36:26.972193",
+      "deadline": "2026-09-01",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540882381228212245",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540882383681626233",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 AI 에너지전환 컨퍼런스 & 제3회 풍력발전량 예측 AI 경진대회 시상식",
+      "url": "https://dacon.io/competitions/official/236756/overview/description",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `세미나`, `AI`",
+        "주최: 한국동서발전 / 데이콘",
+        "접수: 08. 22(토) ~ 09. 02(수)"
+      ],
+      "sent_at": "2026-08-23T00:36:26.972193",
+      "deadline": "2026-09-02",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540882381228212245",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540882383681626233",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "n8n Seoul Meetup 3rd - After-Work Networking",
+      "url": "https://event-us.kr/datapopcorn/event/133004",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `모임`, `AI`",
+        "주최: 데이터팝콘",
+        "접수: 08. 21(금) ~ 09. 04(금) 18:00"
+      ],
+      "sent_at": "2026-08-23T00:36:26.972193",
+      "deadline": "2026-09-04",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540882381228212245",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540882383681626233",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "[IT동아리 젝트] 5기 모집",
+      "url": "https://event-us.kr/ject/event/133407",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `동아리`, `기술일반`",
+        "주최: 젝트",
+        "접수: 08. 22(토) 12:00 ~ 09. 06(일) 23:59"
+      ],
+      "sent_at": "2026-08-23T00:36:26.972193",
+      "deadline": "2026-09-06",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540882381228212245",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540882383681626233",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "e4ds Tech Day 2026",
+      "url": "https://event-us.kr/jongin/event/132364",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `세미나`, `AI`",
+        "주최: e4ds news",
+        "접수: 08. 10(월) ~ 09. 07(월) 17:00"
+      ],
+      "sent_at": "2026-08-23T00:36:26.972193",
+      "deadline": "2026-09-07",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540882381228212245",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540882383681626233",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AICC & CX Insight 2026",
+      "url": "https://event-us.kr/etnewsinternet/event/130316",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `세미나`, `AI`",
+        "주최: 전자신문인터넷",
+        "접수: 07. 09(목) ~ 09. 08(화) 15:00"
+      ],
+      "sent_at": "2026-08-23T00:36:26.972193",
+      "deadline": "2026-09-08",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540882381228212245",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540882383681626233",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "저자 세미나 : 바이브 코딩에서 검증된 코딩으로",
+      "url": "https://event-us.kr/FKH3nHkjmPGh/event/131554",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 서대문구)`, `유료`, `세미나`, `AI`",
+        "주최: 한빛미디어",
+        "접수: 07. 29(수) 15:00 ~ 09. 08(화) 20:00"
+      ],
+      "sent_at": "2026-08-23T00:36:26.972193",
+      "deadline": "2026-09-08",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540882381228212245",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540882383681626233",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Daytona HackSprint Seoul 해커톤",
+      "url": "https://luma.com/daytonaseoul",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `대회`, `AI`",
+        "주최: AI Builders / Daytona",
+        "일시: 09. 19(토)"
+      ],
+      "sent_at": "2026-08-23T00:36:26.972193",
+      "deadline": "2026-09-19",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540882381228212245",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540882383681626233",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "GitHub Copilot Dev Days | Busan",
+      "url": "https://ticketa.co/event/d4fha6wt",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(부산)`, `무료`, `세미나`, `AI`",
+        "주최: 맞다AI가",
+        "접수: 08. 21(금) 22:52 ~ 10. 16(금) 14:00"
+      ],
+      "sent_at": "2026-08-23T00:36:26.972193",
+      "deadline": "2026-10-16",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540882381228212245",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540882383681626233",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "GitHub Copilot Dev Days | Daegu",
+      "url": "https://ticketa.co/event/rfl8sqa9",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(대구)`, `무료`, `세미나`, `AI`",
+        "주최: 맞다AI가",
+        "일시: 10. 17(토)"
+      ],
+      "sent_at": "2026-08-23T00:36:26.972193",
+      "deadline": "2026-10-17",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1540882381228212245",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1540882383681626233",
           "style": "compact"
         }
       ]
