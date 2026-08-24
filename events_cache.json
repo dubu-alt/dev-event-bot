@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-08-23T00:36:26.972193",
+  "updated_at": "2026-08-24T00:35:09.026216",
   "events": [
     {
       "title": "",
@@ -2248,18 +2248,7 @@
       ],
       "sent_at": "2026-08-15T00:34:12.384502",
       "deadline": "2026-08-23",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1537982715771490406",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1537982718678142987",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AWSKRUG 인천 지역 #incheon 소모임 - 08월 24일 (월)",
