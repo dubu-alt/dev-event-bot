@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-08-24T00:35:09.026216",
+  "updated_at": "2026-08-25T00:35:09.229290",
   "events": [
     {
       "title": "",
@@ -2261,18 +2261,7 @@
       ],
       "sent_at": "2026-08-15T00:34:12.384502",
       "deadline": "2026-08-24",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1537982715771490406",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1537982718678142987",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AWSKRUG 보안 #Security 소모임 - 8월 27일 (목)",
@@ -2518,18 +2507,7 @@
       ],
       "sent_at": "2026-08-19T00:34:04.231237",
       "deadline": "2026-08-24",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1539432232119173132",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1539432235424292875",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "[온앤안 무료 세미나] 현직 화이트해커가 밝히는 실전 보안 트렌드 & 커리어 로드맵",
@@ -2542,18 +2520,7 @@
       ],
       "sent_at": "2026-08-19T00:34:04.231237",
       "deadline": "2026-08-24",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1539432232119173132",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1539432235424292875",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "&lt;Do it! 바이브 코딩 + 커서 AI&gt; 무료 온라인 저자 강연",
@@ -2773,18 +2740,7 @@
       ],
       "sent_at": "2026-08-21T00:36:10.588942",
       "deadline": "2026-08-24",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1540157537217945644",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1540157542854955100",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "델 테크놀로지스 포럼 2026",
@@ -3598,6 +3554,30 @@
         {
           "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
           "id": "1540882383681626233",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "타임트리코리아 AI 에이전트 개발 컨퍼런스",
+      "url": "https://conf.timetreeapp.com",
+      "month": "26년 08월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `컨퍼런스`, `AI`",
+        "주최: 타임트리코리아 (TimeTree Korea)",
+        "접수: 08. 18(화) ~ 08. 28(금)"
+      ],
+      "sent_at": "2026-08-25T00:35:09.229290",
+      "deadline": "2026-08-28",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1541606832181870683",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1541606834996248638",
           "style": "compact"
         }
       ]
