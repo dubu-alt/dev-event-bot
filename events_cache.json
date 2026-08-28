@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-08-27T05:32:00.964385",
+  "updated_at": "2026-08-28T07:27:47.310941",
   "events": [
     {
       "title": "",
@@ -2021,18 +2021,7 @@
       ],
       "sent_at": "2026-08-11T00:50:50.285829",
       "deadline": "2026-08-27",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1536537346185498719",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1536537353697624107",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AWSKRUG #partner 소모임 1번째 - AWSKRUG x Ambassadors Meetup - 9월 10일 (목)",
@@ -2745,18 +2734,7 @@
       ],
       "sent_at": "2026-08-21T00:36:10.588942",
       "deadline": "2026-08-27",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1540157537217945644",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1540157542854955100",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 블록체인 밋업데이 (19회차)",
@@ -3775,6 +3753,78 @@
         {
           "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
           "id": "1542406318323933245",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 넥토리얼 For Game Programmer",
+      "url": "https://nexon-tutorial.com/",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `온라인`, `오프라인`, `무료`, `교육`, `기술일반`",
+        "주최: 넥슨코리아",
+        "접수: 08. 25(화) ~ 09. 07(월) 16:00"
+      ],
+      "sent_at": "2026-08-28T07:27:47.310941",
+      "deadline": "2026-09-07",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1542797837144952913",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1542797838893711393",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "GitHub Copilot 최신 업데이트",
+      "url": "https://github.registration.goldcast.io/events/a41c10fa-4c10-4ff5-8954-cd7a1daff6fe",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `AI`",
+        "주최: GitHub",
+        "일시: 09. 16(수) 16:00 ~ 09. 16(수) 17:00"
+      ],
+      "sent_at": "2026-08-28T07:27:47.310941",
+      "deadline": "2026-09-16",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1542797837144952913",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1542797838893711393",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "원티드 AI Championship 2026",
+      "url": "https://event.wanted.co.kr/ai-championship/2026",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `대회`, `AI`",
+        "주최: 원티드랩",
+        "접수: 08. 24(월) ~ 09. 18(금)"
+      ],
+      "sent_at": "2026-08-28T07:27:47.310941",
+      "deadline": "2026-09-18",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1542797837144952913",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1542797838893711393",
           "style": "compact"
         }
       ]
