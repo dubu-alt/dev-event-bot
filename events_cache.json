@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-08-29T04:37:57.481684",
+  "updated_at": "2026-08-30T02:10:03.595210",
   "events": [
     {
       "title": "",
@@ -2775,18 +2775,7 @@
       ],
       "sent_at": "2026-08-21T00:36:10.588942",
       "deadline": "2026-08-29",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1540157537217945644",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1540157542854955100",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "MABC 2026 (Making AI Beneficial Challenge)",
