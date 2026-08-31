@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-08-30T02:10:03.595210",
+  "updated_at": "2026-08-31T02:05:25.789409",
   "events": [
     {
       "title": "",
@@ -1832,18 +1832,7 @@
       ],
       "sent_at": "2026-08-05T01:25:22.441819",
       "deadline": "2026-08-30",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1534371711397396553",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1534371713679097857",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AWSKRUG 구로디지털 #gudi 소모임 - 09월 03일 (목)",
@@ -2119,18 +2108,7 @@
       ],
       "sent_at": "2026-08-12T00:57:33.202305",
       "deadline": "2026-08-30",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1536901424729034864",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1536901425970290810",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "[네트워킹] 개인 툴에서 조직 표준으로: 시리즈 D CTO의 3단계 AI 개발 토대 구축법",
@@ -3342,18 +3320,7 @@
       ],
       "sent_at": "2026-08-27T05:32:00.964385",
       "deadline": "2026-08-30",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1542406315798954093",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1542406318323933245",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 어드밴텍 AI 에코파트너 포럼",
