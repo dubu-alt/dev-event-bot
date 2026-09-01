@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-08-31T02:05:25.789409",
+  "updated_at": "2026-09-01T02:25:59.483221",
   "events": [
     {
       "title": "",
@@ -2238,18 +2238,7 @@
       ],
       "sent_at": "2026-08-15T00:34:12.384502",
       "deadline": "2026-08-31",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1537982715771490406",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1537982718678142987",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "(서울)AI와 Digital Engineering으로 완성하는 Mission-Critical Software 개발 전략 세미나",
@@ -2766,18 +2755,7 @@
       ],
       "sent_at": "2026-08-21T00:36:10.588942",
       "deadline": "2026-08-31",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1540157537217945644",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1540157542854955100",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "[인포그랩] 3rd 유저 컨퍼런스 Next Delivery Stack 2026",
@@ -2790,18 +2768,7 @@
       ],
       "sent_at": "2026-08-21T00:36:10.588942",
       "deadline": "2026-08-31",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1540157537217945644",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1540157542854955100",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "re:Build your Data 차세대 Data Platform 운영 전략 세미나",
@@ -3030,18 +2997,7 @@
       ],
       "sent_at": "2026-08-23T00:36:26.972193",
       "deadline": "2026-08-31",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1540882381228212245",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1540882383681626233",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "게임인(人)을 위한 네트워킹 파티 '2026년 구구야(99夜)'",
@@ -3726,6 +3682,270 @@
         {
           "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
           "id": "1542797838893711393",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AWSKRUG 네트워크 #network 소모임 - (9월 8일)",
+      "url": "https://www.meetup.com/awskrug/events/316307770/",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `모임`, `클라우드`",
+        "주최: AWSKRUG",
+        "접수: 08. 31(월) ~ 09. 04(금) 16:00"
+      ],
+      "sent_at": "2026-09-01T02:25:59.483221",
+      "deadline": "2026-09-04",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1544171440922828901",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1544171442667524197",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "안드로이드 소소밋업: 국내/외 개발자들은 AI를 어떻게 활용하고 있을까?",
+      "url": "https://ticketa.co/event/5g8dos43",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `모임`, `AI`",
+        "주최: GDG Korea Android",
+        "접수: 08. 19(수) 07:00 ~ 09. 07(월) 23:30"
+      ],
+      "sent_at": "2026-09-01T02:25:59.483221",
+      "deadline": "2026-09-07",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1544171440922828901",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1544171442667524197",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "[무료 웨비나] Google Cloud 기반 LLM 애플리케이션 개발",
+      "url": "https://www.megazonesoft.com/gcp-fundamentals_20260908/",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `AI`, `클라우드`",
+        "주최: 메가존소프트",
+        "일시: 09. 08(화)"
+      ],
+      "sent_at": "2026-09-01T02:25:59.483221",
+      "deadline": "2026-09-08",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1544171440922828901",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1544171442667524197",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Taste of Splunk for Game Company",
+      "url": "https://event-us.kr/mdsteches/event/132896",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(경기 성남)`, `무료`, `세미나`, `기술일반`",
+        "주최: Splunk / MDS테크",
+        "접수: 08. 18(화) ~ 09. 08(화) 23:30"
+      ],
+      "sent_at": "2026-09-01T02:25:59.483221",
+      "deadline": "2026-09-08",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1544171440922828901",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1544171442667524197",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AAIF Seoul Chapter Event",
+      "url": "https://luma.com/sa692amj",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 서초구)`, `무료`, `모임`, `AI`",
+        "주최: Agentic AI Foundation(AAIF)",
+        "일시: 09. 09(수)"
+      ],
+      "sent_at": "2026-09-01T02:25:59.483221",
+      "deadline": "2026-09-09",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1544171440922828901",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1544171442667524197",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AI Product Frontiers: AI 시대, 최전선에서 방향을 만드는 사람들",
+      "url": "https://tech.channel.io/kr/articles/ai-product-frontiers-fba8c7be",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `온라인`, `오프라인(서울 강남구)`, `무료`, `모임`, `AI`",
+        "주최: 채널코퍼레이션",
+        "접수: 08. 31(월) ~ 09. 11(금) 17:00"
+      ],
+      "sent_at": "2026-09-01T02:25:59.483221",
+      "deadline": "2026-09-11",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1544171440922828901",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1544171442667524197",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "[웨비나]다양한 AWS・IT기술 정보를 발신하는 \"IAM클라쓰DAY#04\"",
+      "url": "https://event-us.kr/classmethod/event/133986",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `클라우드`",
+        "주최: 클래스메소드코리아",
+        "접수: 08. 28(금) ~ 09. 14(월) 23:30"
+      ],
+      "sent_at": "2026-09-01T02:25:59.483221",
+      "deadline": "2026-09-14",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1544171440922828901",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1544171442667524197",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AWSKRUG 데이터 모임 X Apache Airflow 한국 사용자 모임",
+      "url": "https://www.meetup.com/awskrug/events/316306742/",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `모임`, `클라우드`",
+        "주최: AWSKRUG / Apache Airflow 한국 사용자 모임",
+        "접수: 08. 31(월) ~ 09. 14(월)"
+      ],
+      "sent_at": "2026-09-01T02:25:59.483221",
+      "deadline": "2026-09-14",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1544171440922828901",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1544171442667524197",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "lab | up > /conf/6",
+      "url": "https://event-us.kr/lablup/event/133741",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `세미나`, `AI`",
+        "주최: 래블업",
+        "접수: 09. 01(화) 10:00 ~ 09. 18(금) 00:00"
+      ],
+      "sent_at": "2026-09-01T02:25:59.483221",
+      "deadline": "2026-09-18",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1544171440922828901",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1544171442667524197",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Shipaton 2026: Seoul (Dev Korea #14)",
+      "url": "https://dev-korea.com/events/dev-korea-14-september-2026",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `모임`, `기술일반`",
+        "주최: Dev Korea / RevenueCat",
+        "접수: 08. 15(토) ~ 09. 21(월)"
+      ],
+      "sent_at": "2026-09-01T02:25:59.483221",
+      "deadline": "2026-09-21",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1544171440922828901",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1544171442667524197",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "KVCache Meetup Korea",
+      "url": "https://event-us.kr/pytorchkr/event/133718",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 서초구)`, `무료`, `모임`, `AI`",
+        "주최: PyTorchKR / XCENA",
+        "접수: 08. 26(수) ~ 09. 25(금) 23:30"
+      ],
+      "sent_at": "2026-09-01T02:25:59.483221",
+      "deadline": "2026-09-25",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1544171440922828901",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1544171442667524197",
           "style": "compact"
         }
       ]
