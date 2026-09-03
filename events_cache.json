@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-09-02T01:47:19.648228",
+  "updated_at": "2026-09-03T01:53:13.490126",
   "events": [
     {
       "title": "",
@@ -2794,18 +2794,7 @@
       ],
       "sent_at": "2026-08-21T00:36:10.588942",
       "deadline": "2026-09-02",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1540157537217945644",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1540157542854955100",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AWSKRUG 자격증 소모임 9월 2일 AIF 자격증 취득!",
@@ -2818,18 +2807,7 @@
       ],
       "sent_at": "2026-08-21T00:36:10.588942",
       "deadline": "2026-09-02",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1540157541516841073",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1540157548328386713",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AI Risk Conference Seoul 2026",
@@ -3012,18 +2990,7 @@
       ],
       "sent_at": "2026-08-23T00:36:26.972193",
       "deadline": "2026-09-02",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1540882381228212245",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1540882383681626233",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "n8n Seoul Meetup 3rd - After-Work Networking",
