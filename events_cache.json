@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-09-03T01:53:13.490126",
+  "updated_at": "2026-09-04T01:47:28.207750",
   "events": [
     {
       "title": "",
@@ -1845,18 +1845,7 @@
       ],
       "sent_at": "2026-08-05T01:25:22.441819",
       "deadline": "2026-09-03",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1534371711397396553",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1534371713679097857",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 사이버공격방어대회 (CCE)",
@@ -2820,18 +2809,7 @@
       ],
       "sent_at": "2026-08-21T00:36:10.588942",
       "deadline": "2026-09-03",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1540157541516841073",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1540157548328386713",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 블록체인 밋업데이 (20회차)",
@@ -3891,6 +3869,270 @@
         {
           "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
           "id": "1544171442667524197",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Vibe Dive Online Webinar",
+      "url": "https://ticketa.co/event/6hsfup2t",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `AI`",
+        "주최: GDG Incheon",
+        "일시: 09. 04(금) 20:00"
+      ],
+      "sent_at": "2026-09-04T01:47:28.207750",
+      "deadline": "2026-09-04",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1545248907913592865",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1545248913341026325",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 클라우드 컨퍼런스 ｜2026 CLOUD CONFERENCE",
+      "url": "https://event-us.kr/cloudconference/event/133064",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(부산)`, `무료`, `세미나`, `클라우드`",
+        "주최: 과학기술정보통신부 / 부산광역시 / 정보통신산업진흥원(NIPA)",
+        "접수: 08. 19(수) ~ 09. 08(화) 23:30"
+      ],
+      "sent_at": "2026-09-04T01:47:28.207750",
+      "deadline": "2026-09-08",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1545248907913592865",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1545248913341026325",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AI 에이전트 시대, 애플리케이션·인프라·보안을 다시 설계하라",
+      "url": "https://event-us.kr/talkit/event/134235",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `AI`",
+        "주최: 토크아이티 / F5",
+        "접수: 09. 01(화) ~ 09. 09(수) 14:00"
+      ],
+      "sent_at": "2026-09-04T01:47:28.207750",
+      "deadline": "2026-09-09",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1545248907913592865",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1545248913341026325",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "(대전)AI와 Digital Engineering으로 완성하는 Mission-Critical Software 개발 전략 세미나",
+      "url": "https://event-us.kr/mdsit/event/131386",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(대전)`, `무료`, `세미나`, `기술일반`",
+        "주최: MDS인텔리전스",
+        "접수: 07. 28(화) 07:00 ~ 09. 09(수) 23:30"
+      ],
+      "sent_at": "2026-09-04T01:47:28.207750",
+      "deadline": "2026-09-09",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1545248907913592865",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1545248913341026325",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Tech Talk Talk - Server Developer",
+      "url": "https://techtalktalk.tossinvest.com/2026-09-10",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `기술일반`",
+        "주최: 토스증권",
+        "일시: 09. 10(목) 19:00 ~ 09. 10(목) 21:00"
+      ],
+      "sent_at": "2026-09-04T01:47:28.207750",
+      "deadline": "2026-09-10",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1545248907913592865",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1545248913341026325",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AWSKRUG 데브옵스 #DevOps 소모임 26번째 밋업 - 9월 15일 (화)",
+      "url": "https://www.meetup.com/awskrug/events/316366209/",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `모임`, `클라우드`",
+        "주최: AWSKRUG",
+        "접수: 09. 03(목) ~ 09. 12(토)"
+      ],
+      "sent_at": "2026-09-04T01:47:28.207750",
+      "deadline": "2026-09-12",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1545248907913592865",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1545248913341026325",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "우주에서의 AI 활용 - Beyond Earth Observation | \"AI for Science/Engineering\" Series",
+      "url": "https://luma.com/jpmm44n1",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `세미나`, `AI`",
+        "주최: 모두의연구소 / 리벨리온",
+        "일시: 09. 17(목) 19:00 ~ 09. 17(목) 20:30"
+      ],
+      "sent_at": "2026-09-04T01:47:28.207750",
+      "deadline": "2026-09-17",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1545248907913592865",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1545248913341026325",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "GDGoC Gachon Tech MeetUp: AI에이전트 활용 노하우",
+      "url": "https://event-us.kr/gdgocgachon/event/133845",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(경기 성남)`, `유료`, `모임`, `AI`",
+        "주최: GDGoC Gachon",
+        "접수: 08. 28(금) ~ 09. 17(목) 18:00"
+      ],
+      "sent_at": "2026-09-04T01:47:28.207750",
+      "deadline": "2026-09-17",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1545248907913592865",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1545248913341026325",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Ethereum Korea One Genesis - Build Beyond the Narrative",
+      "url": "https://luma.com/0a4zc5a6",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 성동구)`, `무료`, `세미나`, `블록체인`",
+        "주최: Ethereum Collective Korea / Nonce Classic",
+        "일시: 09. 29(화) 13:00 ~ 09. 29(화) 20:00"
+      ],
+      "sent_at": "2026-09-04T01:47:28.207750",
+      "deadline": "2026-09-29",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1545248907913592865",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1545248913341026325",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "GitHub Copilot Dev Days | Pohang",
+      "url": "https://ticketa.co/event/izi3e7pl",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(경북 포항)`, `무료`, `세미나`, `AI`",
+        "주최: 맞다AI가",
+        "접수: 09. 01(화) ~ 10. 01(목) 00:00"
+      ],
+      "sent_at": "2026-09-04T01:47:28.207750",
+      "deadline": "2026-10-01",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1545248907913592865",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1545248913341026325",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "GitHub Copilot Dev Days | Jeju",
+      "url": "https://ticketa.co/event/ql1tygi5",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(제주)`, `무료`, `세미나`, `AI`",
+        "주최: Microsoft 커뮤니티 이벤트",
+        "접수: 09. 01(화) ~ 10. 31(토) 00:00"
+      ],
+      "sent_at": "2026-09-04T01:47:28.207750",
+      "deadline": "2026-10-31",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1545248907913592865",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1545248913341026325",
           "style": "compact"
         }
       ]
