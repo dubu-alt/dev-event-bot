@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-09-04T01:47:28.207750",
+  "updated_at": "2026-09-05T01:48:21.220419",
   "events": [
     {
       "title": "",
@@ -2822,18 +2822,7 @@
       ],
       "sent_at": "2026-08-21T00:36:10.588942",
       "deadline": "2026-09-04",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1540157541516841073",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1540157548328386713",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "OpenAI DevDay Exchange 2026 - 서울",
@@ -2846,18 +2835,7 @@
       ],
       "sent_at": "2026-08-21T00:36:10.588942",
       "deadline": "2026-09-04",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1540157541516841073",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1540157548328386713",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "Agent Field Trip 2026: Incheon",
@@ -2981,18 +2959,7 @@
       ],
       "sent_at": "2026-08-23T00:36:26.972193",
       "deadline": "2026-09-04",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1540882381228212245",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1540882383681626233",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "[IT동아리 젝트] 5기 모집",
@@ -3620,18 +3587,7 @@
       ],
       "sent_at": "2026-09-01T02:25:59.483221",
       "deadline": "2026-09-04",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1544171440922828901",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1544171442667524197",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "안드로이드 소소밋업: 국내/외 개발자들은 AI를 어떻게 활용하고 있을까?",
@@ -3884,18 +3840,7 @@
       ],
       "sent_at": "2026-09-04T01:47:28.207750",
       "deadline": "2026-09-04",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1545248907913592865",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1545248913341026325",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 클라우드 컨퍼런스 ｜2026 CLOUD CONFERENCE",
