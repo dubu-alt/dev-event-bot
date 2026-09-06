@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-09-05T01:48:21.220419",
+  "updated_at": "2026-09-06T01:42:38.629227",
   "events": [
     {
       "title": "",
@@ -2848,18 +2848,7 @@
       ],
       "sent_at": "2026-08-21T00:36:10.588942",
       "deadline": "2026-09-05",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1540157541516841073",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1540157548328386713",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AI와 Digital Engineering으로 완성하는 Mission-Critical Software 개발 전략 세미나 (대전)",
