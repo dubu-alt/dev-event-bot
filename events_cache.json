@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-09-06T01:42:38.629227",
+  "updated_at": "2026-09-07T01:40:06.018260",
   "events": [
     {
       "title": "",
@@ -2264,18 +2264,7 @@
       ],
       "sent_at": "2026-08-16T00:35:18.930227",
       "deadline": "2026-09-06",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1538345382629871628",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1538345384223572019",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "[부산·무료] Claude Code로 만드는 AI 서비스 l 실습 세미나",
@@ -2961,18 +2950,7 @@
       ],
       "sent_at": "2026-08-23T00:36:26.972193",
       "deadline": "2026-09-06",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1540882381228212245",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1540882383681626233",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "e4ds Tech Day 2026",
