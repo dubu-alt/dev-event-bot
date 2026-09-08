@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-09-07T01:40:06.018260",
+  "updated_at": "2026-09-08T01:51:16.399462",
   "events": [
     {
       "title": "",
@@ -2240,18 +2240,7 @@
       ],
       "sent_at": "2026-08-15T00:34:12.384502",
       "deadline": "2026-09-07",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1537982715771490406",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1537982718678142987",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "Build for the Real World (BUIDL CTC 2026 Fall)",
@@ -2963,18 +2952,7 @@
       ],
       "sent_at": "2026-08-23T00:36:26.972193",
       "deadline": "2026-09-07",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1540882381228212245",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1540882383681626233",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AICC & CX Insight 2026",
@@ -3146,18 +3124,7 @@
       ],
       "sent_at": "2026-08-27T05:32:00.964385",
       "deadline": "2026-09-07",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1542406315798954093",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1542406318323933245",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "The Ghost in the Machine : AI Agent 시대, 보이지 않는 Machine Identity를 어떻게 통제할 것인가?",
@@ -3482,18 +3449,7 @@
       ],
       "sent_at": "2026-08-28T07:27:47.310941",
       "deadline": "2026-09-07",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1542797837144952913",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1542797838893711393",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "GitHub Copilot 최신 업데이트",
@@ -3567,18 +3523,7 @@
       ],
       "sent_at": "2026-09-01T02:25:59.483221",
       "deadline": "2026-09-07",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1544171440922828901",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1544171442667524197",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "[무료 웨비나] Google Cloud 기반 LLM 애플리케이션 개발",
@@ -4045,6 +3990,342 @@
         {
           "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
           "id": "1545248913341026325",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "SAP Connect Day for Busan : AI 시대, 기업 경쟁력의 새로운 기준",
+      "url": "https://keystonellc.kr/sap/2026/0909_SAP_Connect_Day_for_Busan/0909_SAP_Connect_Day_for_Busan_eDM.html",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(부산)`, `무료`, `세미나`, `AI`, `클라우드`",
+        "주최: SAP Korea",
+        "접수: 08. 26(수) ~ 09. 09(수) 10:00"
+      ],
+      "sent_at": "2026-09-08T01:51:16.399462",
+      "deadline": "2026-09-09",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1546699428054835251",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1546699430533791836",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Modern Work Conference Seoul 2026",
+      "url": "https://ticketa.co/event/796zfanx",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 종로구)`, `무료`, `세미나`, `AI`",
+        "주최: Modern Work Community",
+        "접수: 08. 31(월) 22:00 ~ 09. 11(금) 12:00"
+      ],
+      "sent_at": "2026-09-08T01:51:16.399462",
+      "deadline": "2026-09-11",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1546699428054835251",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1546699430533791836",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Astra Commons: Korea",
+      "url": "https://luma.com/s2uzy2ge",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울)`, `무료`, `모임`, `AI`",
+        "주최: Codex Community Korea",
+        "일시: 09. 13(일) 14:00 ~ 09. 13(일) 23:00"
+      ],
+      "sent_at": "2026-09-08T01:51:16.399462",
+      "deadline": "2026-09-13",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1546699428054835251",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1546699430533791836",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "원펀치 랄프톤 in Busan 시즌 2",
+      "url": "https://event-us.kr/pathfinder/event/134629",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(부산)`, `무료`, `대회`, `AI`",
+        "주최: 패스파인더",
+        "접수: 09. 04(금) ~ 09. 16(수) 23:59"
+      ],
+      "sent_at": "2026-09-08T01:51:16.399462",
+      "deadline": "2026-09-16",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1546699428054835251",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1546699430533791836",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "포스트 미토스 시대, AI 공격에 맞서는 보안의 골든타임 전략",
+      "url": "https://event-us.kr/itsman/event/133700",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `AI`",
+        "주최: 잇츠맨 / F5",
+        "접수: 08. 26(수) ~ 09. 17(목) 14:00"
+      ],
+      "sent_at": "2026-09-08T01:51:16.399462",
+      "deadline": "2026-09-17",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1546699428054835251",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1546699430533791836",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AI, Now on AZ3 - 메가존소프트 X 알리바바 클라우드 AI 세미나",
+      "url": "https://event-us.kr/seminar0918/event/133302",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `세미나`, `AI`, `클라우드`",
+        "주최: 메가존소프트 / Alibaba Cloud Korea",
+        "일시: 09. 18(금) 13:00 ~ 09. 18(금) 15:30"
+      ],
+      "sent_at": "2026-09-08T01:51:16.399462",
+      "deadline": "2026-09-18",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1546699428054835251",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1546699430533791836",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 서울 AI 로봇쇼 피지컬 AI 포럼",
+      "url": "https://event-us.kr/seoulairobotshow/event/134390",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `세미나`, `AI`",
+        "주최: 서울특별시 / 서울경제진흥원(SBA)",
+        "접수: 09. 04(금) ~ 09. 18(금) 23:30"
+      ],
+      "sent_at": "2026-09-08T01:51:16.399462",
+      "deadline": "2026-09-18",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1546699428054835251",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1546699430533791836",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AWSKRUG #AIEngineering 소모임 - AWS 인프라와 AI 워크로드의 통합 모니터링 [9월 29일]",
+      "url": "https://www.meetup.com/awskrug/events/316405144/",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `모임`, `AI`, `클라우드`",
+        "주최: AWSKRUG",
+        "접수: 09. 07(월) ~ 09. 22(화) 09:00"
+      ],
+      "sent_at": "2026-09-08T01:51:16.399462",
+      "deadline": "2026-09-22",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1546699428054835251",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1546699430533791836",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Midnight Korea Hackathon 2026",
+      "url": "https://luma.com/2pnv2fwk",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `대회`, `블록체인`",
+        "주최: Midnight Korea",
+        "접수: 09. 01(화) ~ 09. 27(일)"
+      ],
+      "sent_at": "2026-09-08T01:51:16.399462",
+      "deadline": "2026-09-27",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1546699428054835251",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1546699430533791836",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "[웅진x에스원] 보안에서 재해복구까지, 멈추지 않는 비즈니스를 위한 클라우드 운영 전략",
+      "url": "https://event-us.kr/woongjin/event/134801",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(서울 중구)`, `무료`, `세미나`, `클라우드`",
+        "주최: 웅진 / 에스원",
+        "접수: 09. 07(월) 16:00 ~ 10. 09(금) 00:00"
+      ],
+      "sent_at": "2026-09-08T01:51:16.399462",
+      "deadline": "2026-10-09",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1546699428054835251",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1546699430533791836",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Chat With Your Data in a Day: 하루만에 끝내는 Microsoft 통합 분석 환경",
+      "url": "https://event-us.kr/hso/event/132381",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `AI`, `클라우드`",
+        "주최: HSO Korea",
+        "접수: 08. 10(월) ~ 10. 13(화) 00:00"
+      ],
+      "sent_at": "2026-09-08T01:51:16.399462",
+      "deadline": "2026-10-13",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1546699428054835251",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1546699430533791836",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "데이터안심구역 경진대회",
+      "url": "https://event-us.kr/eventdatasafetyzone/event/134171",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `대회`, `AI`",
+        "주최: 과학기술정보통신부 / 한국데이터산업진흥원(Kdata)",
+        "접수: 09. 01(화) ~ 10. 22(목) 18:00"
+      ],
+      "sent_at": "2026-09-08T01:51:16.399462",
+      "deadline": "2026-10-22",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1546699428054835251",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1546699430533791836",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "코드트리 양떼 목장 (4주 코테 습관 만들기)",
+      "url": "https://www.codetree.ai/ko/sheep-sheep-sheep",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `대회`",
+        "주최: 코드트리",
+        "접수: 09. 01(화) ~ 10. 31(토)"
+      ],
+      "sent_at": "2026-09-08T01:51:16.399462",
+      "deadline": "2026-10-31",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1546699428054835251",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1546699430533791836",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "SK AX 상생아카데미",
+      "url": "https://partner.skala.co.kr/front/main.html",
+      "month": "26년 12월",
+      "metadata": [
+        "분류: `오프라인(경기 성남)`, `무료`, `세미나`, `AI`, `기술일반`",
+        "주최: SK AX",
+        "접수: 09. 07(월) ~ 12. 31(목) 23:59"
+      ],
+      "sent_at": "2026-09-08T01:51:16.399462",
+      "deadline": "2026-12-31",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1546699428054835251",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1546699430533791836",
           "style": "compact"
         }
       ]
