@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-09-09T01:56:55.607791",
+  "updated_at": "2026-09-10T01:53:37.014258",
   "events": [
     {
       "title": "",
@@ -2372,18 +2372,7 @@
       ],
       "sent_at": "2026-08-19T00:34:04.231237",
       "deadline": "2026-09-09",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1539432232119173132",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1539432235424292875",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "NextTech Student Challenge - 미래 기술을 경험하는 가장 빠른 방법",
@@ -3082,18 +3071,7 @@
       ],
       "sent_at": "2026-08-27T05:32:00.964385",
       "deadline": "2026-09-09",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1542406315798954093",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1542406318323933245",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 대구 블록체인 밋업데이 [2회차 스마트컨트랙트 과정]",
@@ -3507,18 +3485,7 @@
       ],
       "sent_at": "2026-09-01T02:25:59.483221",
       "deadline": "2026-09-09",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1544171440922828901",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1544171442667524197",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AI Product Frontiers: AI 시대, 최전선에서 방향을 만드는 사람들",
@@ -3701,18 +3668,7 @@
       ],
       "sent_at": "2026-09-04T01:47:28.207750",
       "deadline": "2026-09-09",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1545248907913592865",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1545248913341026325",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "(대전)AI와 Digital Engineering으로 완성하는 Mission-Critical Software 개발 전략 세미나",
@@ -3725,18 +3681,7 @@
       ],
       "sent_at": "2026-09-04T01:47:28.207750",
       "deadline": "2026-09-09",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1545248907913592865",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1545248913341026325",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "Tech Talk Talk - Server Developer",
@@ -3917,18 +3862,7 @@
       ],
       "sent_at": "2026-09-08T01:51:16.399462",
       "deadline": "2026-09-09",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1546699428054835251",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1546699430533791836",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "Modern Work Conference Seoul 2026",
@@ -4238,6 +4172,318 @@
         {
           "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
           "id": "1546699430533791836",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 GAME TECH NIGHT",
+      "url": "https://forms.cloud.microsoft/pages/responsepage.aspx?id=yDUE9b-R_0S6bazYnHEv8mh1z_yAjedIuR8-S9A4C1lUMURSSlRBVEFRWDlCQ01LWVlCUU0yTzBDTS4u&route=shorturl",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(경기 성남)`, `무료`, `세미나`, `AI`",
+        "주최: Microsoft / GitHub / Unity",
+        "일시: 09. 11(금) 16:00 ~ 09. 11(금) 21:00"
+      ],
+      "sent_at": "2026-09-10T01:53:37.014258",
+      "deadline": "2026-09-11",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1547424783405424754",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1547424786336972933",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "GXG 2026",
+      "url": "https://gxg.world/",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(경기 성남)`, `무료`, `모임`, `기술일반`",
+        "주최: 성남시 / 성남산업진흥원 / 게임문화재단",
+        "일시: 09. 11(금) 10:00 ~ 09. 12(토) 22:00"
+      ],
+      "sent_at": "2026-09-10T01:53:37.014258",
+      "deadline": "2026-09-12",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1547424783405424754",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1547424786336972933",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "[KISA] 도메인 관리 실무 및 보안 강화",
+      "url": "https://event-us.kr/Ut2KSHw11cCG/event/132606",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `기술일반`",
+        "주최: 한국인터넷진흥원(KISA) 한국인터넷정보센터",
+        "접수: 08. 18(화) 09:00 ~ 09. 16(수) 18:00"
+      ],
+      "sent_at": "2026-09-10T01:53:37.014258",
+      "deadline": "2026-09-16",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1547424783405424754",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1547424786336972933",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "대만 오픈소스 컨퍼런스 COSCUP 후기 공유회",
+      "url": "https://ticketa.co/event/qdbrrlz0",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 서초구)`, `무료`, `모임`, `기술일반`",
+        "주최: FOSS for All",
+        "접수: 09. 09(수) 12:05 ~ 09. 19(토) 13:30"
+      ],
+      "sent_at": "2026-09-10T01:53:37.014258",
+      "deadline": "2026-09-19",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1547424783405424754",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1547424786336972933",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "if(kakao)26",
+      "url": "https://if.kakao.com/2026",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `온라인`, `오프라인(경기 용인)`, `무료`, `세미나`, `AI`, `기술일반`",
+        "주최: 카카오",
+        "접수: 09. 07(월) ~ 09. 28(월) 12:00"
+      ],
+      "sent_at": "2026-09-10T01:53:37.014258",
+      "deadline": "2026-09-28",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1547424783405424754",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1547424786336972933",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AI Agent Build Day: Gemini Enterprise로 완성하는 에이전트 개발 전략",
+      "url": "https://event-us.kr/gsneotek/event/134839",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `세미나`, `AI`, `클라우드`",
+        "주최: GS네오텍",
+        "접수: 09. 08(화) 09:00 ~ 10. 01(목) 13:00"
+      ],
+      "sent_at": "2026-09-10T01:53:37.014258",
+      "deadline": "2026-10-01",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1547424783405424754",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1547424786336972933",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "오픈소스 테크데이 2026",
+      "url": "https://ostday.kr/",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(서울 서초구)`, `무료`, `세미나`, `AI`, `기술일반`",
+        "주최: 과학기술정보통신부 / 국가과학기술연구회(NST) / 출연연 오픈소스 협의체",
+        "접수: 09. 09(수) 10:00 ~ 10. 06(화) 10:00"
+      ],
+      "sent_at": "2026-09-10T01:53:37.014258",
+      "deadline": "2026-10-06",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1547424783405424754",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1547424786336972933",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 국립공원 위성 모니터링 AI 챌린지",
+      "url": "https://aifactory.space/ko/page/knps",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `대회`, `AI`",
+        "주최: 국립공원공단 / 인공지능팩토리",
+        "접수: 08. 05(수) ~ 10. 06(화) 14:00"
+      ],
+      "sent_at": "2026-09-10T01:53:37.014258",
+      "deadline": "2026-10-06",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1547424783405424754",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1547424786336972933",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "[TTA/무료웨비나] QUANTUM PARADIGM: 양자가 바꿀 ICT 보안과 네트워크의 미래",
+      "url": "https://event-us.kr/edutta/event/133694",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `기술일반`",
+        "주최: 한국정보통신기술협회(TTA) TTA아카데미",
+        "접수: 07. 21(화) ~ 10. 20(화) 23:30"
+      ],
+      "sent_at": "2026-09-10T01:53:37.014258",
+      "deadline": "2026-10-20",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1547424783405424754",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1547424786336972933",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 데이터·AI 혁신 챌린지 통합경진대회 데이터 문제해결 부문",
+      "url": "https://event-us.kr/kdataaichallenge/event/134967",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `대회`, `AI`",
+        "주최: 과학기술정보통신부 / 한국데이터산업진흥원(Kdata)",
+        "접수: 09. 09(수) ~ 10. 22(목) 23:30"
+      ],
+      "sent_at": "2026-09-10T01:53:37.014258",
+      "deadline": "2026-10-22",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1547424783405424754",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1547424786336972933",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AI 시대의 지능형 사이버 보안 전략!",
+      "url": "https://event-us.kr/peoplus/event/134972",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(서울 서초구)`, `무료`, `세미나`, `AI`",
+        "주최: 피플러스 / Palo Alto Networks",
+        "접수: 09. 09(수) 11:00 ~ 10. 25(일) 23:30"
+      ],
+      "sent_at": "2026-09-10T01:53:37.014258",
+      "deadline": "2026-10-25",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1547424783405424754",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1547424786336972933",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "드로이드나이츠 2026",
+      "url": "https://ticketa.co/event/2o8rdpls",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `세미나`, `기술일반`",
+        "주최: 드로이드나이츠",
+        "접수: 09. 14(월) 13:00 ~ 11. 01(일) 23:59"
+      ],
+      "sent_at": "2026-09-10T01:53:37.014258",
+      "deadline": "2026-11-01",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1547424783405424754",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1547424786336972933",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "생산성부터 보안, AI 까지 다루는 12주 릴레이 웨비나!",
+      "url": "https://www.rocketpunch.com/event?eventId=cZlwtO40G0",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `AI`, `클라우드`",
+        "주최: 디모아 / Microsoft",
+        "일시: 09. 10(목) 14:00 ~ 11. 26(목) 15:00"
+      ],
+      "sent_at": "2026-09-10T01:53:37.014258",
+      "deadline": "2026-11-26",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1547424783405424754",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1547424786336972933",
           "style": "compact"
         }
       ]
