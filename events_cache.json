@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-09-10T01:53:37.014258",
+  "updated_at": "2026-09-11T01:52:06.852651",
   "events": [
     {
       "title": "",
@@ -3694,18 +3694,7 @@
       ],
       "sent_at": "2026-09-04T01:47:28.207750",
       "deadline": "2026-09-10",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1545248907913592865",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1545248913341026325",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AWSKRUG 데브옵스 #DevOps 소모임 26번째 밋업 - 9월 15일 (화)",
