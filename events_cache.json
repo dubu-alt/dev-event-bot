@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-09-11T01:52:06.852651",
+  "updated_at": "2026-09-12T01:57:17.416199",
   "events": [
     {
       "title": "",
@@ -1871,18 +1871,7 @@
       ],
       "sent_at": "2026-08-06T01:22:28.158074",
       "deadline": "2026-09-11",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1534733367617261619",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1534733369307435142",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "x402 on XRPL: AI Builders Night Korea",
@@ -3084,18 +3073,7 @@
       ],
       "sent_at": "2026-08-27T05:32:00.964385",
       "deadline": "2026-09-11",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1542406315798954093",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1542406318323933245",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 블록체인 밋업데이 (22회차)",
@@ -3108,18 +3086,7 @@
       ],
       "sent_at": "2026-08-27T05:32:00.964385",
       "deadline": "2026-09-11",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1542406315798954093",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1542406318323933245",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 넥스트 블록체인 교육 [3회차]",
@@ -3132,18 +3099,7 @@
       ],
       "sent_at": "2026-08-27T05:32:00.964385",
       "deadline": "2026-09-11",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1542406315798954093",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1542406318323933245",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "[무료 웨비나] Post Mythos 시대, 기업의 능동적인 AI 적용 전략 및 방안",
@@ -3498,18 +3454,7 @@
       ],
       "sent_at": "2026-09-01T02:25:59.483221",
       "deadline": "2026-09-11",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1544171440922828901",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1544171442667524197",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "[웨비나]다양한 AWS・IT기술 정보를 발신하는 \"IAM클라쓰DAY#04\"",
@@ -3864,18 +3809,7 @@
       ],
       "sent_at": "2026-09-08T01:51:16.399462",
       "deadline": "2026-09-11",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1546699428054835251",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1546699430533791836",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "Astra Commons: Korea",
@@ -4176,18 +4110,7 @@
       ],
       "sent_at": "2026-09-10T01:53:37.014258",
       "deadline": "2026-09-11",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1547424783405424754",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1547424786336972933",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "GXG 2026",
