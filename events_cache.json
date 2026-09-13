@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-09-12T01:57:17.416199",
+  "updated_at": "2026-09-13T01:50:48.087229",
   "events": [
     {
       "title": "",
@@ -3652,18 +3652,7 @@
       ],
       "sent_at": "2026-09-04T01:47:28.207750",
       "deadline": "2026-09-12",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1545248907913592865",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1545248913341026325",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "우주에서의 AI 활용 - Beyond Earth Observation | \"AI for Science/Engineering\" Series",
@@ -4123,18 +4112,7 @@
       ],
       "sent_at": "2026-09-10T01:53:37.014258",
       "deadline": "2026-09-12",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1547424783405424754",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1547424786336972933",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "[KISA] 도메인 관리 실무 및 보안 강화",
