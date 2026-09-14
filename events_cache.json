@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-09-13T01:50:48.087229",
+  "updated_at": "2026-09-14T02:08:21.316671",
   "events": [
     {
       "title": "",
@@ -3811,18 +3811,7 @@
       ],
       "sent_at": "2026-09-08T01:51:16.399462",
       "deadline": "2026-09-13",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1546699428054835251",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1546699430533791836",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "원펀치 랄프톤 in Busan 시즌 2",
