@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-09-14T02:08:21.316671",
+  "updated_at": "2026-09-15T02:15:03.045558",
   "events": [
     {
       "title": "",
@@ -3467,18 +3467,7 @@
       ],
       "sent_at": "2026-09-01T02:25:59.483221",
       "deadline": "2026-09-14",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1544171440922828901",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1544171442667524197",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AWSKRUG 데이터 모임 X Apache Airflow 한국 사용자 모임",
@@ -3491,18 +3480,7 @@
       ],
       "sent_at": "2026-09-01T02:25:59.483221",
       "deadline": "2026-09-14",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1544171440922828901",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1544171442667524197",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "lab | up > /conf/6",
@@ -4363,6 +4341,283 @@
         {
           "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
           "id": "1547424786336972933",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "[부산글로벌게임센터] Bu:net 컨퍼런스",
+      "url": "https://okky.kr/articles/1563407",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(부산)`, `무료`, `세미나`, `기술일반`",
+        "주최: 부산정보산업진흥원(BIPA) / 부산글로벌게임센터",
+        "접수: 08. 26(수) ~ 09. 14(월)"
+      ],
+      "sent_at": "2026-09-15T02:15:03.045558",
+      "deadline": "2026-09-14",
+      "messages": []
+    },
+    {
+      "title": "2026년 제1회 서남권 가상융합 콘텐츠 기술 세미나 [AI-XR NOVA 2026]",
+      "url": "https://event-us.kr/valleyco/event/135067",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(광주 남구)`, `무료`, `세미나`, `AI`",
+        "주최: 디자인밸리",
+        "접수: 09. 10(목) ~ 09. 15(화) 23:30"
+      ],
+      "sent_at": "2026-09-15T02:15:03.045558",
+      "deadline": "2026-09-15",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1549242115089764503",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1549242117317070939",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "현 AI는 학습하지 못한다 - 사람을 닮은 지능 SNN 배우기",
+      "url": "https://event-us.kr/bibimbap/event/135242",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 광진구)`, `무료`, `세미나`, `AI`",
+        "주최: B!BimBap",
+        "접수: 09. 14(월) ~ 09. 21(월) 18:00"
+      ],
+      "sent_at": "2026-09-15T02:15:03.045558",
+      "deadline": "2026-09-21",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1549242115089764503",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1549242117317070939",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Toss Infra Day",
+      "url": "https://toss.im/builder/to/aad14fa6ffbd420993d9566d3a8a87bf",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `모임`, `기술일반`",
+        "주최: 토스",
+        "접수: 09. 14(월) ~ 09. 23(수)"
+      ],
+      "sent_at": "2026-09-15T02:15:03.045558",
+      "deadline": "2026-09-23",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1549242115089764503",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1549242117317070939",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Accessibility, live (Dev Korea #15)",
+      "url": "https://dev-korea.com/events/dev-korea-15-september-2026",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `모임`, `AI`, `기술일반`",
+        "주최: Dev Korea",
+        "접수: 09. 05(토) ~ 09. 28(월)"
+      ],
+      "sent_at": "2026-09-15T02:15:03.045558",
+      "deadline": "2026-09-28",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1549242115089764503",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1549242117317070939",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "[부산·무료] 바이브코딩을 활용한 웹서비스 제작과 품질 검증",
+      "url": "https://event-us.kr/elicelab/event/135055",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(부산)`, `무료`, `세미나`, `AI`",
+        "주최: 엘리스랩 / 고용노동부 / 한국산업인력공단",
+        "접수: 09. 10(목) 12:00 ~ 09. 28(월) 14:00"
+      ],
+      "sent_at": "2026-09-15T02:15:03.045558",
+      "deadline": "2026-09-28",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1549242115089764503",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1549242117317070939",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "서울시여성가족재단 우먼잇츠 AX 세미나 [AI와 함께하는 경계의 확장]",
+      "url": "https://okky.kr/articles/1563786",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 동작구)`, `무료`, `세미나`, `AI`",
+        "주최: 서울시여성가족재단",
+        "일시: 09. 30(수) 19:00 ~ 09. 30(수) 21:00"
+      ],
+      "sent_at": "2026-09-15T02:15:03.045558",
+      "deadline": "2026-09-30",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1549242115089764503",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1549242117317070939",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AI BESTudy #4 - AI 배포 승인, '정확도 90%'라는 숫자로 충분하니까?",
+      "url": "https://event-us.kr/bespinglobalkorea/event/135104",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울 서초구)`, `무료`, `모임`, `AI`",
+        "주최: 베스핀글로벌",
+        "접수: 09. 10(목) 16:00 ~ 09. 30(수) 10:00"
+      ],
+      "sent_at": "2026-09-15T02:15:03.045558",
+      "deadline": "2026-09-30",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1549242115089764503",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1549242117317070939",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 넥스트 블록체인 교육 [4회차]",
+      "url": "https://event-us.kr/ConventionSOOP/event/135004",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(부산)`, `무료`, `세미나`, `블록체인`",
+        "주최: 과학기술정보통신부 / 한국인터넷진흥원(KISA) / 부산광역시",
+        "접수: 09. 10(목) ~ 10. 09(금) 18:00"
+      ],
+      "sent_at": "2026-09-15T02:15:03.045558",
+      "deadline": "2026-10-09",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1549242115089764503",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1549242117317070939",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Intel AI Summit Seoul 2026",
+      "url": "https://event-us.kr/intelseminar/event/131490",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `세미나`, `AI`",
+        "주최: 인텔코리아",
+        "접수: 09. 12(토) ~ 11. 06(금) 09:00"
+      ],
+      "sent_at": "2026-09-15T02:15:03.045558",
+      "deadline": "2026-11-06",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1549242115089764503",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1549242117317070939",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Flutter Korea 2026",
+      "url": "https://ticketa.co/event/c9xsstcs",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `세미나`, `기술일반`",
+        "주최: Flutter Seoul",
+        "접수: 09. 01(화) 21:00 ~ 11. 07(토) 09:00"
+      ],
+      "sent_at": "2026-09-15T02:15:03.045558",
+      "deadline": "2026-11-07",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1549242115089764503",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1549242117317070939",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "DDD Seoul 2026",
+      "url": "https://ticketa.co/event/o65cl11x",
+      "month": "26년 12월",
+      "metadata": [
+        "분류: `오프라인(서울 종로구)`, `유료`, `세미나`, `기술일반`",
+        "주최: DDD Seoul",
+        "접수: 09. 10(목) ~ 12. 04(금) 00:00"
+      ],
+      "sent_at": "2026-09-15T02:15:03.045558",
+      "deadline": "2026-12-04",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1549242115089764503",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1549242117317070939",
           "style": "compact"
         }
       ]
