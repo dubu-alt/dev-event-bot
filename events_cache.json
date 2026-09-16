@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-09-15T02:15:03.045558",
+  "updated_at": "2026-09-16T02:08:07.889308",
   "events": [
     {
       "title": "",
@@ -2374,18 +2374,7 @@
       ],
       "sent_at": "2026-08-19T00:34:04.231237",
       "deadline": "2026-09-15",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1539432232119173132",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1539432235424292875",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "딥보이스 범죄 대응을 위한 AI 탐지 모델 경진대회",
@@ -3112,18 +3101,7 @@
       ],
       "sent_at": "2026-08-27T05:32:00.964385",
       "deadline": "2026-09-15",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1542406315798954093",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1542406318323933245",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "[보안 웨비나] 모바일 앱 서비스, 어디서 뚫리는가? AI 시대의 실전 보안 위협과 대응 전략",
@@ -4369,18 +4347,7 @@
       ],
       "sent_at": "2026-09-15T02:15:03.045558",
       "deadline": "2026-09-15",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1549242115089764503",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1549242117317070939",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "현 AI는 학습하지 못한다 - 사람을 닮은 지능 SNN 배우기",
@@ -4618,6 +4585,30 @@
         {
           "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
           "id": "1549242117317070939",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "SoftBank Hackathon 2026 in Korea",
+      "url": "https://www.allforyoung.com/posts/86209",
+      "month": "26년 09월",
+      "metadata": [
+        "분류: `오프라인(서울)`, `오프라인(부산)`, `무료`, `대회`, `클라우드`",
+        "주최: 소프트뱅크 / KOREC / Progate",
+        "접수: 08. 17(월) ~ 09. 22(화) 23:59"
+      ],
+      "sent_at": "2026-09-16T02:08:07.889308",
+      "deadline": "2026-09-22",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1549602761673408636",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1549602763535552523",
           "style": "compact"
         }
       ]
