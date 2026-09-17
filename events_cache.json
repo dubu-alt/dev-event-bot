@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-09-16T02:08:07.889308",
+  "updated_at": "2026-09-17T02:11:47.668848",
   "events": [
     {
       "title": "",
@@ -2797,18 +2797,7 @@
       ],
       "sent_at": "2026-08-21T00:36:10.588942",
       "deadline": "2026-09-16",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1540157541516841073",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1540157548328386713",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "무신사 패턴 '26 테크 컨퍼런스",
@@ -3114,18 +3103,7 @@
       ],
       "sent_at": "2026-08-27T05:32:00.964385",
       "deadline": "2026-09-16",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1542406315798954093",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1542406318323933245",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "Enhans :: 금소법 시대, AI는 어떻게 약관을 지키는가",
@@ -3319,18 +3297,7 @@
       ],
       "sent_at": "2026-08-28T07:27:47.310941",
       "deadline": "2026-09-16",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1542797837144952913",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1542797838893711393",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "원티드 AI Championship 2026",
@@ -3780,18 +3747,7 @@
       ],
       "sent_at": "2026-09-08T01:51:16.399462",
       "deadline": "2026-09-16",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1546699428054835251",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1546699430533791836",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "포스트 미토스 시대, AI 공격에 맞서는 보안의 골든타임 전략",
@@ -4070,18 +4026,7 @@
       ],
       "sent_at": "2026-09-10T01:53:37.014258",
       "deadline": "2026-09-16",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1547424783405424754",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1547424786336972933",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "대만 오픈소스 컨퍼런스 COSCUP 후기 공유회",
