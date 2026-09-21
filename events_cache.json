@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-09-20T02:07:56.036764",
+  "updated_at": "2026-09-21T02:08:22.041529",
   "events": [
     {
       "title": "",
@@ -3157,18 +3157,7 @@
       ],
       "sent_at": "2026-08-27T05:32:00.964385",
       "deadline": "2026-09-20",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1542406315798954093",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1542406318323933245",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 K-조선 해커톤",
