@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-09-21T02:08:22.041529",
+  "updated_at": "2026-09-22T02:13:45.803396",
   "events": [
     {
       "title": "",
@@ -3170,18 +3170,7 @@
       ],
       "sent_at": "2026-08-27T05:32:00.964385",
       "deadline": "2026-09-21",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1542406315798954093",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1542406318323933245",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "Microsoft Fabric 실전 원데이 워크숍: Fabric Analyst in a Day",
@@ -3374,18 +3363,7 @@
       ],
       "sent_at": "2026-09-01T02:25:59.483221",
       "deadline": "2026-09-21",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1544171440922828901",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1544171442667524197",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "KVCache Meetup Korea",
@@ -4151,18 +4129,7 @@
       ],
       "sent_at": "2026-09-15T02:15:03.045558",
       "deadline": "2026-09-21",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1549242115089764503",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1549242117317070939",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "Toss Infra Day",
