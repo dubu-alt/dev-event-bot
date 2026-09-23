@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-09-22T02:13:45.803396",
+  "updated_at": "2026-09-23T02:13:45.905427",
   "events": [
     {
       "title": "",
@@ -3667,18 +3667,7 @@
       ],
       "sent_at": "2026-09-08T01:51:16.399462",
       "deadline": "2026-09-22",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1546699428054835251",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1546699430533791836",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "Midnight Korea Hackathon 2026",
@@ -4358,18 +4347,7 @@
       ],
       "sent_at": "2026-09-16T02:08:07.889308",
       "deadline": "2026-09-22",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1549602761673408636",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1549602763535552523",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     }
   ]
 }
