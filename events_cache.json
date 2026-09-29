@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-09-28T02:22:06.689301",
+  "updated_at": "2026-09-29T03:05:53.954171",
   "events": [
     {
       "title": "",
@@ -3854,18 +3854,7 @@
       ],
       "sent_at": "2026-09-10T01:53:37.014258",
       "deadline": "2026-09-28",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1547424783405424754",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1547424786336972933",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AI Agent Build Day: Gemini Enterprise로 완성하는 에이전트 개발 전략",
@@ -4122,18 +4111,7 @@
       ],
       "sent_at": "2026-09-15T02:15:03.045558",
       "deadline": "2026-09-28",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1549242115089764503",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1549242117317070939",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "[부산·무료] 바이브코딩을 활용한 웹서비스 제작과 품질 검증",
@@ -4146,18 +4124,7 @@
       ],
       "sent_at": "2026-09-15T02:15:03.045558",
       "deadline": "2026-09-28",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1549242115089764503",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1549242117317070939",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "서울시여성가족재단 우먼잇츠 AX 세미나 [AI와 함께하는 경계의 확장]",
@@ -4353,18 +4320,7 @@
       ],
       "sent_at": "2026-09-24T02:00:18.444483",
       "deadline": "2026-09-28",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1552499901571797043",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1552499906625806467",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "SK하이닉스 AI 해커톤 2026",
@@ -4377,18 +4333,7 @@
       ],
       "sent_at": "2026-09-24T02:00:18.444483",
       "deadline": "2026-09-28",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1552499901571797043",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1552499906625806467",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "Open AGI Frontier: AI Meets Robotics with Open AGI Salon",
@@ -5016,18 +4961,7 @@
       ],
       "sent_at": "2026-09-25T02:17:04.445077",
       "deadline": "2026-09-28",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1552866504117063761",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1552866506277261373",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 국방 AI 경진대회 (MAICON)",
@@ -5505,6 +5439,174 @@
         {
           "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
           "id": "1552866512438825012",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "ML Engineer Meetup",
+      "url": "https://luma.com/1odx3eoy",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `모임`, `AI`",
+        "주최: 채널코퍼레이션(Channel Dev Meetup)",
+        "접수: 09. 28(월) ~ 10. 09(금) 17:00"
+      ],
+      "sent_at": "2026-09-29T03:05:53.954171",
+      "deadline": "2026-10-09",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1554328344701706294",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1554328348904128588",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "[Nota on AIr #02] AI PC에서 로컬 LLM을 더 가볍고, 더 쉽게 사용하기",
+      "url": "https://www.kr.nota.ai/ytlive",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `AI`",
+        "주최: 노타(Nota AI) / 래블업(Lablup)",
+        "접수: 09. 28(월) 15:30 ~ 10. 14(수) 19:30"
+      ],
+      "sent_at": "2026-09-29T03:05:53.954171",
+      "deadline": "2026-10-14",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1554328344701706294",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1554328348904128588",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "실험실 밖에서 무너지는 피지컬 AI? 실전에 강한 피지컬 AI를 위한 데이터 관리 로드맵",
+      "url": "https://event-us.kr/pebblous/event/136147",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `AI`",
+        "주최: 페블러스(Pebblous)",
+        "접수: 09. 28(월) 13:30 ~ 10. 20(화) 23:30"
+      ],
+      "sent_at": "2026-09-29T03:05:53.954171",
+      "deadline": "2026-10-20",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1554328344701706294",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1554328348904128588",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 블록체인 밋업데이 (27회차)",
+      "url": "https://event-us.kr/2026bcmd/event/129793",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(서울 송파구)`, `무료`, `세미나`, `블록체인`",
+        "주최: 과학기술정보통신부 / 한국인터넷진흥원(KISA)",
+        "접수: 09. 21(월) ~ 10. 23(금) 18:00"
+      ],
+      "sent_at": "2026-09-29T03:05:53.954171",
+      "deadline": "2026-10-23",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1554328344701706294",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1554328348904128588",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 블록체인 밋업데이 (28회차)",
+      "url": "https://event-us.kr/2026bcmd/event/129794",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(서울 송파구)`, `무료`, `세미나`, `블록체인`, `AI`",
+        "주최: 과학기술정보통신부 / 한국인터넷진흥원(KISA)",
+        "접수: 09. 21(월) ~ 10. 23(금) 18:00"
+      ],
+      "sent_at": "2026-09-29T03:05:53.954171",
+      "deadline": "2026-10-23",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1554328344701706294",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1554328348904128588",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Git 사용자를 위한 Jujutsu Workshop",
+      "url": "https://event-us.kr/vimkr/event/136098",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(서울 성동구)`, `유료`, `세미나`, `기술일반`",
+        "주최: vim.kr",
+        "접수: 09. 27(일) ~ 10. 24(토) 23:30"
+      ],
+      "sent_at": "2026-09-29T03:05:53.954171",
+      "deadline": "2026-10-24",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1554328344701706294",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1554328348904128588",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 제14회 빅콘테스트 AI·데이터 경진대회",
+      "url": "https://www.bigcontest.or.kr/",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `대회`, `AI`",
+        "주최: 과학기술정보통신부 / 한국정보통신진흥협회(KAIT)",
+        "접수: 09. 08(화) ~ 10. 26(월)"
+      ],
+      "sent_at": "2026-09-29T03:05:53.954171",
+      "deadline": "2026-10-26",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1554328344701706294",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1554328348904128588",
           "style": "compact"
         }
       ]
