@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-09-29T03:05:53.954171",
+  "updated_at": "2026-09-30T02:47:51.732279",
   "events": [
     {
       "title": "",
@@ -3493,18 +3493,7 @@
       ],
       "sent_at": "2026-09-04T01:47:28.207750",
       "deadline": "2026-09-29",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1545248907913592865",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1545248913341026325",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "GitHub Copilot Dev Days | Pohang",
@@ -4346,18 +4335,7 @@
       ],
       "sent_at": "2026-09-24T02:00:18.444483",
       "deadline": "2026-09-29",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1552499901571797043",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1552499906625806467",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "Dot4 9월 밋업 (미니 손선풍기 증정)",
