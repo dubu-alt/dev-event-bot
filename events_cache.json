@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-09-30T02:47:51.732279",
+  "updated_at": "2026-10-01T02:54:00.522891",
   "events": [
     {
       "title": "",
@@ -2387,18 +2387,7 @@
       ],
       "sent_at": "2026-08-19T00:34:04.231237",
       "deadline": "2026-09-30",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1539432232119173132",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1539432235424292875",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "블랙박스 영상 기반 지능형 고의사고 분석 모델 AI 경진대회",
@@ -2411,18 +2400,7 @@
       ],
       "sent_at": "2026-08-19T00:34:04.231237",
       "deadline": "2026-09-30",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1539432232119173132",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1539432235424292875",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "나라장터 자체입찰 공고 법령 위반사항 모니터링 AI 경진대회",
@@ -2435,18 +2413,7 @@
       ],
       "sent_at": "2026-08-19T00:34:04.231237",
       "deadline": "2026-09-30",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1539432232119173132",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1539432235424292875",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AX 다음 — 구독은 했는데 아무도 말 안 해준 5가지",
@@ -3183,18 +3150,7 @@
       ],
       "sent_at": "2026-08-27T05:32:00.964385",
       "deadline": "2026-09-30",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1542406315798954093",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1542406318323933245",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 넥토리얼 For Game Programmer",
@@ -4126,18 +4082,7 @@
       ],
       "sent_at": "2026-09-15T02:15:03.045558",
       "deadline": "2026-09-30",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1549242115089764503",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1549242117317070939",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AI BESTudy #4 - AI 배포 승인, '정확도 90%'라는 숫자로 충분하니까?",
@@ -4150,18 +4095,7 @@
       ],
       "sent_at": "2026-09-15T02:15:03.045558",
       "deadline": "2026-09-30",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1549242115089764503",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1549242117317070939",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 넥스트 블록체인 교육 [4회차]",
@@ -4348,18 +4282,7 @@
       ],
       "sent_at": "2026-09-24T02:00:18.444483",
       "deadline": "2026-09-30",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1552499901571797043",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1552499906625806467",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AI시대를 선도하는 Voice AI - 일레븐랩스",
@@ -4372,18 +4295,7 @@
       ],
       "sent_at": "2026-09-24T02:00:18.444483",
       "deadline": "2026-09-30",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1552499901571797043",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1552499906625806467",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "Samsung AI Forum 2026 (제 10회 삼성 AI 포럼)",
@@ -4396,18 +4308,7 @@
       ],
       "sent_at": "2026-09-24T02:00:18.444483",
       "deadline": "2026-09-30",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1552499901571797043",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1552499906625806467",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AWSKRUG 데브옵스 x 보안 소모임 - 9월 30일 (수)",
@@ -4420,18 +4321,7 @@
       ],
       "sent_at": "2026-09-24T02:00:18.444483",
       "deadline": "2026-09-30",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1552499901571797043",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1552499906625806467",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "[무료 웨비나] 망분리 완화, 무엇을 준비해야 할까? AI 시대 보안 검증 전략",
@@ -4444,18 +4334,7 @@
       ],
       "sent_at": "2026-09-24T02:00:18.444483",
       "deadline": "2026-09-30",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1552499901571797043",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1552499906625806467",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "DIGITAL AF Seoul: Hackathon - In person",
@@ -4952,18 +4831,7 @@
       ],
       "sent_at": "2026-09-25T02:17:04.445077",
       "deadline": "2026-09-30",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1552866504117063761",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1552866506277261373",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 AI·디지털 기반 사회문제 해결 챌린지",
@@ -4976,18 +4844,7 @@
       ],
       "sent_at": "2026-09-25T02:17:04.445077",
       "deadline": "2026-09-30",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1552866504117063761",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1552866506277261373",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 제2회 영남권 사이버 공격 방어 대회",
