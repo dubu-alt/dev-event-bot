@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-10-02T02:56:29.423868",
+  "updated_at": "2026-10-03T02:42:51.303167",
   "events": [
     {
       "title": "",
@@ -4327,18 +4327,7 @@
       ],
       "sent_at": "2026-09-24T02:00:18.444483",
       "deadline": "2026-10-02",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1552499901571797043",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1552499906625806467",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "스노우플레이크 유저그룹 밋업 18회 - Snowflake World Tour 2026에서 가장 뜨거웠던 세션을 다시 만나다",
@@ -4351,18 +4340,7 @@
       ],
       "sent_at": "2026-09-24T02:00:18.444483",
       "deadline": "2026-10-02",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1552499901571797043",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1552499906625806467",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "N.O.V.A. 2026 대화형 의료 진단 AI 에이전트 대회",
@@ -5413,18 +5391,7 @@
       ],
       "sent_at": "2026-10-02T02:56:29.423868",
       "deadline": "2026-10-02",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1555413137291878431",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1555413138537451656",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "[부산대 AI 콜로퀴엄 2026] 직접 만들며 본 Foundation Model의 현재, 그리고 어디까지 진화할까?",
@@ -5437,18 +5404,7 @@
       ],
       "sent_at": "2026-10-02T02:56:29.423868",
       "deadline": "2026-10-02",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1555413137291878431",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1555413138537451656",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AI 공격 대응 : 위협 인텔리전스 실전 활용 전략",
