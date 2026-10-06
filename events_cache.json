@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-10-05T02:49:21.539670",
+  "updated_at": "2026-10-06T03:40:02.179962",
   "events": [
     {
       "title": "",
@@ -5726,6 +5726,390 @@
         {
           "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
           "id": "1555413138537451656",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Let'Swift 2026 — 개발 환경의 변화 워크숍",
+      "url": "https://ticketa.co/event/vdb8aajs",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `세미나`, `기술일반`",
+        "주최: Let'Swift",
+        "접수: 10. 03(토) 08:06 ~ 10. 08(목) 19:01"
+      ],
+      "sent_at": "2026-10-06T03:40:02.179962",
+      "deadline": "2026-10-08",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1556873649594695743",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1556873651817676882",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "스위프 앱 6기 데모데이 & 네트워킹 행사",
+      "url": "https://event-us.kr/swypim/event/136587",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `모임`, `기술일반`",
+        "주최: 스위프 (SWYP)",
+        "접수: 10. 01(목) ~ 10. 08(목) 23:30"
+      ],
+      "sent_at": "2026-10-06T03:40:02.179962",
+      "deadline": "2026-10-08",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1556873649594695743",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1556873651817676882",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 SNU X Croche AI 앱 해커톤",
+      "url": "https://linkareer.com/activity/353364",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `온라인`, `오프라인(서울 관악구)`, `무료`, `대회`, `AI`",
+        "주최: 서울대학교 창업지원단 / 하이어에이아이",
+        "접수: 09. 10(목) ~ 10. 10(토) 13:00"
+      ],
+      "sent_at": "2026-10-06T03:40:02.179962",
+      "deadline": "2026-10-10",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1556873649594695743",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1556873651817676882",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "[Seoul] Google Agentic AI Night",
+      "url": "https://luma.com/m5go7n2c",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `세미나`, `AI`",
+        "주최: Beyond the Vibes Community",
+        "일시: 10. 13(화) 19:00 ~ 10. 13(화) 22:00"
+      ],
+      "sent_at": "2026-10-06T03:40:02.179962",
+      "deadline": "2026-10-13",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1556873649594695743",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1556873651817676882",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Replit x OpenAI x AWS x Gold House Ventures Hackathon",
+      "url": "https://partiful.com/e/PVm8Ehw7QwzympSfwkB3",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(서울)`, `무료`, `대회`, `AI`",
+        "주최: Replit / OpenAI / AWS / Gold House Ventures",
+        "일시: 10. 14(수) 13:00 ~ 10. 14(수) 19:00"
+      ],
+      "sent_at": "2026-10-06T03:40:02.179962",
+      "deadline": "2026-10-14",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1556873649594695743",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1556873651817676882",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "GitHub Copilot Dev Days (Seoul)",
+      "url": "https://event-us.kr/powerplatform/event/136275",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(서울 종로구)`, `유료`, `세미나`, `AI`",
+        "주최: 파워 플랫폼 한국 유저 그룹",
+        "접수: 10. 01(목) ~ 10. 14(수) 00:00"
+      ],
+      "sent_at": "2026-10-06T03:40:02.179962",
+      "deadline": "2026-10-14",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1556873649594695743",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1556873651817676882",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "개발자 무료 오프라인 밋업! Tech:Talk Ep.2",
+      "url": "https://event-us.kr/loopers/event/136682",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인`, `무료`, `모임`, `기술일반`",
+        "주최: 루퍼스",
+        "접수: 10. 02(금) ~ 10. 16(금) 23:59"
+      ],
+      "sent_at": "2026-10-06T03:40:02.179962",
+      "deadline": "2026-10-16",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1556873649594695743",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1556873651817676882",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AWSKRUG 프론트엔드 #frontend 소모임 10월 21일(수)",
+      "url": "https://www.meetup.com/awskrug/events/316824282/",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `모임`, `AI`, `기술일반`",
+        "주최: AWSKRUG",
+        "접수: 10. 05(월) ~ 10. 18(일) 23:59"
+      ],
+      "sent_at": "2026-10-06T03:40:02.179962",
+      "deadline": "2026-10-18",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1556873649594695743",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1556873651817676882",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "수학 연구의 AI 혁신 | \"AI for Science/Engineering\" Series | 리벨리온×모두의연구소",
+      "url": "https://luma.com/6fx4hphm",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `세미나`, `AI`",
+        "주최: 모두의연구소 / 리벨리온",
+        "접수: 10. 02(금) 21:30 ~ 10. 21(수) 15:00"
+      ],
+      "sent_at": "2026-10-06T03:40:02.179962",
+      "deadline": "2026-10-21",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1556873649594695743",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1556873651817676882",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "[무료 웨비나] AI 시대의 인프라 경제학 - 오라클 리눅스, OLVM으로 IT TCO 최적화하기",
+      "url": "https://event-us.kr/cloudnetworks/event/136635",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `클라우드`",
+        "주최: 클라우드네트웍스 / 한국오라클",
+        "접수: 10. 02(금) ~ 10. 22(목) 13:00"
+      ],
+      "sent_at": "2026-10-06T03:40:02.179962",
+      "deadline": "2026-10-22",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1556873649594695743",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1556873651817676882",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AWSKRUG 성수 #seongsu (English-Friendly) - Kiro & AWS Abuse Trends (10/28 수)",
+      "url": "https://www.meetup.com/awskrug/events/316792002/",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(서울 성동구)`, `유료`, `모임`, `클라우드`, `AI`",
+        "주최: AWSKRUG",
+        "접수: 10. 05(월) ~ 10. 28(수) 19:00"
+      ],
+      "sent_at": "2026-10-06T03:40:02.179962",
+      "deadline": "2026-10-28",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1556873649594695743",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1556873651817676882",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Redis 속도로, 비용은 더 효율적으로",
+      "url": "https://redis.io/ko/resources/videos/smarter-infrastructure-costs/",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `클라우드`",
+        "주최: Redis",
+        "접수: 10. 01(목) 01:00 ~ 10. 29(목) 14:00"
+      ],
+      "sent_at": "2026-10-06T03:40:02.179962",
+      "deadline": "2026-10-29",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1556873649594695743",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1556873651817676882",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "제9회 Dreams Come True 컨퍼런스 - 생성형 AI 보안, DLP + AI 보안 체계, AI 비대면 본인 확인",
+      "url": "https://cometrue.ai/index.php/con_261104/",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `세미나`, `AI`",
+        "주최: 컴트루테크놀로지",
+        "접수: 10. 02(금) 12:00 ~ 10. 30(금) 17:00"
+      ],
+      "sent_at": "2026-10-06T03:40:02.179962",
+      "deadline": "2026-10-30",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1556873649594695743",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1556873651817676882",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026년 AI 라이프 솔루션 챌린지",
+      "url": "https://www.keit.re.kr/board.es?mid=a10301010000&bid=0009&act=view&list_no=128385",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `대회`, `AI`",
+        "주최: 산업통상부 / 한국산업기술기획평가원(KEIT)",
+        "접수: 09. 30(수) ~ 10. 31(토) 23:59"
+      ],
+      "sent_at": "2026-10-06T03:40:02.179962",
+      "deadline": "2026-10-31",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1556873649594695743",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1556873651817676882",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 NASA International Space Apps Challenge Seoul",
+      "url": "https://www.spaceappschallenge.org/2026/local-events/seoul/",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `대회`, `기술일반`",
+        "주최: NASA Space Apps Seoul",
+        "일시: 11. 14(토) ~ 11. 15(일)"
+      ],
+      "sent_at": "2026-10-06T03:40:02.179962",
+      "deadline": "2026-11-15",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1556873649594695743",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1556873651817676882",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Apache Airflow Meetup 2026 @Seoul",
+      "url": "https://event-us.kr/airflowkrug/event/136699",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(서울 서초구)`, `유료`, `모임`, `기술일반`",
+        "주최: Apache Airflow 한국 사용자 모임",
+        "접수: 10. 10(토) ~ 11. 16(월) 00:00"
+      ],
+      "sent_at": "2026-10-06T03:40:02.179962",
+      "deadline": "2026-11-16",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1556873649594695743",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1556873651817676882",
           "style": "compact"
         }
       ]
