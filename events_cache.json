@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-10-06T03:40:02.179962",
+  "updated_at": "2026-10-07T03:06:38.685386",
   "events": [
     {
       "title": "",
@@ -3803,18 +3803,7 @@
       ],
       "sent_at": "2026-09-10T01:53:37.014258",
       "deadline": "2026-10-06",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1547424783405424754",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1547424786336972933",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 국립공원 위성 모니터링 AI 챌린지",
@@ -3827,18 +3816,7 @@
       ],
       "sent_at": "2026-09-10T01:53:37.014258",
       "deadline": "2026-10-06",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1547424783405424754",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1547424786336972933",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "[TTA/무료웨비나] QUANTUM PARADIGM: 양자가 바꿀 ICT 보안과 네트워크의 미래",
@@ -4366,18 +4344,7 @@
       ],
       "sent_at": "2026-09-24T02:00:18.444483",
       "deadline": "2026-10-06",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1552499901571797043",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1552499906625806467",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "[kt cloud 웨비나] AI 시대, 데이터센터 운영의 기준을 높이다",
