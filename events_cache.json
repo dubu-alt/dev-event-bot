@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-10-11T02:40:17.264151",
+  "updated_at": "2026-10-12T03:04:06.604825",
   "events": [
     {
       "title": "",
@@ -4718,18 +4718,7 @@
       ],
       "sent_at": "2026-09-25T02:17:04.445077",
       "deadline": "2026-10-11",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1552866504117063761",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1552866506277261373",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "OpenSearch Project - Seoul Meetup",
