@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-10-12T03:04:06.604825",
+  "updated_at": "2026-10-13T04:19:49.943985",
   "events": [
     {
       "title": "",
@@ -5938,18 +5938,7 @@
       ],
       "sent_at": "2026-10-09T03:28:12.833625",
       "deadline": "2026-10-12",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1557957839023112226",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1557957841761992736",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AWSKRUG 자격증 소모임 10월 15일 SAA 자격증 취득!",
@@ -5962,18 +5951,7 @@
       ],
       "sent_at": "2026-10-09T03:28:12.833625",
       "deadline": "2026-10-12",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1557957839023112226",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1557957841761992736",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "Bu:net 인사이트 포럼 — NEXT PROCESS",
@@ -6211,6 +6189,246 @@
         {
           "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
           "id": "1557957841761992736",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Daytona HackSprint Seoul 해커톤",
+      "url": "https://event-us.kr/aibuildersglobal/event/137263",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `대회`, `AI`",
+        "주최: AI Builders / Daytona",
+        "접수: 10. 11(일) ~ 10. 17(토) 12:00"
+      ],
+      "sent_at": "2026-10-13T04:19:49.943985",
+      "deadline": "2026-10-17",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1559420382837211147",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1559420384754012171",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 AI 인사이트 포럼",
+      "url": "https://seoulaiforum.kr/",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `온라인`, `오프라인(서울 중구)`, `무료`, `세미나`, `AI`",
+        "주최: 서울특별시 / 서울AI재단",
+        "접수: 10. 01(목) ~ 10. 23(금)"
+      ],
+      "sent_at": "2026-10-13T04:19:49.943985",
+      "deadline": "2026-10-23",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1559420382837211147",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1559420384754012171",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "나랏돈 50조 찾기 프로젝트 : 나라장터 해커톤",
+      "url": "https://hackathon.savetax.now/",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `대회`, `AI`",
+        "주최: 개혁신당 / 국회의원 이준석 의원실",
+        "접수: 10. 12(월) 07:00 ~ 10. 25(일) 23:30"
+      ],
+      "sent_at": "2026-10-13T04:19:49.943985",
+      "deadline": "2026-10-25",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1559420382837211147",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1559420384754012171",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Grok Bot Meetup Seoul",
+      "url": "https://luma.com/3leebkxk",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(서울 성동구)`, `무료`, `모임`, `AI`",
+        "주최: SpaceXAI for Seoul",
+        "일시: 10. 26(월) 11:00 ~ 10. 28(수) 18:00"
+      ],
+      "sent_at": "2026-10-13T04:19:49.943985",
+      "deadline": "2026-10-28",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1559420382837211147",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1559420384754012171",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "K-DEVCON HAPPY DEV-WIN",
+      "url": "https://ticketa.co/event/agk0gglh",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(서울 서초구)`, `유료`, `모임`, `기술일반`",
+        "주최: K-DEVCON",
+        "접수: 10. 12(월) ~ 10. 30(금) 13:00"
+      ],
+      "sent_at": "2026-10-13T04:19:49.943985",
+      "deadline": "2026-10-30",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1559420382837211147",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1559420384754012171",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026년 양자내성암호 전환 경진대회·해커톤",
+      "url": "https://www.pqcchallenge.kr/",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `온라인`, `오프라인(서울 서초구)`, `무료`, `대회`, `기술일반`",
+        "주최: 과학기술정보통신부 / 한국인터넷진흥원(KISA)",
+        "접수: 10. 01(목) 12:00 ~ 10. 30(금) 16:00"
+      ],
+      "sent_at": "2026-10-13T04:19:49.943985",
+      "deadline": "2026-10-30",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1559420382837211147",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1559420384754012171",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "DEVFEST INCHEON 2026",
+      "url": "https://ticketa.co/event/8dedugs6",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(인천)`, `유료`, `세미나`, `AI`",
+        "주최: GDG Incheon",
+        "접수: 10. 09(금) 09:00 ~ 10. 31(토) 23:59"
+      ],
+      "sent_at": "2026-10-13T04:19:49.943985",
+      "deadline": "2026-10-31",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1559420382837211147",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1559420384754012171",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "월간 AX: 10월",
+      "url": "https://event-us.kr/FKH3nHkjmPGh/event/137338",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(서울 서대문구)`, `무료`, `세미나`, `AI`",
+        "주최: IT조선 / 한빛미디어",
+        "접수: 10. 12(월) 16:00 ~ 11. 03(화) 16:00"
+      ],
+      "sent_at": "2026-10-13T04:19:49.943985",
+      "deadline": "2026-11-03",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1559420382837211147",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1559420384754012171",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 블록체인 밋업데이 (30회차)",
+      "url": "https://event-us.kr/2026bcmd/event/129798",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(서울 송파구)`, `무료`, `세미나`, `블록체인`",
+        "주최: 과학기술정보통신부 / 한국인터넷진흥원(KISA)",
+        "접수: 10. 06(화) ~ 11. 06(금) 18:00"
+      ],
+      "sent_at": "2026-10-13T04:19:49.943985",
+      "deadline": "2026-11-06",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1559420382837211147",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1559420384754012171",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Techive 여덟번째 발표: AI 에이전트를 이해하고 부리고 다스리기",
+      "url": "https://event-us.kr/techive/event/137241",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(광주)`, `무료`, `세미나`, `AI`",
+        "주최: Techive / 광주과학기술원(GIST)",
+        "접수: 10. 10(토) 11:00 ~ 11. 06(금) 23:30"
+      ],
+      "sent_at": "2026-10-13T04:19:49.943985",
+      "deadline": "2026-11-06",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1559420382837211147",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1559420384754012171",
           "style": "compact"
         }
       ]
