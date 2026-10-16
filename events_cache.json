@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-10-15T02:11:20.132676",
+  "updated_at": "2026-10-16T02:02:20.769373",
   "events": [
     {
       "title": "",
@@ -4363,18 +4363,7 @@
       ],
       "sent_at": "2026-09-24T02:00:18.444483",
       "deadline": "2026-10-15",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1552499901571797043",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1552499906625806467",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 블록체인 밋업데이 (26회차)",
@@ -4759,18 +4748,7 @@
       ],
       "sent_at": "2026-09-25T02:17:04.445077",
       "deadline": "2026-10-15",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1552866504117063761",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1552866506277261373",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "FEConf 2026",
@@ -5867,18 +5845,7 @@
       ],
       "sent_at": "2026-10-09T03:28:12.833625",
       "deadline": "2026-10-15",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1557957839023112226",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1557957841761992736",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "YUMITHON — 맛집 검색부터 예약까지, 헤이유미 MCP로 만드는 새로운 앱·서비스",
