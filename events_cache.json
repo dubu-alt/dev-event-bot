@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-10-16T02:02:20.769373",
+  "updated_at": "2026-10-17T01:56:31.034379",
   "events": [
     {
       "title": "",
@@ -2883,18 +2883,7 @@
       ],
       "sent_at": "2026-08-23T00:36:26.972193",
       "deadline": "2026-10-16",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1540882381228212245",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1540882383681626233",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "GitHub Copilot Dev Days | Daegu",
@@ -4376,18 +4365,7 @@
       ],
       "sent_at": "2026-09-24T02:00:18.444483",
       "deadline": "2026-10-16",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1552499901571797043",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1552499906625806467",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "CloudBro Ship to Production 시즌3 [Final Demo Day]",
@@ -5566,18 +5544,7 @@
       ],
       "sent_at": "2026-10-06T03:40:02.179962",
       "deadline": "2026-10-16",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1556873649594695743",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1556873651817676882",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AWSKRUG 프론트엔드 #frontend 소모임 10월 21일(수)",
