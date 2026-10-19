@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-10-18T01:55:41.995967",
+  "updated_at": "2026-10-19T02:12:35.717212",
   "events": [
     {
       "title": "",
@@ -4380,18 +4380,7 @@
       ],
       "sent_at": "2026-09-24T02:00:18.444483",
       "deadline": "2026-10-18",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1552499904482517004",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1552499921020657717",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "계속되는 기업 보안 위협, 실제 사례와 탐지 대응 전략",
@@ -5535,18 +5524,7 @@
       ],
       "sent_at": "2026-10-06T03:40:02.179962",
       "deadline": "2026-10-18",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1556873649594695743",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1556873651817676882",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "수학 연구의 AI 혁신 | \"AI for Science/Engineering\" Series | 리벨리온×모두의연구소",
@@ -6403,6 +6381,486 @@
         {
           "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
           "id": "1560112827677675552",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "세종 R&D 기업 AI 활용 사업화 MVP 메이커톤",
+      "url": "https://sejongrnd.ai.kr",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(세종)`, `무료`, `대회`, `AI`",
+        "주최: 세종테크노파크",
+        "접수: 10. 15(목) ~ 10. 20(화) 23:30"
+      ],
+      "sent_at": "2026-10-19T02:12:35.717212",
+      "deadline": "2026-10-20",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1561562685114556440",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1561562687232811101",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 GBGC 경북 게임개발사관학교 Gen AI Game JAM",
+      "url": "https://event-us.kr/medici/event/137520",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(경북 경주)`, `무료`, `대회`, `AI`",
+        "주최: 한국콘텐츠진흥원 / 경상북도 / 경산시 / 경북테크노파크 경북글로벌게임센터",
+        "접수: 10. 01(목) ~ 10. 21(수) 18:00"
+      ],
+      "sent_at": "2026-10-19T02:12:35.717212",
+      "deadline": "2026-10-21",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1561562685114556440",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1561562687232811101",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 제주 환경 해커톤",
+      "url": "https://bigdatahub.ac.kr/information/notice?bbs_section=view&idx=184",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(제주)`, `무료`, `대회`, `AI`",
+        "주최: 서울대학교 빅데이터혁신융합대학사업단",
+        "접수: 10. 07(수) ~ 10. 25(일)"
+      ],
+      "sent_at": "2026-10-19T02:12:35.717212",
+      "deadline": "2026-10-25",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1561562685114556440",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1561562687232811101",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AWSKRUG #을지로 소모임 - KiroCrew 및 올리브영앱 개선 사례 (10월 26일)",
+      "url": "https://www.meetup.com/awskrug/events/316977004/",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(서울 용산구)`, `유료`, `모임`, `AI`, `기술일반`",
+        "주최: AWSKRUG",
+        "일시: 10. 26(월) 19:00 ~ 10. 26(월) 21:00"
+      ],
+      "sent_at": "2026-10-19T02:12:35.717212",
+      "deadline": "2026-10-26",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1561562685114556440",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1561562687232811101",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 AI 해킹 방어 대회 (ACDC)",
+      "url": "https://event-us.kr/2026acd/event/137541",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `온라인`, `오프라인(서울 강남구)`, `무료`, `대회`, `AI`",
+        "주최: 과학기술정보통신부 / 한국인터넷진흥원(KISA) / 한국정보보호산업협회(KISIA)",
+        "접수: 10. 14(수) 10:30 ~ 10. 26(월) 14:00"
+      ],
+      "sent_at": "2026-10-19T02:12:35.717212",
+      "deadline": "2026-10-26",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1561562685114556440",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1561562687232811101",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "우먼 AI WEEK - 과학커뮤니케이션 포럼 × 우먼 AI 퍼스널 트레이닝 데이",
+      "url": "https://wtech.or.kr/sub/board/notice/230",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(서울 동작구)`, `무료`, `세미나`, `AI`",
+        "주최: 서울시여성가족재단 / 한국여성과학기술단체총연합회",
+        "접수: 09. 30(수) ~ 10. 26(월) 18:00"
+      ],
+      "sent_at": "2026-10-19T02:12:35.717212",
+      "deadline": "2026-10-26",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1561562685114556440",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1561562687232811101",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "JetBrains Air Day Seoul 2026",
+      "url": "https://lp.jetbrains.com/jetbrains-air-day-seoul-2026/",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(서울 서초구)`, `무료`, `세미나`, `AI`",
+        "주최: JetBrains / 단군소프트",
+        "접수: 10. 14(수) ~ 10. 26(월) 18:00"
+      ],
+      "sent_at": "2026-10-19T02:12:35.717212",
+      "deadline": "2026-10-26",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1561562685114556440",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1561562687232811101",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AWSKRUG #Security 소모임 - CASA AL1 보안인증 취득기 및 AWS RAG 보안 사례 (10월 29일)",
+      "url": "https://www.meetup.com/awskrug/events/317007691/",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `모임`, `클라우드`, `AI`",
+        "주최: AWSKRUG",
+        "접수: 10. 19(월) ~ 10. 26(월) 23:59"
+      ],
+      "sent_at": "2026-10-19T02:12:35.717212",
+      "deadline": "2026-10-26",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1561562685114556440",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1561562687232811101",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Google Cloud Fundamentals: Getting Started with Google Kubernetes Engine",
+      "url": "https://www.megazonesoft.com/gcp-fundamentals_20261027/",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `클라우드`",
+        "주최: 메가존소프트",
+        "접수: 10. 15(목) ~ 10. 26(월) 23:59"
+      ],
+      "sent_at": "2026-10-19T02:12:35.717212",
+      "deadline": "2026-10-26",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1561562685114556440",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1561562687232811101",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AI Native 옵저버빌리티로 5분 내에 장애 원인 찾는 3가지 방법",
+      "url": "https://event-us.kr/msap/event/137769",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `AI`, `클라우드`",
+        "주최: MSAP.ai",
+        "접수: 10. 16(금) ~ 10. 28(수) 13:30"
+      ],
+      "sent_at": "2026-10-19T02:12:35.717212",
+      "deadline": "2026-10-28",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1561562685114556440",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1561562687232811101",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "c0mpiled-17: Seoul",
+      "url": "https://luma.com/compiled-8lsr",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `대회`, `AI`",
+        "주최: Transpose Platform / 아산나눔재단 / 한국벤처캐피탈협회 / 한국벤처투자 / 한국무역협회",
+        "접수: 10. 14(수) ~ 10. 30(금) 23:30"
+      ],
+      "sent_at": "2026-10-19T02:12:35.717212",
+      "deadline": "2026-10-30",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1561562685114556440",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1561562687232811101",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Hello World AI 해커톤 — 개인전, 하루 안에 배포까지",
+      "url": "https://hackon.kr/e/1a32b615",
+      "month": "26년 10월",
+      "metadata": [
+        "분류: `오프라인`, `무료`, `대회`, `AI`",
+        "주최: HACK:ON",
+        "일시: 10. 31(토) 13:00"
+      ],
+      "sent_at": "2026-10-19T02:12:35.717212",
+      "deadline": "2026-10-31",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1561562685114556440",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1561562687232811101",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "11월 월간 개발자 밋업 - 일상 속 비트코인 결제",
+      "url": "https://event-us.kr/noncelab/event/137852",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(서울 마포구)`, `유료`, `모임`, `블록체인`",
+        "주최: 비트코인센터서울",
+        "접수: 10. 17(토) 17:00 ~ 11. 01(일) 15:00"
+      ],
+      "sent_at": "2026-10-19T02:12:35.717212",
+      "deadline": "2026-11-01",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1561562685114556440",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1561562687232811101",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "화이트햇 2026 (WHITEHAT 2026) 국방 사이버보안 콘테스트",
+      "url": "https://whitehat2026.kr/",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `온라인`, `오프라인(서울 강남구)`, `무료`, `대회`, `기술일반`",
+        "주최: 국방부 / 사이버작전사령부",
+        "접수: 10. 02(금) 13:00 ~ 11. 02(월) 23:30"
+      ],
+      "sent_at": "2026-10-19T02:12:35.717212",
+      "deadline": "2026-11-02",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1561562685114556440",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1561562687232811101",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Ollama x FriendliAI Seoul Meetup",
+      "url": "https://event-us.kr/friendliai/event/137581",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(서울 성동구)`, `무료`, `모임`, `AI`",
+        "주최: Ollama / FriendliAI",
+        "접수: 10. 15(목) ~ 11. 04(수) 23:30"
+      ],
+      "sent_at": "2026-10-19T02:12:35.717212",
+      "deadline": "2026-11-04",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1561562685114556440",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1561562687232811101",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Cypherpunk DIY 워크숍 - 직접 만드는 자유",
+      "url": "https://event-us.kr/noncelab/event/137876",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(서울 마포구)`, `유료`, `세미나`, `블록체인`",
+        "주최: 비트코인센터서울 / DIYbitcoin",
+        "접수: 10. 18(일) 19:30 ~ 11. 10(화) 19:00"
+      ],
+      "sent_at": "2026-10-19T02:12:35.717212",
+      "deadline": "2026-11-10",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1561562685114556440",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1561562687232811101",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 블록체인 밋업데이 (31회차)",
+      "url": "https://event-us.kr/2026bcmd/event/129799",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(서울 송파구)`, `무료`, `세미나`, `블록체인`, `AI`",
+        "주최: 과학기술정보통신부 / 한국인터넷진흥원(KISA)",
+        "접수: 10. 12(월) ~ 11. 13(금) 18:00"
+      ],
+      "sent_at": "2026-10-19T02:12:35.717212",
+      "deadline": "2026-11-13",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1561562685114556440",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1561562687232811101",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "PyTorch Day Korea 2026",
+      "url": "https://pytorchday.kr/",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `세미나`, `AI`",
+        "주최: 파이토치 한국 사용자 모임(PyTorch Korea User Group)",
+        "접수: 10. 16(금) 09:30 ~ 11. 16(월) 23:30"
+      ],
+      "sent_at": "2026-10-19T02:12:35.717212",
+      "deadline": "2026-11-16",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1561562685114556440",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1561562687232811101",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "ServiceNow AI 플랫폼의 미래: 사람과 AI 에이전트, 계정 권한과 자산의 워크플로우 통합 경험",
+      "url": "https://event-us.kr/itsman/event/137846",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `AI`, `기술일반`",
+        "주최: 잇츠맨 / ServiceNow",
+        "접수: 10. 17(토) ~ 11. 17(화) 14:00"
+      ],
+      "sent_at": "2026-10-19T02:12:35.717212",
+      "deadline": "2026-11-17",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1561562685114556440",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1561562687232811101",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Techive 아홉번째 발표: AI에 시키고, 내가 직접 만든다!",
+      "url": "https://event-us.kr/techive/event/137668",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(광주)`, `무료`, `세미나`, `AI`",
+        "주최: Techive / 광주과학기술원(GIST)",
+        "접수: 10. 15(목) ~ 11. 20(금) 23:30"
+      ],
+      "sent_at": "2026-10-19T02:12:35.717212",
+      "deadline": "2026-11-20",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1561562685114556440",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1561562687232811101",
           "style": "compact"
         }
       ]
