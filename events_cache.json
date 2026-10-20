@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-10-19T02:12:35.717212",
+  "updated_at": "2026-10-20T02:27:30.579704",
   "events": [
     {
       "title": "",
@@ -5217,18 +5217,7 @@
       ],
       "sent_at": "2026-10-02T02:56:29.423868",
       "deadline": "2026-10-19",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1555413137291878431",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1555413138537451656",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "[무료] AI시대, 데이터를 지키는 보안전략 - 기업과 금융보안부터 내 개인정보까지",
