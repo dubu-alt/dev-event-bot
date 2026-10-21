@@ -62,6 +62,29 @@ class ParseDeadlineTest(unittest.TestCase):
         event = make_event(metadata=["접수: 13. 45(월)"])
         self.assertIsNone(parse_deadline(event))
 
+    def test_ignores_time_range_with_hyphen(self):
+        # '14:00 - 18:00'의 '00 - 18'을 날짜로 오인하면 안 된다
+        event = make_event(metadata=["일시: 07. 25(토) 14:00 - 18:00"])
+        self.assertEqual(parse_deadline(event), datetime(2026, 7, 25))
+
+    def test_ignores_times_in_application_range(self):
+        event = make_event(
+            metadata=["접수: 09. 29(화) 10:00 ~ 10. 19(월) 10:00"], month="26년 10월"
+        )
+        self.assertEqual(parse_deadline(event), datetime(2026, 10, 19))
+
+    def test_korean_month_day_format(self):
+        event = make_event(metadata=["일시: 10월 13일(화)"], month="26년 10월")
+        self.assertEqual(parse_deadline(event), datetime(2026, 10, 13))
+
+    def test_date_appended_to_other_field(self):
+        # Dev-Event 원문에서 주최 뒤에 ' - 일자:'로 날짜를 붙인 경우
+        event = make_event(
+            metadata=["분류: `오프라인`", "주최: Google Cloud - 일자: 10월 13(화)"],
+            month="26년 10월",
+        )
+        self.assertEqual(parse_deadline(event), datetime(2026, 10, 13))
+
 
 class IsExpiredTest(unittest.TestCase):
     def test_not_expired_before_deadline(self):
@@ -262,3 +285,41 @@ class CacheStoresDeadlineTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class SkipExpiredNewEventsTest(unittest.TestCase):
+    """캐시에 없더라도 이미 마감된 행사는 새로 보내지 않는다."""
+
+    def _run(self, parsed_events):
+        bot = DevEventBot.__new__(DevEventBot)
+        bot.dry_run = False
+        bot.style = DIGEST_STYLE_COMPACT
+        bot.cache = MagicMock()
+        bot.cache.now = NOW
+        bot.cache.events = []
+        bot.cache.is_sent.return_value = False
+        sender = DiscordSender("https://discord.test/wh", "테스트", style=DIGEST_STYLE_COMPACT)
+        sender.send_digest_detailed = MagicMock(
+            side_effect=lambda events: [(True, "1")] * len(events)
+        )
+        bot.senders = [sender]
+        with patch("dev_event_bot.ReadmeDownloader.fetch", return_value="readme"), \
+                patch("dev_event_bot.MarkdownParser.parse_events", return_value=parsed_events):
+            new_count, _ = bot.run()
+        return new_count, sender
+
+    def test_expired_event_is_not_sent(self):
+        expired = make_event(title="마감", url="https://example.com/old")  # 07. 20 마감
+        live = make_event(
+            title="진행중", url="https://example.com/new",
+            metadata=["접수: 07. 01(수) ~ 08. 10(월)"],
+        )
+        new_count, sender = self._run([expired, live])
+        self.assertEqual(new_count, 1)
+        sent = sender.send_digest_detailed.call_args[0][0]
+        self.assertEqual([e["title"] for e in sent], ["진행중"])
+
+    def test_event_without_deadline_is_still_sent(self):
+        unknown = make_event(title="날짜없음", metadata=["주최: 어딘가"])
+        new_count, _ = self._run([unknown])
+        self.assertEqual(new_count, 1)

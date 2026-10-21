@@ -131,6 +131,22 @@ def normalize_title(title: str) -> str:
     return re.sub(r"\s+", " ", (title or "")).strip().lower()
 
 
+def _find_metadata_value(metadata: List[str], names: Tuple[str, ...]) -> str:
+    """메타데이터에서 names 순서대로 처음 발견되는 항목의 값을 돌려준다.
+
+    보통은 '접수: ...'처럼 줄 맨 앞에 이름이 오지만, Dev-Event 원문에는
+    '주최: Google Cloud - 일자: 10월 13(화)'처럼 다른 항목 뒤에 ' - '로
+    이어 붙인 경우도 있어 ' - ' 뒤에 오는 이름도 함께 찾는다.
+    """
+    for name in names:
+        pattern = re.compile(rf'(?:^|\s-\s*){name}\s*:\s*(.+)$')
+        for part in metadata:
+            match = pattern.search(part.strip())
+            if match and match.group(1).strip():
+                return match.group(1).strip()
+    return ""
+
+
 def parse_deadline(event: Dict) -> Optional[datetime]:
     """행사의 마감일(접수 마감일, 없으면 행사 종료일)을 추출한다.
 
@@ -138,28 +154,26 @@ def parse_deadline(event: Dict) -> Optional[datetime]:
       접수: 06. 06(토) ~ 06. 08(월)     → 06. 08
       접수: 05. 12(화) ~ 06. 14(일) 23:59 → 06. 14
       일시: 08. 29(토)                  → 08. 29
+      일시: 07. 25(토) 14:00 - 18:00     → 07. 25 (시간 범위는 무시)
+      주최: Google Cloud - 일자: 10월 13(화) → 10. 13
     연도는 표기에 없으므로 'month'(예: '26년 07월')의 연도를 기준으로 추론하되,
     12월 → 1월처럼 연말을 넘기는 구간이면 다음 해로 보정한다.
     판별할 수 없으면 None.
     """
-    # '접수'가 있으면 그것을, 없으면 '일시'를 마감 기준으로 삼는다.
+    # '접수'가 있으면 그것을, 없으면 '일시', 그것도 없으면 '일자'를 마감 기준으로 삼는다.
     # (접수 마감이 지난 행사는 더 이상 신청할 수 없으므로 알림 가치가 없다)
-    text = ""
-    for name in ('접수', '일시'):
-        for part in event.get('metadata', []):
-            key, sep, value = part.partition(':')
-            if sep and key.strip() == name and value.strip():
-                text = value.strip()
-                break
-        if text:
-            break
+    text = _find_metadata_value(event.get('metadata', []), ('접수', '일시', '일자'))
     if not text:
         return None  # 날짜 정보 자체가 없음
 
-    # 'MM. DD' 형태를 모두 찾는다. 구분자는 '.', '-', '/' 모두 허용.
+    # 시각('14:00', '23:59')을 먼저 지운다. 지우지 않으면
+    # '14:00 - 18:00' 같은 시간 범위의 '00 - 18'이 날짜로 오인된다.
+    text = re.sub(r'\d{1,2}\s*:\s*\d{2}', ' ', text)
+
+    # 'MM. DD' 또는 'MM월 DD일' 형태를 모두 찾는다. 구분자는 '.', '-', '/', '월' 허용.
     # '06. 06(토) ~ 06. 08(월)' → [('06','06'), ('06','08')]
-    # 뒤에 붙는 시각('23:59')은 ':' 구분이라 이 패턴에 걸리지 않는다.
-    matches = re.findall(r'(\d{1,2})\s*[.\-/]\s*(\d{1,2})', text)
+    # '10월 13(화)'             → [('10','13')]
+    matches = re.findall(r'(\d{1,2})\s*(?:[.\-/]|월)\s*(\d{1,2})', text)
     if not matches:
         return None
     # 마지막 날짜 = 기간의 끝 = 마감일 (단일 날짜면 그 날짜가 곧 마감일)
@@ -949,14 +963,26 @@ class DevEventBot:
             # 신규 이벤트 필터링
             new_events = []
             enriched_count = 0
+            skipped_expired = 0
             for event in events:
                 if self.cache.is_sent(event):
                     if self.cache.enrich(event):
                         enriched_count += 1
                     logger.debug(f"중복 이벤트 건너뜀: {event['title'][:40]}")
                     continue
+                # 캐시에 없더라도 이미 마감된 행사는 보내지 않는다.
+                # 캐시를 수동으로 정리했거나 보관 기간이 지나 기록이 지워진 행사가
+                # 원본 README에 아직 남아 있으면, 이 검사가 없을 때 마감된 알림이 다시 나간다.
+                # 캐시에도 기록하지 않으므로 캐시가 불필요하게 커지지 않는다.
+                if is_expired(event, self.cache.now):
+                    skipped_expired += 1
+                    logger.debug(f"이미 마감된 행사 건너뜀: {event['title'][:40]}")
+                    continue
                 logger.info(f"새 행사 발견: {event['title']}")
                 new_events.append(event)
+
+            if skipped_expired:
+                logger.info(f"캐시에 없지만 이미 마감된 행사 {skipped_expired}개는 전송하지 않음")
 
             # 다이제스트 전송
             new_count = 0
