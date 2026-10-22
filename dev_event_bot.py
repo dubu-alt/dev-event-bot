@@ -74,6 +74,21 @@ MAX_COMPACT_SUMMARY_CHARS = 180
 # 행사 블록 사이 구분 (빈 줄을 넣어야 목록이 뭉쳐 보이지 않는다)
 COMPACT_BLOCK_SEPARATOR = "\n\n"
 
+# '지금 접수 중' 게시판: 채널에 메시지 1개를 두고 매 실행마다 내용을 덮어쓴다.
+# Discord 메시지 1개의 임베드 글자 합계 제한은 6000자. 여유를 두고 예산을 잡는다.
+MAX_BOARD_CHARS = 5500
+# 임베드 1개의 description 제한은 4096자. 한 구간에 행사가 몰려도 넘지 않게 따로 막는다.
+MAX_BOARD_SECTION_CHARS = 4000
+MAX_BOARD_TITLE_CHARS = 60
+WEEKDAYS_KO = "월화수목금토일"
+# (섹션 이름, 포함할 최대 D-day, 임베드 색상). 위에서부터 순서대로 채운다.
+BOARD_SECTIONS = [
+    ("🔥 오늘 마감", 0, 15158332),      # 빨강
+    ("⏰ 3일 이내", 3, 15105570),       # 주황
+    ("📅 7일 이내", 7, 15844367),       # 노랑
+    ("🗓️ 그 이후", None, 3447003),      # 파랑
+]
+
 
 def get_digest_style() -> str:
     """DIGEST_STYLE 환경변수로 다이제스트 표현 방식 결정"""
@@ -83,6 +98,25 @@ def get_digest_style() -> str:
     if style:
         logger.warning(f"알 수 없는 DIGEST_STYLE '{style}', 기본값({DEFAULT_DIGEST_STYLE}) 사용")
     return DEFAULT_DIGEST_STYLE
+
+
+def is_board_enabled() -> bool:
+    """ACTIVE_BOARD 환경변수가 0/false/no/off면 게시판 갱신을 끈다 (기본: 켬)"""
+    value = os.environ.get("ACTIVE_BOARD", "").strip().lower()
+    return value not in ("0", "false", "no", "off")
+
+
+def board_webhook_names() -> Optional[List[str]]:
+    """게시판을 만들 웹훅 이름 목록. None이면 설정된 웹훅 전부.
+
+    ACTIVE_BOARD에 웹훅 환경변수 이름을 쉼표로 적으면 그 채널에만 게시판을 둔다.
+    예: ACTIVE_BOARD=DISCORD_SUMOKJANG_WEBHOOK
+    비어 있거나 1/true/yes/on이면 전부, 0/false/no/off면 끔(is_board_enabled).
+    """
+    value = os.environ.get("ACTIVE_BOARD", "").strip()
+    if value.lower() in ("", "1", "true", "yes", "on", "0", "false", "no", "off"):
+        return None
+    return [name.strip() for name in value.split(",") if name.strip()]
 
 
 def get_webhooks() -> List[Tuple[str, str]]:
@@ -226,6 +260,8 @@ class EventCache:
     def __init__(self, cache_file: str = CACHE_FILE, now: Optional[datetime] = None):
         self.cache_file = cache_file
         self.now = now or datetime.now()
+        # 웹훅별 '지금 접수 중' 게시판 메시지 참조: {웹훅 이름: {"id": 메시지 ID}}
+        self.boards: Dict[str, Dict] = {}
         self.events = self._load()
         self._url_keys = {
             normalize_url(e["url"]) for e in self.events if e.get("url")
@@ -267,6 +303,12 @@ class EventCache:
         # v2: {"version": 2, "events": [...]}
         if isinstance(data, dict) and isinstance(data.get("events"), list):
             events = [e for e in data["events"] if isinstance(e, dict) and e.get("url")]
+            boards = data.get("boards")
+            if isinstance(boards, dict):
+                self.boards = {
+                    name: ref for name, ref in boards.items()
+                    if isinstance(ref, dict) and ref.get("id")
+                }
             logger.info(f"캐시 로드 완료: {len(events)}개 이벤트")
             return events
 
@@ -278,6 +320,7 @@ class EventCache:
         payload = {
             "version": CACHE_VERSION,
             "updated_at": self.now.isoformat(),
+            "boards": self.boards,
             "events": self.events,
         }
         try:
@@ -621,7 +664,10 @@ class DiscordSender:
         held_at = cls._metadata_value(event, '일시')
         apply_at = cls._metadata_value(event, '접수')
         if held_at:
-            segments.append(held_at)
+            # '접수'와 같은 형식으로 앞에 '일시'를 붙인다. 이렇게 하지 않으면
+            # '10. 22(목) ...'처럼 줄이 '숫자. '로 시작해 Discord가 번호 목록으로
+            # 렌더링하고, '-# '(작고 흐린 글씨) 효과도 풀려 버린다.
+            segments.append(f"일시 {held_at}")
         elif apply_at:
             segments.append(f"접수 {apply_at}")
         elif event.get('month'):
@@ -740,6 +786,39 @@ class DiscordSender:
             logger.warning(f"메시지 수정 오류 ({self.webhook_name}): {e}")
             return False
 
+    def upsert_message(self, message_id: Optional[str], payload: Dict) -> Optional[str]:
+        """message_id가 있으면 수정하고, 없거나 사라졌으면 새로 보낸다.
+
+        반환값은 지금 살아 있는 메시지 ID (실패 시 기존 ID 또는 None).
+        edit_message()는 404를 '정리 완료'로 보고 성공 처리하지만, 게시판은
+        사라졌으면 다시 만들어야 하므로 상태 코드를 직접 확인한다.
+        """
+        if not self.webhook_url:
+            return message_id
+        if message_id:
+            url = f"{self.webhook_url.rstrip('/')}/messages/{message_id}"
+            try:
+                response = requests.patch(url, json=payload, timeout=10)
+                if response.status_code in (200, DISCORD_SUCCESS_CODE):
+                    return message_id
+                if response.status_code != 404:
+                    logger.warning(
+                        f"게시판 수정 실패 {response.status_code} ({self.webhook_name}), 다음 실행에서 재시도"
+                    )
+                    return message_id
+                logger.info(f"게시판 메시지가 삭제되어 새로 만듭니다 ({self.webhook_name})")
+            except requests.RequestException as e:
+                logger.warning(f"게시판 수정 오류 ({self.webhook_name}): {e}")
+                return message_id
+        message = self._post_webhook_message(payload)
+        if message and message.get("id"):
+            logger.info(
+                f"게시판 메시지 생성 ({self.webhook_name}): {message['id']} "
+                f"- 웹훅은 고정(pin)할 수 없으니 채널에서 직접 고정해 주세요"
+            )
+            return str(message["id"])
+        return message_id
+
     def delete_message(self, message_id: str) -> bool:
         """이미 보낸 웹훅 메시지를 삭제 (DELETE)"""
         if not (self.webhook_url and message_id):
@@ -756,6 +835,98 @@ class DiscordSender:
         except requests.RequestException as e:
             logger.warning(f"메시지 삭제 오류 ({self.webhook_name}): {e}")
             return False
+
+
+def _deadline_kind(event: Dict) -> str:
+    """마감일이 접수 마감에서 왔으면 '마감', 행사 날짜에서 왔으면 '행사'"""
+    return "마감" if _find_metadata_value(event.get('metadata', []), ('접수',)) else "행사"
+
+
+def _board_line(event: Dict, deadline: datetime, days_left: int) -> str:
+    """게시판 1줄: `D-3` 🔴 [제목](링크) · 10/25(일) 마감"""
+    dday = "D-DAY" if days_left == 0 else f"D-{days_left}"
+    title = event.get('title', '')
+    if len(title) > MAX_BOARD_TITLE_CHARS:
+        title = title[:MAX_BOARD_TITLE_CHARS - 1] + "…"
+    title = DiscordSender._escape_link_text(title)
+    when = f"{deadline.month}/{deadline.day}({WEEKDAYS_KO[deadline.weekday()]})"
+    emoji = DiscordSender._category_emoji(event)
+    return f"`{dday}` {emoji} [{title}]({event['url']}) · {when} {_deadline_kind(event)}"
+
+
+def build_board_payload(events: List[Dict], now: datetime) -> Dict:
+    """'지금 접수 중' 게시판 메시지 payload
+
+    마감되지 않았고 마감일을 아는 행사를 마감이 가까운 순서로 정렬해
+    D-day 구간별 임베드로 나눈다. 메시지 글자 제한(6000자)을 넘을 만큼 많으면
+    마감이 먼 행사부터 생략하고 '외 N건'으로 표시한다.
+    """
+    today = now.replace(hour=0, minute=0, second=0, microsecond=0)
+    active: List[Tuple[datetime, Dict]] = []
+    unknown = 0
+    seen = set()
+    for event in events:
+        key = normalize_url(event.get('url', ''))
+        if not event.get('title') or key in seen:
+            continue
+        seen.add(key)
+        deadline = parse_deadline(event)
+        if deadline is None:
+            unknown += 1
+            continue
+        if deadline < today:
+            continue
+        active.append((deadline, event))
+    active.sort(key=lambda item: (item[0], item[1].get('title', '')))
+
+    content = f"📌 **지금 접수 중인 개발자 행사 {len(active)}건** (마감 가까운 순)"
+    sections: List[Tuple[str, int, List[str]]] = [
+        (name, color, []) for name, _, color in BOARD_SECTIONS
+    ]
+    used = len(content)
+    shown = 0
+    for deadline, event in active:
+        days_left = (deadline - today).days
+        index = next(
+            i for i, (_, limit, _) in enumerate(BOARD_SECTIONS)
+            if limit is None or days_left <= limit
+        )
+        line = _board_line(event, deadline, days_left)
+        # 섹션 제목(임베드 title)도 글자 수에 포함되므로 넉넉히 더한다
+        cost = len(line) + 1 + (40 if not sections[index][2] else 0)
+        if used + cost > MAX_BOARD_CHARS:
+            break
+        section_chars = sum(len(existing) + 1 for existing in sections[index][2])
+        if section_chars + len(line) + 1 > MAX_BOARD_SECTION_CHARS:
+            # 이 구간은 꽉 찼다. 정렬돼 있으므로 다음 행사들도 같은 구간이거나
+            # 더 먼 구간이다. 더 먼 구간에 자리가 남을 수 있으니 계속 본다.
+            continue
+        sections[index][2].append(line)
+        used += cost
+        shown += 1
+
+    embeds = [
+        {
+            "title": f"{name} ({len(lines)}건)",
+            "description": "\n".join(lines),
+            "color": color,
+        }
+        for name, color, lines in sections
+        if lines
+    ]
+    notes = []
+    if len(active) > shown:
+        notes.append(f"마감이 더 먼 {len(active) - shown}건은 글자 수 제한으로 생략")
+    if unknown:
+        notes.append(f"마감일을 알 수 없는 {unknown}건 제외")
+    if not embeds:
+        embeds = [{"description": "지금 접수 중인 행사가 없어요.", "color": COLOR_INFO}]
+    footer = "Dev-Event Bot · 매일 자동 갱신"
+    if notes:
+        footer += " · " + " · ".join(notes)
+    embeds[-1]["footer"] = {"text": footer}
+    embeds[-1]["timestamp"] = datetime.now(timezone.utc).isoformat()
+    return {"content": content, "embeds": embeds}
 
 
 def chunk_events(events: List[Dict], style: str) -> List[List[Dict]]:
@@ -913,6 +1084,28 @@ class DevEventBot:
             logger.info(f"마감 정리 완료 | 수정 {edited}건, 삭제 {deleted}건")
         return edited, deleted
 
+    def update_boards(self) -> int:
+        """웹훅마다 '지금 접수 중' 게시판 메시지를 만들거나 최신 내용으로 덮어쓴다.
+
+        웹훅 메시지 수정은 알림이 가지 않으므로 매일 갱신해도 채널이 시끄럽지 않다.
+        메시지 ID는 캐시의 'boards'에 저장해 다음 실행에서 같은 메시지를 수정한다.
+        반환값은 갱신에 성공한 게시판 수.
+        """
+        payload = build_board_payload(self.cache.events, self.cache.now)
+        targets = board_webhook_names()
+        updated = 0
+        for sender in self.senders:
+            if targets is not None and sender.webhook_name not in targets:
+                continue
+            current = (self.cache.boards.get(sender.webhook_name) or {}).get("id")
+            message_id = sender.upsert_message(current, payload)
+            if message_id:
+                self.cache.boards[sender.webhook_name] = {"id": message_id}
+                updated += 1
+        if updated:
+            logger.info(f"게시판 갱신: {updated}개 채널, {payload['content']}")
+        return updated
+
     def _log_dry_run_cleanup(self) -> None:
         """DRY RUN에서 마감 정리 대상만 로그로 출력"""
         for (webhook_name, message_id), group in self._grouped_messages().items():
@@ -1021,6 +1214,22 @@ class DevEventBot:
                 self._log_dry_run_cleanup()
             else:
                 self.cleanup_expired_messages()
+
+            # '지금 접수 중' 게시판 갱신 (ACTIVE_BOARD=0이면 생략)
+            if is_board_enabled():
+                if self.dry_run:
+                    payload = build_board_payload(self.cache.events, self.cache.now)
+                    logger.info(f"[DRY RUN] 게시판 갱신 생략: {payload['content']}")
+                    for embed in payload["embeds"]:
+                        logger.info(f"[DRY RUN]   {embed.get('title', '')}")
+                else:
+                    # 게시판은 부가 기능이다. 여기서 예외가 나도 아래 캐시 저장은
+                    # 반드시 실행돼야 한다. 저장이 빠지면 방금 보낸 행사가 캐시에
+                    # 기록되지 않아 다음 실행에서 같은 알림이 또 나간다.
+                    try:
+                        self.update_boards()
+                    except Exception as e:
+                        logger.warning(f"게시판 갱신 실패 (다음 실행에서 재시도): {e}")
 
             # 오래된 캐시 정리 후 저장 (DRY RUN에서는 파일 미변경)
             if self.dry_run:

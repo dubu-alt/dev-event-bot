@@ -62,6 +62,8 @@ jobs:
           DISCORD_SUMOKJANG_WEBHOOK: ${{ secrets.DISCORD_SUMOKJANG_WEBHOOK }}
           # 비워두면 compact(임베드 1개 목록). rich로 두면 행사 1건당 임베드 1개
           DIGEST_STYLE: ${{ vars.DIGEST_STYLE }}
+          # 비워두면 모든 채널에 "지금 접수 중" 게시판 갱신. 0이면 끔. 웹훅 이름(쉼표 구분)을 적으면 그 채널만
+          ACTIVE_BOARD: ${{ vars.ACTIVE_BOARD }}
         run: |
           python dev_event_bot.py
       

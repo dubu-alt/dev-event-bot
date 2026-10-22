@@ -303,6 +303,7 @@ class SkipExpiredNewEventsTest(unittest.TestCase):
             side_effect=lambda events: [(True, "1")] * len(events)
         )
         bot.senders = [sender]
+        bot.update_boards = MagicMock(return_value=0)  # 게시판 갱신은 별도 테스트에서 검증
         with patch("dev_event_bot.ReadmeDownloader.fetch", return_value="readme"), \
                 patch("dev_event_bot.MarkdownParser.parse_events", return_value=parsed_events):
             new_count, _ = bot.run()

@@ -105,7 +105,7 @@ class CompactEmbedTest(unittest.TestCase):
         ])
         self.assertEqual(
             DiscordSender._compact_summary(event),
-            "7. 25(토) 14:00 - 18:00 · 온라인 · 무료 · 모임 · 바이브 코딩 클럽",
+            "일시 7. 25(토) 14:00 - 18:00 · 온라인 · 무료 · 모임 · 바이브 코딩 클럽",
         )
 
     def test_summary_falls_back_to_apply_then_month(self):
@@ -295,3 +295,11 @@ class SendDigestTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class SummaryListMarkdownTest(unittest.TestCase):
+    def test_summary_never_starts_with_number_and_dot(self):
+        # '10. 22(목)'으로 시작하면 Discord가 번호 목록으로 렌더링한다
+        event = make_event(metadata=["일시: 10. 22(목) ~ 10. 23(금)"])
+        summary_line = DiscordSender._compact_line(event).split("\n", 1)[1]
+        self.assertTrue(summary_line.startswith("-# 일시 10. 22(목)"))
