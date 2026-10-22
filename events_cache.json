@@ -1,6 +1,14 @@
 {
   "version": 3,
-  "updated_at": "2026-10-22T02:16:18.945103",
+  "updated_at": "2026-10-22T03:03:03.926020",
+  "boards": {
+    "DISCORD_WEBHOOK_URL": {
+      "id": "1562662554436640873"
+    },
+    "DISCORD_SUMOKJANG_WEBHOOK": {
+      "id": "1562662555699257379"
+    }
+  },
   "events": [
     {
       "title": "",
