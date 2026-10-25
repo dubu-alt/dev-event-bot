@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-10-24T02:19:47.237834",
+  "updated_at": "2026-10-25T02:06:45.617010",
   "boards": {
     "DISCORD_WEBHOOK_URL": {
       "id": "1562662554436640873"
@@ -845,18 +845,7 @@
       ],
       "sent_at": "2026-08-11T00:50:50.285829",
       "deadline": "2026-10-24",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1536537346185498719",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1536537353697624107",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "OpenAI DevDay Exchange 2026 - 서울",
@@ -1276,18 +1265,7 @@
       ],
       "sent_at": "2026-09-25T02:17:04.445077",
       "deadline": "2026-10-24",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1552866504117063761",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1552866506277261373",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "MongoDB User Group Seoul Meetup #6 OCT 2026",
@@ -1507,18 +1485,7 @@
       ],
       "sent_at": "2026-09-29T03:05:53.954171",
       "deadline": "2026-10-24",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1554328344701706294",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1554328348904128588",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 제14회 빅콘테스트 AI·데이터 경진대회",
