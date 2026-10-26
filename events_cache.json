@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-10-25T02:06:45.617010",
+  "updated_at": "2026-10-26T02:07:45.988900",
   "boards": {
     "DISCORD_WEBHOOK_URL": {
       "id": "1562662554436640873"
@@ -982,18 +982,7 @@
       ],
       "sent_at": "2026-09-10T01:53:37.014258",
       "deadline": "2026-10-25",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1547424783405424754",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1547424786336972933",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "드로이드나이츠 2026",
@@ -1548,18 +1537,7 @@
       ],
       "sent_at": "2026-10-02T02:56:29.423868",
       "deadline": "2026-10-25",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1555413137291878431",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1555413138537451656",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "K-클라우드 핵심 인프라 및 오픈소스 SW 기술 세미나",
@@ -2023,18 +2001,7 @@
       ],
       "sent_at": "2026-10-13T04:19:49.943985",
       "deadline": "2026-10-25",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1559420382837211147",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1559420384754012171",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "Grok Bot Meetup Seoul",
@@ -2400,18 +2367,7 @@
       ],
       "sent_at": "2026-10-19T02:12:35.717212",
       "deadline": "2026-10-25",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1561562685114556440",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1561562687232811101",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AWSKRUG #을지로 소모임 - KiroCrew 및 올리브영앱 개선 사례 (10월 26일)",
