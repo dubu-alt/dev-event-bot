@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-10-26T02:07:45.988900",
+  "updated_at": "2026-10-27T02:44:38.476465",
   "boards": {
     "DISCORD_WEBHOOK_URL": {
       "id": "1562662554436640873"
@@ -1487,18 +1487,7 @@
       ],
       "sent_at": "2026-09-29T03:05:53.954171",
       "deadline": "2026-10-26",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1554328344701706294",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1554328348904128588",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "합성 미세구조 기반 재료 물성 예측 AI 경진대회",
@@ -1550,18 +1539,7 @@
       ],
       "sent_at": "2026-10-02T02:56:29.423868",
       "deadline": "2026-10-26",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1555413137291878431",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1555413138537451656",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "무료 개발자 세미나 - 인프라지스틱스 데이 2026",
@@ -1916,18 +1894,7 @@
       ],
       "sent_at": "2026-10-09T03:28:12.833625",
       "deadline": "2026-10-26",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1557957839023112226",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1557957841761992736",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "[KISA] DNS 운영 고급 실무 및 Q&A",
@@ -2380,18 +2347,7 @@
       ],
       "sent_at": "2026-10-19T02:12:35.717212",
       "deadline": "2026-10-26",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1561562685114556440",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1561562687232811101",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 AI 해킹 방어 대회 (ACDC)",
@@ -2404,18 +2360,7 @@
       ],
       "sent_at": "2026-10-19T02:12:35.717212",
       "deadline": "2026-10-26",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1561562685114556440",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1561562687232811101",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "우먼 AI WEEK - 과학커뮤니케이션 포럼 × 우먼 AI 퍼스널 트레이닝 데이",
@@ -2428,18 +2373,7 @@
       ],
       "sent_at": "2026-10-19T02:12:35.717212",
       "deadline": "2026-10-26",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1561562685114556440",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1561562687232811101",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "JetBrains Air Day Seoul 2026",
@@ -2452,18 +2386,7 @@
       ],
       "sent_at": "2026-10-19T02:12:35.717212",
       "deadline": "2026-10-26",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1561562685114556440",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1561562687232811101",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AWSKRUG #Security 소모임 - CASA AL1 보안인증 취득기 및 AWS RAG 보안 사례 (10월 29일)",
@@ -2476,18 +2399,7 @@
       ],
       "sent_at": "2026-10-19T02:12:35.717212",
       "deadline": "2026-10-26",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1561562685114556440",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1561562687232811101",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "Google Cloud Fundamentals: Getting Started with Google Kubernetes Engine",
@@ -2500,18 +2412,7 @@
       ],
       "sent_at": "2026-10-19T02:12:35.717212",
       "deadline": "2026-10-26",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1561562685114556440",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1561562687232811101",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AI Native 옵저버빌리티로 5분 내에 장애 원인 찾는 3가지 방법",
@@ -2788,18 +2689,7 @@
       ],
       "sent_at": "2026-10-22T02:16:18.945103",
       "deadline": "2026-10-26",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1562650791184179281",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1562650793016954901",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "Games on AWS 2026",
@@ -2812,18 +2702,7 @@
       ],
       "sent_at": "2026-10-22T02:16:18.945103",
       "deadline": "2026-10-26",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1562650791184179281",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1562650793016954901",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 HBR AX SUMMIT",
@@ -2836,18 +2715,7 @@
       ],
       "sent_at": "2026-10-22T02:16:18.945103",
       "deadline": "2026-10-26",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1562650791184179281",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1562650793016954901",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "[SaaS 전환지원센터] 제10회 SaaS 전환 성공 세미나 - AI 시대, SaaS 고도화와 보안·운영 혁신 전략",
@@ -3100,18 +2968,7 @@
       ],
       "sent_at": "2026-10-24T02:19:47.237834",
       "deadline": "2026-10-26",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1563376435148890224",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1563376438537756673",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "Hacktoberfest Seoul 2026",
