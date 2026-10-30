@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-10-29T03:17:01.106962",
+  "updated_at": "2026-10-30T03:19:33.346180",
   "boards": {
     "DISCORD_WEBHOOK_URL": {
       "id": "1562662554436640873"
@@ -1256,18 +1256,7 @@
       ],
       "sent_at": "2026-09-25T02:17:04.445077",
       "deadline": "2026-10-29",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1552866504117063761",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1552866506277261373",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "쿵야 IP를 활용한 로블록스(Roblox) 게임 콘텐츠 제작 공모전",
@@ -1541,18 +1530,7 @@
       ],
       "sent_at": "2026-10-02T02:56:29.423868",
       "deadline": "2026-10-29",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1555413137291878431",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1555413138537451656",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "항만 문제해결을 위한 AI 기술 공모전",
@@ -1700,18 +1678,7 @@
       ],
       "sent_at": "2026-10-06T03:40:02.179962",
       "deadline": "2026-10-29",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1556873649594695743",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1556873651817676882",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "제9회 Dreams Come True 컨퍼런스 - 생성형 AI 보안, DLP + AI 보안 체계, AI 비대면 본인 확인",
@@ -2144,18 +2111,7 @@
       ],
       "sent_at": "2026-10-15T02:11:20.132676",
       "deadline": "2026-10-29",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1560112825156763699",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1560112827677675552",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AWSKRUG 주니어 #junior 밋업 - 11월 5일 (목)",
@@ -2686,18 +2642,7 @@
       ],
       "sent_at": "2026-10-22T02:16:18.945103",
       "deadline": "2026-10-29",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1562650791184179281",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1562650793016954901",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AI 개발에 관심있는 사람들의 네트워킹 모임",
