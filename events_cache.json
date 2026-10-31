@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-10-30T03:19:33.346180",
+  "updated_at": "2026-10-31T03:03:14.225727",
   "boards": {
     "DISCORD_WEBHOOK_URL": {
       "id": "1562662554436640873"
@@ -1691,18 +1691,7 @@
       ],
       "sent_at": "2026-10-06T03:40:02.179962",
       "deadline": "2026-10-30",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1556873649594695743",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1556873651817676882",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026년 AI 라이프 솔루션 챌린지",
@@ -1865,18 +1854,7 @@
       ],
       "sent_at": "2026-10-09T03:28:12.833625",
       "deadline": "2026-10-30",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1557957839023112226",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1557957841761992736",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 AI 인사이트 포럼",
@@ -1928,18 +1906,7 @@
       ],
       "sent_at": "2026-10-13T04:19:49.943985",
       "deadline": "2026-10-30",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1559420382837211147",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1559420384754012171",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026년 양자내성암호 전환 경진대회·해커톤",
@@ -1952,18 +1919,7 @@
       ],
       "sent_at": "2026-10-13T04:19:49.943985",
       "deadline": "2026-10-30",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1559420382837211147",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1559420384754012171",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "DEVFEST INCHEON 2026",
@@ -2124,18 +2080,7 @@
       ],
       "sent_at": "2026-10-15T02:11:20.132676",
       "deadline": "2026-10-30",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1560112825156763699",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1560112827677675552",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 Edge AI Day",
@@ -2350,18 +2295,7 @@
       ],
       "sent_at": "2026-10-19T02:12:35.717212",
       "deadline": "2026-10-30",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1561562685114556440",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1561562687232811101",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "Hello World AI 해커톤 — 개인전, 하루 안에 배포까지",
@@ -2655,18 +2589,7 @@
       ],
       "sent_at": "2026-10-22T02:16:18.945103",
       "deadline": "2026-10-30",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1562650791184179281",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1562650793016954901",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "젝커톤 2026 | 젝트 X 스위프 AI 해커톤",
