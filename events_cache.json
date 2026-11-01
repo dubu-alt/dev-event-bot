@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-10-31T03:03:14.225727",
+  "updated_at": "2026-11-01T02:58:29.167271",
   "boards": {
     "DISCORD_WEBHOOK_URL": {
       "id": "1562662554436640873"
@@ -871,18 +871,7 @@
       ],
       "sent_at": "2026-09-04T01:47:28.207750",
       "deadline": "2026-10-31",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1545248907913592865",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1545248913341026325",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "데이터안심구역 경진대회",
@@ -908,18 +897,7 @@
       ],
       "sent_at": "2026-09-08T01:51:16.399462",
       "deadline": "2026-10-31",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1546699428054835251",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1546699430533791836",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "SK AX 상생아카데미",
@@ -1704,18 +1682,7 @@
       ],
       "sent_at": "2026-10-06T03:40:02.179962",
       "deadline": "2026-10-31",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1556873649594695743",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1556873651817676882",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 NASA International Space Apps Challenge Seoul",
@@ -1932,18 +1899,7 @@
       ],
       "sent_at": "2026-10-13T04:19:49.943985",
       "deadline": "2026-10-31",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1559420382837211147",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1559420384754012171",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "월간 AX: 10월",
@@ -2308,18 +2264,7 @@
       ],
       "sent_at": "2026-10-19T02:12:35.717212",
       "deadline": "2026-10-31",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1561562685114556440",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1561562687232811101",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "11월 월간 개발자 밋업 - 일상 속 비트코인 결제",
@@ -2602,18 +2547,7 @@
       ],
       "sent_at": "2026-10-22T02:16:18.945103",
       "deadline": "2026-10-31",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1562650791184179281",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1562650793016954901",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "올리브영 테크 컨퍼런스 define:OMNI",
@@ -2783,18 +2717,7 @@
       ],
       "sent_at": "2026-10-24T02:19:47.237834",
       "deadline": "2026-10-31",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1563376435148890224",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1563376438537756673",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "TRILLION AGENT AI HACKATHON 2026",
@@ -3370,6 +3293,366 @@
         {
           "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
           "id": "1564834411092901919",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "OBA.RUN 2nd 해커톤",
+      "url": "https://luma.com/ahvyoors",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `대회`, `AI`",
+        "주최: Hashed · 마켓핏랩 · vooy (주관 OBA)",
+        "접수: 10. 30(금) ~ 11. 04(수)"
+      ],
+      "sent_at": "2026-11-01T02:58:29.167271",
+      "deadline": "2026-11-04",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1566285275284643982",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1566285277570404464",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "LOTTE AX CHALLENGE 2026",
+      "url": "https://lotteaxchallenge.com/",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `온라인`, `오프라인(경기 오산)`, `무료`, `대회`, `AI`",
+        "주최: 롯데지주",
+        "접수: 10. 28(수) ~ 11. 04(수) 23:59"
+      ],
+      "sent_at": "2026-11-01T02:58:29.167271",
+      "deadline": "2026-11-04",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1566285275284643982",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1566285277570404464",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "TSBM 11월 (TypeScript Backend Meetup)",
+      "url": "https://ticketa.co/event/bvhhl9a7",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `모임`, `기술일반`",
+        "주최: TSBM (TypeScript Backend Meetup)",
+        "접수: 10. 29(목) ~ 11. 06(금) 18:00"
+      ],
+      "sent_at": "2026-11-01T02:58:29.167271",
+      "deadline": "2026-11-06",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1566285275284643982",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1566285277570404464",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AI 헬스케어 미니 데이터 챌린지",
+      "url": "https://resume-show-project.vercel.app/precourse.html",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `대회`, `AI`",
+        "주최: 오즈코딩스쿨 · 데이콘",
+        "접수: 10. 30(금) ~ 11. 06(금) 23:59"
+      ],
+      "sent_at": "2026-11-01T02:58:29.167271",
+      "deadline": "2026-11-06",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1566285275284643982",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1566285277570404464",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 AI GAME LAB DAY",
+      "url": "https://event-us.kr/gghcs/event/138448",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(경기 성남시)`, `무료`, `세미나`, `AI`",
+        "주최: 글로벌게임허브센터",
+        "접수: 10. 28(수) ~ 11. 09(월) 16:00"
+      ],
+      "sent_at": "2026-11-01T02:58:29.167271",
+      "deadline": "2026-11-09",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1566285275284643982",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1566285277570404464",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "[솔트룩스] AI 에이전트 ML 엔지니어 AI 캠프",
+      "url": "https://event-us.kr/codelab/event/138813",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(서울 금천구)`, `무료`, `교육`, `AI`",
+        "주최: 솔트룩스 AI 캠퍼스 · 코드랩아카데미",
+        "접수: 10. 22(목) ~ 11. 09(월) 23:59"
+      ],
+      "sent_at": "2026-11-01T02:58:29.167271",
+      "deadline": "2026-11-09",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1566285275284643982",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1566285277570404464",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "우리테크 제품 활용 웨비나 2회차",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLScP2J1dWCx0KW83hx6L3QAfqij3rsh0_bo651GX0Sm-9D0XuA/viewform",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `기술일반`",
+        "주최: 우리테크 (RealGrid)",
+        "일시: 11. 09(월) 14:00 ~ 11. 13(금) 15:00"
+      ],
+      "sent_at": "2026-11-01T02:58:29.167271",
+      "deadline": "2026-11-13",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1566285275284643982",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1566285277570404464",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "FDE 리쿠르팅 카니발 2026",
+      "url": "https://event.wanted.co.kr/FDErecruiting2026",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(서울 송파구)`, `유료`, `모임`, `AI`",
+        "주최: 원티드랩",
+        "접수: 10. 30(금) ~ 11. 16(월) 10:00"
+      ],
+      "sent_at": "2026-11-01T02:58:29.167271",
+      "deadline": "2026-11-16",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1566285275284643982",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1566285277570404464",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "DevFest GDG Busan X Elice Lab 2026 - Builder Day",
+      "url": "https://ticketa.co/event/fb7a0c8t",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(부산)`, `무료`, `세미나`, `AI`",
+        "주최: GDG Busan · Elice Lab",
+        "접수: 10. 20(화) ~ 11. 19(목) 14:00"
+      ],
+      "sent_at": "2026-11-01T02:58:29.167271",
+      "deadline": "2026-11-19",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1566285275284643982",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1566285277570404464",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "[에너자이 기술 세미나] AI on Edge #2",
+      "url": "https://event-us.kr/enerzai/event/138890",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `세미나`, `AI`",
+        "주최: 에너자이 (ENERZAi)",
+        "접수: 10. 30(금) ~ 11. 20(금) 17:00"
+      ],
+      "sent_at": "2026-11-01T02:58:29.167271",
+      "deadline": "2026-11-20",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1566285275284643982",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1566285277570404464",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 블록체인 밋업데이 (32회차)",
+      "url": "https://event-us.kr/2026bcmd/event/129800",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(서울 송파구)`, `무료`, `세미나`, `블록체인`, `AI`",
+        "주최: 과학기술정보통신부 / 한국인터넷진흥원(KISA)",
+        "접수: 10. 19(월) ~ 11. 20(금) 18:00"
+      ],
+      "sent_at": "2026-11-01T02:58:29.167271",
+      "deadline": "2026-11-20",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1566285275284643982",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1566285277570404464",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AWSKRUG 커넥트 #connect 소모임 - 유럽 소버린 AI 및 AI 에이전트 기반 K8s 플랫폼 엔지니어링 (11월 26일)",
+      "url": "https://www.meetup.com/awskrug/events/317199460/",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(서울 서초구)`, `유료`, `모임`, `클라우드`",
+        "주최: AWSKRUG",
+        "일시: 11. 26(목) 19:00 ~ 11. 26(목) 21:10"
+      ],
+      "sent_at": "2026-11-01T02:58:29.167271",
+      "deadline": "2026-11-26",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1566285275284643982",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1566285277570404464",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 Devfest: AFK - Away From Keyboard",
+      "url": "https://event-us.kr/gdgcampuskorea/event/138371",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(서울 마포구)`, `유료`, `대회`, `AI`",
+        "주최: GDG Campus Korea",
+        "접수: 10. 30(금) ~ 11. 27(금) 18:00"
+      ],
+      "sent_at": "2026-11-01T02:58:29.167271",
+      "deadline": "2026-11-27",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1566285275284643982",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1566285277570404464",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "DevFest GDG Daejeon 2026",
+      "url": "https://ticketa.co/event/qk6gq7et",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(대전)`, `유료`, `세미나`, `AI`",
+        "주최: GDG Daejeon",
+        "접수: 10. 29(목) ~ 11. 28(토) 10:00"
+      ],
+      "sent_at": "2026-11-01T02:58:29.167271",
+      "deadline": "2026-11-28",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1566285275284643982",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1566285277570404464",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "루프플레이 | 개발자를 위한 실전 스터디 & 네트워킹",
+      "url": "https://event-us.kr/loopers/event/138756",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `동아리`, `기술일반`",
+        "주최: 루퍼스",
+        "접수: 10. 28(수) ~ 11. 30(월) 23:59"
+      ],
+      "sent_at": "2026-11-01T02:58:29.167271",
+      "deadline": "2026-11-30",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1566285275284643982",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1566285277570404464",
           "style": "compact"
         }
       ]
