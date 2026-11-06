@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-11-05T04:01:14.273921",
+  "updated_at": "2026-11-06T03:59:10.387801",
   "boards": {
     "DISCORD_WEBHOOK_URL": {
       "id": "1562662554436640873"
@@ -1994,18 +1994,7 @@
       ],
       "sent_at": "2026-10-15T02:11:20.132676",
       "deadline": "2026-11-05",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1560112825156763699",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1560112827677675552",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "[SK텔레콤] FLY AI Challenger 10기 모집",
@@ -2485,18 +2474,7 @@
       ],
       "sent_at": "2026-10-22T02:16:18.945103",
       "deadline": "2026-11-05",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1562650791184179281",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1562650793016954901",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "OWASP x BIPA 부산 보안 커뮤니티 데이",
