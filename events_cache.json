@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-11-06T03:59:10.387801",
+  "updated_at": "2026-11-07T03:35:06.883429",
   "boards": {
     "DISCORD_WEBHOOK_URL": {
       "id": "1562662554436640873"
@@ -1010,18 +1010,7 @@
       ],
       "sent_at": "2026-09-15T02:15:03.045558",
       "deadline": "2026-11-06",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1549242115089764503",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1549242117317070939",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "Flutter Korea 2026",
@@ -1249,18 +1238,7 @@
       ],
       "sent_at": "2026-09-25T02:17:04.445077",
       "deadline": "2026-11-06",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1552866505182543995",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1552866512438825012",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 DATA·AI 분석 경진대회",
@@ -1273,18 +1251,7 @@
       ],
       "sent_at": "2026-09-25T02:17:04.445077",
       "deadline": "2026-11-06",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1552866505182543995",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1552866512438825012",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "NVIDIA AI Day Seoul 2026",
@@ -1881,18 +1848,7 @@
       ],
       "sent_at": "2026-10-13T04:19:49.943985",
       "deadline": "2026-11-06",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1559420382837211147",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1559420384754012171",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "Techive 여덟번째 발표: AI 에이전트를 이해하고 부리고 다스리기",
@@ -1905,18 +1861,7 @@
       ],
       "sent_at": "2026-10-13T04:19:49.943985",
       "deadline": "2026-11-06",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1559420382837211147",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1559420384754012171",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AI 에이전트의 ERP·레거시 연동과 멀티에이전트 협업 실전 세미나",
@@ -2487,18 +2432,7 @@
       ],
       "sent_at": "2026-10-22T02:16:18.945103",
       "deadline": "2026-11-06",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1562650791184179281",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1562650793016954901",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "DEVS 커뮤니티 1st 밋업",
@@ -2511,18 +2445,7 @@
       ],
       "sent_at": "2026-10-22T02:16:18.945103",
       "deadline": "2026-11-06",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1562650791184179281",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1562650793016954901",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "[1회차] RL과 VLA로 만나는 Physical AI - 로봇 제어 기초",
@@ -2609,18 +2532,7 @@
       ],
       "sent_at": "2026-10-24T02:19:47.237834",
       "deadline": "2026-11-06",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1563376435148890224",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1563376438537756673",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "MAWD 대학생 START-UP HACKATHON",
@@ -2805,18 +2717,7 @@
       ],
       "sent_at": "2026-10-28T02:53:11.957132",
       "deadline": "2026-11-06",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1564834403107086450",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1564834411092901919",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "K-하이테크 플랫폼 AI 세미나 (AI TALKING STAGE)",
@@ -3191,18 +3092,7 @@
       ],
       "sent_at": "2026-11-01T02:58:29.167271",
       "deadline": "2026-11-06",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1566285275284643982",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1566285277570404464",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AI 헬스케어 미니 데이터 챌린지",
@@ -3215,18 +3105,7 @@
       ],
       "sent_at": "2026-11-01T02:58:29.167271",
       "deadline": "2026-11-06",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1566285275284643982",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1566285277570404464",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 AI GAME LAB DAY",
