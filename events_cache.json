@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-11-07T03:35:06.883429",
+  "updated_at": "2026-11-08T03:05:15.283718",
   "boards": {
     "DISCORD_WEBHOOK_URL": {
       "id": "1562662554436640873"
@@ -1023,18 +1023,7 @@
       ],
       "sent_at": "2026-09-15T02:15:03.045558",
       "deadline": "2026-11-07",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1549242115089764503",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1549242117317070939",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "DDD Seoul 2026",
@@ -2545,18 +2534,7 @@
       ],
       "sent_at": "2026-10-24T02:19:47.237834",
       "deadline": "2026-11-07",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1563376435148890224",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1563376438537756673",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "제23회 차세대 테크 리더십포럼 - AI-Native System: 지능화로 다시 설계되는 공학",
