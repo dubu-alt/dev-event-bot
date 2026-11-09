@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-11-08T03:05:15.283718",
+  "updated_at": "2026-11-09T03:27:49.426840",
   "boards": {
     "DISCORD_WEBHOOK_URL": {
       "id": "1562662554436640873"
@@ -1941,18 +1941,7 @@
       ],
       "sent_at": "2026-10-15T02:11:20.132676",
       "deadline": "2026-11-08",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1560112825156763699",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1560112827677675552",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "openKcloud DevDay 2026 \"모두를 위한 AI, 관측에서 서비스까지 AI로 연결되는 클라우드\"",
@@ -2447,18 +2436,7 @@
       ],
       "sent_at": "2026-10-22T02:16:18.945103",
       "deadline": "2026-11-08",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1562650791184179281",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1562650793016954901",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AWS Community Day Seoul 2026 - AI 에이전트 시대의 클라우드 운영 배우기",
@@ -2708,18 +2686,7 @@
       ],
       "sent_at": "2026-10-28T02:53:11.957132",
       "deadline": "2026-11-08",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1564834403107086450",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1564834411092901919",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "아임웹 테크그라운드 26",
@@ -2732,18 +2699,7 @@
       ],
       "sent_at": "2026-10-28T02:53:11.957132",
       "deadline": "2026-11-08",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1564834403107086450",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1564834411092901919",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "From Vulnerability Research to Vulnerability Engineering (Dev Korea #19)",
@@ -3360,18 +3316,7 @@
       ],
       "sent_at": "2026-11-05T04:01:14.273921",
       "deadline": "2026-11-08",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1567750628103684137",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1567750630364155955",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 AI 활용 전국 대학생 창업 해커톤",
