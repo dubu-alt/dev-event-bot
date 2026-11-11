@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-11-10T05:01:35.230349",
+  "updated_at": "2026-11-11T03:35:10.388638",
   "boards": {
     "DISCORD_WEBHOOK_URL": {
       "id": "1562662554436640873"
@@ -1253,18 +1253,7 @@
       ],
       "sent_at": "2026-09-25T02:17:04.445077",
       "deadline": "2026-11-10",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1552866505182543995",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1552866512438825012",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 동남 버그바운티 대회",
@@ -1954,18 +1943,7 @@
       ],
       "sent_at": "2026-10-15T02:11:20.132676",
       "deadline": "2026-11-10",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1560112825156763699",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1560112827677675552",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "세종 R&D 기업 AI 활용 사업화 MVP 메이커톤",
@@ -2173,18 +2151,7 @@
       ],
       "sent_at": "2026-10-19T02:12:35.717212",
       "deadline": "2026-11-10",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1561562685114556440",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1561562687232811101",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 블록체인 밋업데이 (31회차)",
