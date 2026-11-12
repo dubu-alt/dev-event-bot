@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-11-11T03:35:10.388638",
+  "updated_at": "2026-11-12T04:43:34.568088",
   "boards": {
     "DISCORD_WEBHOOK_URL": {
       "id": "1562662554436640873"
@@ -2679,18 +2679,7 @@
       ],
       "sent_at": "2026-10-28T02:53:11.957132",
       "deadline": "2026-11-11",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1564834403107086450",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1564834411092901919",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "Furiosa Developer Meetup",
@@ -3274,18 +3263,7 @@
       ],
       "sent_at": "2026-11-05T04:01:14.273921",
       "deadline": "2026-11-11",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1567750628103684137",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1567750630364155955",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AI를 활용한 웹서비스 제작, 개발부터 배포까지 (부산)",
@@ -3739,6 +3717,30 @@
         {
           "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
           "id": "1569577751633993779",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "사이프(SIPE) 6기 모집",
+      "url": "https://sipe.team/recruit",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(서울)`, `유료`, `동아리`, `기술일반`, `커뮤니티`, `네트워킹`",
+        "주최: 사이프(SIPE)",
+        "접수: 11. 02(월) ~ 11. 16(월)"
+      ],
+      "sent_at": "2026-11-12T04:43:34.568088",
+      "deadline": "2026-11-16",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1570297990214848513",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1570297992442019916",
           "style": "compact"
         }
       ]
