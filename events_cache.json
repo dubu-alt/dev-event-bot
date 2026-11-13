@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-11-12T04:43:34.568088",
+  "updated_at": "2026-11-13T03:55:45.313454",
   "boards": {
     "DISCORD_WEBHOOK_URL": {
       "id": "1562662554436640873"
@@ -1470,18 +1470,7 @@
       ],
       "sent_at": "2026-10-02T02:56:29.423868",
       "deadline": "2026-11-12",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1555413137291878431",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1555413138537451656",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "SHOWCASE26",
@@ -2492,18 +2481,7 @@
       ],
       "sent_at": "2026-10-24T02:19:47.237834",
       "deadline": "2026-11-12",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1563376435148890224",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1563376438537756673",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "현대자동차그룹 차량용 앱 개발 공모전 (Code your App into Pleos App Market)",
@@ -2692,18 +2670,7 @@
       ],
       "sent_at": "2026-10-28T02:53:11.957132",
       "deadline": "2026-11-12",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1564834403107086450",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1564834411092901919",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "C++ Korea 소모임 - 2026/11",
@@ -3276,18 +3243,7 @@
       ],
       "sent_at": "2026-11-05T04:01:14.273921",
       "deadline": "2026-11-12",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1567750628103684137",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1567750630364155955",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "Backend Meetup",
@@ -3741,6 +3697,270 @@
         {
           "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
           "id": "1570297992442019916",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "SLASH Live Ep. 2 - iPhone Duo 대응기",
+      "url": "https://toss.im/builder/to/f478d459ab4d4480a37798912f788c10",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `기술일반`",
+        "주최: 토스",
+        "일시: 11. 18(수) 19:00 ~ 11. 18(수) 20:30"
+      ],
+      "sent_at": "2026-11-13T03:55:45.313454",
+      "deadline": "2026-11-18",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1570648342466404355",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1570648344550973483",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 대구광역시 기후·환경·탄소중립 공공데이터 AI 활용대회",
+      "url": "https://www.dcnc.or.kr/bbs/board.php?bo_table=notice&wr_id=193",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `대회`, `AI`",
+        "주최: 대구광역시 탄소중립지원센터",
+        "접수: 10. 12(월) ~ 11. 20(금) 17:00"
+      ],
+      "sent_at": "2026-11-13T03:55:45.313454",
+      "deadline": "2026-11-20",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1570648342466404355",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1570648344550973483",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Notion AI Hackathon Seoul",
+      "url": "https://luma.com/vc6rmvaz",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(서울 서초구)`, `무료`, `대회`, `AI`",
+        "주최: Team.HUMAN (Notion Korea 지원)",
+        "일시: 11. 21(토) 10:00 ~ 11. 21(토) 19:00"
+      ],
+      "sent_at": "2026-11-13T03:55:45.313454",
+      "deadline": "2026-11-21",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1570648342466404355",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1570648344550973483",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 SSAFYnity 커리어파티",
+      "url": "https://ssafynity.github.io/events/archive/2026-career-party/",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `모임`, `기술일반`",
+        "주최: SSAFYnity (싸피니티)",
+        "접수: 11. 01(일) ~ 11. 21(토) 23:30"
+      ],
+      "sent_at": "2026-11-13T03:55:45.313454",
+      "deadline": "2026-11-21",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1570648342466404355",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1570648344550973483",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 AI 정보보호 세미나 | AI 시대, 사이버 위협과 보안 이야기",
+      "url": "https://event-us.kr/day1ax/event/139802",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `온라인`, `오프라인(경기 수원)`, `무료`, `세미나`, `기술일반`",
+        "주최: 온앤安",
+        "접수: 11. 09(월) ~ 11. 23(월) 23:59"
+      ],
+      "sent_at": "2026-11-13T03:55:45.313454",
+      "deadline": "2026-11-23",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1570648342466404355",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1570648344550973483",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AI in class, AI at work (Dev Korea #20)",
+      "url": "https://dev-korea.com/events/ai-in-class-november-2026",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(서울 용산구)`, `무료`, `모임`, `AI`",
+        "주최: Dev Korea · 서울특별시교육청",
+        "일시: 11. 24(화) 18:30 ~ 11. 24(화) 22:00"
+      ],
+      "sent_at": "2026-11-13T03:55:45.313454",
+      "deadline": "2026-11-24",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1570648342466404355",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1570648344550973483",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AI 시안으로 개발자와 협업하기",
+      "url": "https://event-us.kr/proofer/event/140027",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `AI`",
+        "주최: 프루퍼(proofer)",
+        "접수: 11. 12(목) 09:00 ~ 11. 24(화) 19:00"
+      ],
+      "sent_at": "2026-11-13T03:55:45.313454",
+      "deadline": "2026-11-24",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1570648342466404355",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1570648344550973483",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2027 ChatGPT 도입 전략 세미나",
+      "url": "https://event.imaginationgroup.co.kr/seminar/12/",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(서울 서초구)`, `무료`, `세미나`, `AI`",
+        "주최: 한국AI기술협회 · 상상력집단",
+        "접수: 11. 10(화) ~ 11. 25(수) 23:59"
+      ],
+      "sent_at": "2026-11-13T03:55:45.313454",
+      "deadline": "2026-11-25",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1570648342466404355",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1570648344550973483",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AWSKRUG 인천 지역 #incheon 소모임 - 11월 26일 (목)",
+      "url": "https://www.meetup.com/awskrug/events/317378266/",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(인천)`, `무료`, `모임`, `클라우드`",
+        "주최: AWSKRUG",
+        "접수: 11. 11(수) ~ 11. 26(목) 19:30"
+      ],
+      "sent_at": "2026-11-13T03:55:45.313454",
+      "deadline": "2026-11-26",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1570648342466404355",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1570648344550973483",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "[kt cloud 웨비나] 클라우드 운영, 보이는 만큼 달라지다",
+      "url": "https://event-us.kr/ktcloud/event/139954",
+      "month": "26년 12월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `클라우드`",
+        "주최: kt cloud",
+        "접수: 11. 11(수) 12:00 ~ 12. 02(수) 13:00"
+      ],
+      "sent_at": "2026-11-13T03:55:45.313454",
+      "deadline": "2026-12-02",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1570648342466404355",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1570648344550973483",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Microsoft Ignite 2026 Recap :: 전문가와 함께 최신 기술 짚어보기",
+      "url": "https://event-us.kr/msmvp/event/139823",
+      "month": "26년 12월",
+      "metadata": [
+        "분류: `오프라인(서울 종로구)`, `무료`, `세미나`, `AI`",
+        "주최: Microsoft MVP 커뮤니티",
+        "접수: 11. 10(화) 11:00 ~ 12. 06(일) 10:00"
+      ],
+      "sent_at": "2026-11-13T03:55:45.313454",
+      "deadline": "2026-12-06",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1570648342466404355",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1570648344550973483",
           "style": "compact"
         }
       ]
