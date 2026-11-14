@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-11-13T03:55:45.313454",
+  "updated_at": "2026-11-14T03:54:02.171728",
   "boards": {
     "DISCORD_WEBHOOK_URL": {
       "id": "1562662554436640873"
@@ -1266,18 +1266,7 @@
       ],
       "sent_at": "2026-09-25T02:17:04.445077",
       "deadline": "2026-11-13",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1552866505182543995",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1552866512438825012",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "FOSS for All Conference 2026",
@@ -2153,18 +2142,7 @@
       ],
       "sent_at": "2026-10-19T02:12:35.717212",
       "deadline": "2026-11-13",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1561562685114556440",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1561562687232811101",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "PyTorch Day Korea 2026",
@@ -2683,18 +2661,7 @@
       ],
       "sent_at": "2026-10-28T02:53:11.957132",
       "deadline": "2026-11-13",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1564834403107086450",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1564834411092901919",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AI 위협 시대, 운영 연속성을 위한 OT 보안 전략",
@@ -3001,18 +2968,7 @@
       ],
       "sent_at": "2026-11-01T02:58:29.167271",
       "deadline": "2026-11-13",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1566285275284643982",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1566285277570404464",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "FDE 리쿠르팅 카니발 2026",
@@ -3256,18 +3212,7 @@
       ],
       "sent_at": "2026-11-05T04:01:14.273921",
       "deadline": "2026-11-13",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1567750628103684137",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1567750630364155955",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 성평등 AI 벤치마크 챌린지",
