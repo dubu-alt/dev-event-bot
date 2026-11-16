@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-11-15T03:36:47.153084",
+  "updated_at": "2026-11-16T03:36:14.459383",
   "boards": {
     "DISCORD_WEBHOOK_URL": {
       "id": "1562662554436640873"
@@ -1574,18 +1574,7 @@
       ],
       "sent_at": "2026-10-06T03:40:02.179962",
       "deadline": "2026-11-15",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1556873649594695743",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1556873651817676882",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "Apache Airflow Meetup 2026 @Seoul",
@@ -2472,18 +2461,7 @@
       ],
       "sent_at": "2026-10-24T02:19:47.237834",
       "deadline": "2026-11-15",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1563376435148890224",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1563376438537756673",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "[LG U+ RTK 웨비나] 피지컬 AI 시대, 정확한 위치가 경쟁력입니다",
