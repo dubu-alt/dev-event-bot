@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-11-17T05:33:14.777952",
+  "updated_at": "2026-11-18T04:58:12.018346",
   "boards": {
     "DISCORD_WEBHOOK_URL": {
       "id": "1562662554436640873"
@@ -2146,18 +2146,7 @@
       ],
       "sent_at": "2026-10-19T02:12:35.717212",
       "deadline": "2026-11-17",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1561562685114556440",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1561562687232811101",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "Techive 아홉번째 발표: AI에 시키고, 내가 직접 만든다!",
