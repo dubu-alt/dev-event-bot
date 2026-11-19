@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-11-18T04:58:12.018346",
+  "updated_at": "2026-11-19T04:52:53.238617",
   "boards": {
     "DISCORD_WEBHOOK_URL": {
       "id": "1562662554436640873"
@@ -2441,18 +2441,7 @@
       ],
       "sent_at": "2026-10-24T02:19:47.237834",
       "deadline": "2026-11-18",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1563376435148890224",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1563376438537756673",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 대구 블록체인 밋업데이 [4회차 보안 과정]",
@@ -3292,18 +3281,7 @@
       ],
       "sent_at": "2026-11-10T05:01:35.230349",
       "deadline": "2026-11-18",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1569577748027015309",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1569577751633993779",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "클라우드 네이티브 커뮤니티 밋업 in 대구",
@@ -3569,18 +3547,7 @@
       ],
       "sent_at": "2026-11-13T03:55:45.313454",
       "deadline": "2026-11-18",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1570648342466404355",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1570648344550973483",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 대구광역시 기후·환경·탄소중립 공공데이터 AI 활용대회",
