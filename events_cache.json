@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-11-19T04:52:53.238617",
+  "updated_at": "2026-11-20T04:42:54.923428",
   "boards": {
     "DISCORD_WEBHOOK_URL": {
       "id": "1562662554436640873"
@@ -2339,18 +2339,7 @@
       ],
       "sent_at": "2026-10-22T02:16:18.945103",
       "deadline": "2026-11-19",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1562650791184179281",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1562650793016954901",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "Inference Korea meetup",
@@ -2608,18 +2597,7 @@
       ],
       "sent_at": "2026-10-28T02:53:11.957132",
       "deadline": "2026-11-19",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1564834403107086450",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1564834411092901919",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "제주 AI·빅데이터 활용 AI Agent 개발 챌린지",
@@ -2928,18 +2906,7 @@
       ],
       "sent_at": "2026-11-01T02:58:29.167271",
       "deadline": "2026-11-19",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1566285275284643982",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1566285277570404464",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "[에너자이 기술 세미나] AI on Edge #2",
@@ -3800,18 +3767,7 @@
       ],
       "sent_at": "2026-11-17T05:33:14.777952",
       "deadline": "2026-11-19",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1572122428937740363",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1572122432330932295",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "[세종테크노파크] 확장형 탐지 및 대응 솔루션(XDR) (온라인 무료 교육)",
@@ -3824,18 +3780,7 @@
       ],
       "sent_at": "2026-11-17T05:33:14.777952",
       "deadline": "2026-11-19",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1572122428937740363",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1572122432330932295",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AWSKRUG #Security 소모임 - 11월 24일(화)",
@@ -4289,6 +4234,102 @@
         {
           "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
           "id": "1572122436449607681",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "TripPups AI Game Hackathon 2026",
+      "url": "https://hackon.kr/e/d0c8a7e5",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `대회`, `AI`",
+        "주최: Trip-Pups",
+        "일시: 10. 26(월) ~ 11. 28(토) 23:59"
+      ],
+      "sent_at": "2026-11-20T04:42:54.923428",
+      "deadline": "2026-11-28",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1573196926810071182",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1573196928664076360",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 SVC Seoul AI 해커톤 | 현대건설과 함께하는 주거생활 AI 아이디어",
+      "url": "https://onoffmix.com/event/353176",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(서울 마포구)`, `무료`, `대회`, `AI`",
+        "주최: 창업진흥원 · 현대건설 · SVC Seoul",
+        "접수: 11. 10(화) ~ 11. 29(일) 23:59"
+      ],
+      "sent_at": "2026-11-20T04:42:54.923428",
+      "deadline": "2026-11-29",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1573196926810071182",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1573196928664076360",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 창업도시 프로젝트 지역문제 해결형 AI활용 경진대회 (대구 로컬 AI 그라운드)",
+      "url": "https://www.dgucenter.or.kr/bbs/board.php?bo_table=notice&wr_id=744",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(대구)`, `무료`, `대회`, `AI`",
+        "주최: 대구정책연구원 · 대구광역시 창의도시재생지원센터",
+        "접수: 11. 06(금) ~ 11. 30(월) 18:00"
+      ],
+      "sent_at": "2026-11-20T04:42:54.923428",
+      "deadline": "2026-11-30",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1573196926810071182",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1573196928664076360",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "모두콘 2026: Deeper in AI",
+      "url": "https://service.modulabs.co.kr/r/moducon-github",
+      "month": "26년 12월",
+      "metadata": [
+        "분류: `오프라인(서울 서대문구)`, `무료`, `컨퍼런스`, `AI`",
+        "주최: 모두의연구소",
+        "접수: 11. 06(금) 20:00 ~ 12. 07(월) 12:00"
+      ],
+      "sent_at": "2026-11-20T04:42:54.923428",
+      "deadline": "2026-12-07",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1573196926810071182",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1573196928664076360",
           "style": "compact"
         }
       ]
