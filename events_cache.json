@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-11-21T04:38:39.220015",
+  "updated_at": "2026-11-22T03:52:28.980587",
   "boards": {
     "DISCORD_WEBHOOK_URL": {
       "id": "1562662554436640873"
@@ -3175,18 +3175,7 @@
       ],
       "sent_at": "2026-11-10T05:01:35.230349",
       "deadline": "2026-11-21",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1569577748027015309",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1569577751633993779",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "스크래퍼 개발자 모임 6회",
@@ -3430,18 +3419,7 @@
       ],
       "sent_at": "2026-11-13T03:55:45.313454",
       "deadline": "2026-11-21",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1570648342466404355",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1570648344550973483",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 SSAFYnity 커리어파티",
@@ -3454,18 +3432,7 @@
       ],
       "sent_at": "2026-11-13T03:55:45.313454",
       "deadline": "2026-11-21",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1570648342466404355",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1570648344550973483",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2026 AI 정보보호 세미나 | AI 시대, 사이버 위협과 보안 이야기",
@@ -3685,18 +3652,7 @@
       ],
       "sent_at": "2026-11-17T05:33:14.777952",
       "deadline": "2026-11-21",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1572122428937740363",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1572122432330932295",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "PyTorch;DeepDive!",
@@ -3709,18 +3665,7 @@
       ],
       "sent_at": "2026-11-17T05:33:14.777952",
       "deadline": "2026-11-21",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1572122428937740363",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1572122432330932295",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "[GenAI Lab 핸즈온] 안전하고 경제적인 AI 운영 — LLM Gateway 직접 설치해보기",
