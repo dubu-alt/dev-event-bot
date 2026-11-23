@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-11-22T03:52:28.980587",
+  "updated_at": "2026-11-23T04:31:27.999046",
   "boards": {
     "DISCORD_WEBHOOK_URL": {
       "id": "1562662554436640873"
@@ -3064,18 +3064,7 @@
       ],
       "sent_at": "2026-11-05T04:01:14.273921",
       "deadline": "2026-11-22",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1567750628103684137",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1567750630364155955",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "3rd vLLM Korea Meetup",
@@ -4158,18 +4147,7 @@
       ],
       "sent_at": "2026-11-21T04:38:39.220015",
       "deadline": "2026-11-22",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1573558240560554005",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1573558241667973125",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AAIF Daegu: Agentic AI Night",
