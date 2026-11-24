@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-11-23T04:31:27.999046",
+  "updated_at": "2026-11-24T07:25:55.847403",
   "boards": {
     "DISCORD_WEBHOOK_URL": {
       "id": "1562662554436640873"
@@ -3077,18 +3077,7 @@
       ],
       "sent_at": "2026-11-05T04:01:14.273921",
       "deadline": "2026-11-23",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1567750628103684137",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1567750630364155955",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "ClickHouse x OliveYoung x NxtCloud 서울 밋업",
@@ -3177,18 +3166,7 @@
       ],
       "sent_at": "2026-11-10T05:01:35.230349",
       "deadline": "2026-11-23",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1569577748027015309",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1569577751633993779",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "제5회 코드포코리아 시빅테크 컨퍼런스 '다시' 시빅해킹",
@@ -3434,18 +3412,7 @@
       ],
       "sent_at": "2026-11-13T03:55:45.313454",
       "deadline": "2026-11-23",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1570648342466404355",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1570648344550973483",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AI in class, AI at work (Dev Korea #20)",
@@ -3667,18 +3634,7 @@
       ],
       "sent_at": "2026-11-17T05:33:14.777952",
       "deadline": "2026-11-23",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1572122428937740363",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1572122432330932295",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AWSKRUG #Data x AIEngineering 소모임 - 비전 파운데이션 모델 ZERO 개발 과정 공유 [11월 26일]",
@@ -3691,18 +3647,7 @@
       ],
       "sent_at": "2026-11-17T05:33:14.777952",
       "deadline": "2026-11-23",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1572122428937740363",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1572122432330932295",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "잡코리아 프로덕트 컨퍼런스 | 흩어진 경계, 흔들리는 기준",
@@ -4361,6 +4306,630 @@
         {
           "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
           "id": "1573558241667973125",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 AI-Powered V&V Tools — 슈어소프트테크 웨비나",
+      "url": "https://onoffmix.com/event/353238",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `기술일반`, `AI`",
+        "주최: 슈어소프트테크",
+        "접수: 11. 23(월) ~ 11. 24(화) 23:59"
+      ],
+      "sent_at": "2026-11-24T07:25:55.847403",
+      "deadline": "2026-11-24",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1574687500973117601",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1574687503741358112",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Builders Lounge 11월 모임: AI 개발 시대, 기획의 중요성",
+      "url": "https://luma.com/b4s042ch",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `모임`, `AI`",
+        "주최: Builders Lounge",
+        "일시: 11. 25(수) 13:00 ~ 11. 25(수) 15:00"
+      ],
+      "sent_at": "2026-11-24T07:25:55.847403",
+      "deadline": "2026-11-25",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1574687500973117601",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1574687503741358112",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 청강 CK GAME SUMMIT — AI와 게임 산업의 미래 생태계를 논하다",
+      "url": "https://ck-game-summit-2026.vercel.app/",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(경기 성남)`, `무료`, `세미나`, `AI`",
+        "주최: 청강문화산업대학교 게임콘텐츠스쿨",
+        "접수: 11. 23(월) ~ 11. 25(수) 23:59"
+      ],
+      "sent_at": "2026-11-24T07:25:55.847403",
+      "deadline": "2026-11-25",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1574687500973117601",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1574687503741358112",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "[AI허브 안심존] Hands-On 데이터분석 : 미개방 데이터 체험",
+      "url": "https://onoffmix.com/event/353083",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(경기 성남)`, `무료`, `세미나`, `AI`",
+        "주최: 과학기술정보통신부 · 한국지능정보사회진흥원(NIA) AI허브 안심존",
+        "접수: 11. 09(월) ~ 11. 25(수)"
+      ],
+      "sent_at": "2026-11-24T07:25:55.847403",
+      "deadline": "2026-11-25",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1574687500973117601",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1574687503741358112",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Codex Community Meetup: Seoul",
+      "url": "https://luma.com/ek6u1wis",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `모임`, `AI`",
+        "주최: Codex Community Korea · Oracle Korea",
+        "일시: 11. 27(금) 19:00 ~ 11. 27(금) 21:00"
+      ],
+      "sent_at": "2026-11-24T07:25:55.847403",
+      "deadline": "2026-11-27",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1574687500973117601",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1574687503741358112",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "PyLadies Asia Conference 2026",
+      "url": "https://pyladies.kr/ko",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `세미나`, `기술일반`, `AI`",
+        "주최: PyLadies Seoul",
+        "접수: 11. 21(토) 22:00 ~ 11. 29(일) 10:30"
+      ],
+      "sent_at": "2026-11-24T07:25:55.847403",
+      "deadline": "2026-11-29",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1574687500973117601",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1574687503741358112",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "Build with Qwen: AutoRAG Hackathon 2026",
+      "url": "https://luma.com/pcd9sjr8",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `대회`, `AI`",
+        "주최: 알리바바 클라우드 · Markr · 브레인크루",
+        "접수: 11. 23(월) ~ 11. 29(일) 23:59"
+      ],
+      "sent_at": "2026-11-24T07:25:55.847403",
+      "deadline": "2026-11-29",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1574687500973117601",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1574687503741358112",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "ForwardThon 2026 — 기업의 숫자를 바꾸는 FDE 해커톤",
+      "url": "https://forwardthon.com/",
+      "month": "26년 11월",
+      "metadata": [
+        "분류: `오프라인(서울 광진구)`, `무료`, `대회`, `AI`",
+        "주최: 위시켓 · AIDP × 요즘IT",
+        "접수: 10. 22(목) ~ 11. 30(월) 23:59"
+      ],
+      "sent_at": "2026-11-24T07:25:55.847403",
+      "deadline": "2026-11-30",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1574687500973117601",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1574687503741358112",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "[한국체육산업개발] 공공데이터 활용 경진대회",
+      "url": "https://www.ssgsag.kr/posters/29549",
+      "month": "26년 12월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `대회`, `기술일반`",
+        "주최: 한국체육산업개발(주)",
+        "접수: 11. 02(월) ~ 12. 01(화) 18:00"
+      ],
+      "sent_at": "2026-11-24T07:25:55.847403",
+      "deadline": "2026-12-01",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1574687500973117601",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1574687503741358112",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "오렌지파크 해커톤 | 아이디어를 MVP로, 첫 고객을 만나기",
+      "url": "https://www.orangepark.or.kr/articles/A8345675",
+      "month": "26년 12월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `온라인`, `무료`, `대회`, `AI`",
+        "주최: 스마일게이트 오렌지플래닛",
+        "접수: 11. 17(화) ~ 12. 01(화)"
+      ],
+      "sent_at": "2026-11-24T07:25:55.847403",
+      "deadline": "2026-12-01",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1574687500973117601",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1574687503741358112",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "HSK Chain Horizon Hackathon · Seoul",
+      "url": "https://dorahacks.io/hackathon/hskchainseoul/detail",
+      "month": "26년 12월",
+      "metadata": [
+        "분류: `온라인`, `오프라인(서울 서초구)`, `무료`, `대회`, `블록체인`, `AI`",
+        "주최: 해시키 체인(HashKey Chain) · Pentabase",
+        "접수: 11. 20(금) ~ 12. 03(목) 13:00"
+      ],
+      "sent_at": "2026-11-24T07:25:55.847403",
+      "deadline": "2026-12-03",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1574687500973117601",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1574687503741358112",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "DevFest Seoul 2026",
+      "url": "https://event-us.kr/gdgseoul/event/140782",
+      "month": "26년 12월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `세미나`, `AI`",
+        "주최: GDG Seoul",
+        "접수: 11. 22(일) ~ 12. 06(일) 12:00"
+      ],
+      "sent_at": "2026-11-24T07:25:55.847403",
+      "deadline": "2026-12-06",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1574687500973117601",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1574687503741358112",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 서울 야간경제 활성화 해커톤 (Dopamine Seoul 24)",
+      "url": "https://aifactory.space/ko/competitions/9320",
+      "month": "26년 12월",
+      "metadata": [
+        "분류: `온라인`, `오프라인(서울 성동구)`, `무료`, `대회`, `기술일반`",
+        "주최: 서울특별시 · 서울창업허브 · 서울경제진흥원(SBA)",
+        "접수: 11. 18(수) 16:00 ~ 12. 07(월) 23:59"
+      ],
+      "sent_at": "2026-11-24T07:25:55.847403",
+      "deadline": "2026-12-07",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1574687500973117601",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1574687503741358112",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 강원 AI 창업아이디어 경진대회",
+      "url": "https://sangji-ai-startup-2026.workspace-700806.chatgpt.site/",
+      "month": "26년 12월",
+      "metadata": [
+        "분류: `오프라인(강원 원주)`, `무료`, `대회`, `AI`",
+        "주최: 상지대학교 앵커사업단 · 상상력집단",
+        "접수: 11. 23(월) ~ 12. 07(월) 23:59"
+      ],
+      "sent_at": "2026-11-24T07:25:55.847403",
+      "deadline": "2026-12-07",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1574687500973117601",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1574687503741358112",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2027년도 Apple 디벨로퍼 아카데미 6기 일반 전형 모집",
+      "url": "https://developeracademy.postech.ac.kr/apply",
+      "month": "26년 12월",
+      "metadata": [
+        "분류: `오프라인(포항)`, `무료`, `교육`, `기술일반`",
+        "주최: Apple Developer Academy @ POSTECH",
+        "접수: 05. 14(목) 09:00 ~ 12. 09(수) 13:00"
+      ],
+      "sent_at": "2026-11-24T07:25:55.847403",
+      "deadline": "2026-12-09",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1574687500973117601",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1574687503741358112",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "n8n Meetup Seoul · Year-End Meetup 2026",
+      "url": "https://luma.com/n8n-seoul-yearend-2026",
+      "month": "26년 12월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `모임`, `AI`",
+        "주최: 데이터팝콘 · n8n 서울 앰배서더",
+        "접수: 11. 23(월) 13:30 ~ 12. 09(수) 23:30"
+      ],
+      "sent_at": "2026-11-24T07:25:55.847403",
+      "deadline": "2026-12-09",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1574687500973117601",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1574687503741358112",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "제41회 IT 인프라 & 네트워크 전문가 따라잡기 'N.EX.T' 정기 기술 세미나",
+      "url": "https://onoffmix.com/event/353459",
+      "month": "26년 12월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `유료`, `세미나`, `기술일반`, `클라우드`",
+        "주최: IT 인프라 & 네트워크 전문가 따라잡기 커뮤니티",
+        "접수: 11. 23(월) ~ 12. 09(수) 23:59"
+      ],
+      "sent_at": "2026-11-24T07:25:55.847403",
+      "deadline": "2026-12-09",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1574687500973117601",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1574687503741358112",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AX Failure Con — 기업 AI 전환의 실패와 교훈",
+      "url": "https://day1ax.com/ax-failure-con/",
+      "month": "26년 12월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `세미나`, `AI`",
+        "주최: DAY1 AX (데이원컴퍼니)",
+        "일시: 12. 10(목) 16:00 ~ 12. 10(목) 18:30"
+      ],
+      "sent_at": "2026-11-24T07:25:55.847403",
+      "deadline": "2026-12-10",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1574687500973117601",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1574687503741358112",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "[잇츠맨 웨비나] 텔레메트리 기반 수집부터 AI 연계까지, 실제 구축 사례로 보는 인프라 장애 대응 전략",
+      "url": "https://onoffmix.com/event/353826",
+      "month": "26년 12월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `기술일반`",
+        "주최: 잇츠맨 · 바이텍씨스템",
+        "접수: 11. 23(월) ~ 12. 10(목) 14:00"
+      ],
+      "sent_at": "2026-11-24T07:25:55.847403",
+      "deadline": "2026-12-10",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1574687500973117601",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1574687503741358112",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 정보접근성기술 컨퍼런스 (2026 IAT Conference)",
+      "url": "https://onoffmix.com/event/351274",
+      "month": "26년 12월",
+      "metadata": [
+        "분류: `오프라인(서울 마포구)`, `무료`, `세미나`, `기술일반`",
+        "주최: (사)한국시각장애인연합회 · 한국장애인소비자평가원",
+        "접수: 11. 23(월) ~ 12. 10(목) 23:30"
+      ],
+      "sent_at": "2026-11-24T07:25:55.847403",
+      "deadline": "2026-12-10",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1574687500973117601",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1574687503741358112",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 AI학과 공모전 「일상의 편리를 위한 AI서비스개발」 (세종사이버대학교)",
+      "url": "https://cms.sjcu.ac.kr/artificial-intelligence/community/data.do?mode=view&articleNo=138524",
+      "month": "26년 12월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `대회`, `AI`",
+        "주최: 세종사이버대학교 AI학과",
+        "접수: 10. 06(화) ~ 12. 11(금)"
+      ],
+      "sent_at": "2026-11-24T07:25:55.847403",
+      "deadline": "2026-12-11",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1574687502600507467",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1574687508157956167",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "AutoRAG Agent 오픈소스 컨퍼런스 2026",
+      "url": "https://luma.com/1j9tw0oj",
+      "month": "26년 12월",
+      "metadata": [
+        "분류: `오프라인(서울 강남구)`, `무료`, `세미나`, `AI`",
+        "주최: Markr · 브레인크루",
+        "일시: 12. 14(월) 12:30 ~ 12. 14(월) 17:40"
+      ],
+      "sent_at": "2026-11-24T07:25:55.847403",
+      "deadline": "2026-12-14",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1574687502600507467",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1574687508157956167",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2026 국가시범도시 AI 아이디어·기술 공모전",
+      "url": "https://smartcity-ai.kr/",
+      "month": "26년 12월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `대회`, `AI`",
+        "주최: 국토교통부 · 스마트도시협회",
+        "접수: 11. 16(월) ~ 12. 14(월) 18:00"
+      ],
+      "sent_at": "2026-11-24T07:25:55.847403",
+      "deadline": "2026-12-14",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1574687502600507467",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1574687508157956167",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "MUG Seoul DEC 2026 - MongoDB 2026 Highlights",
+      "url": "https://luma.com/ftkf0lxh",
+      "month": "26년 12월",
+      "metadata": [
+        "분류: `오프라인(서울 서초구)`, `무료`, `모임`, `기술일반`, `AI`",
+        "주최: Seoul MongoDB User Group",
+        "일시: 12. 15(화) 19:00 ~ 12. 15(화) 21:30"
+      ],
+      "sent_at": "2026-11-24T07:25:55.847403",
+      "deadline": "2026-12-15",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1574687502600507467",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1574687508157956167",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "[잇츠맨 웨비나] PostgreSQL for the Enterprise — 안정성, 관리, 기술지원을 어떻게 확보할 것인가?",
+      "url": "https://onoffmix.com/event/353825",
+      "month": "26년 12월",
+      "metadata": [
+        "분류: `온라인`, `무료`, `세미나`, `기술일반`",
+        "주최: 잇츠맨 · 인젠트",
+        "접수: 11. 23(월) ~ 12. 17(목) 14:00"
+      ],
+      "sent_at": "2026-11-24T07:25:55.847403",
+      "deadline": "2026-12-17",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1574687502600507467",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1574687508157956167",
+          "style": "compact"
+        }
+      ]
+    },
+    {
+      "title": "2027 제 2회 Superb AI X BDAI Vision AI Hackathon",
+      "url": "https://bdai.co.kr/lectures/contest/18/",
+      "month": "27년 01월",
+      "metadata": [
+        "분류: `온라인`, `오프라인`, `무료`, `대회`, `AI`",
+        "주최: Superb AI × BDAI",
+        "접수: 11. 16(월) ~ 01. 10(일)"
+      ],
+      "sent_at": "2026-11-24T07:25:55.847403",
+      "deadline": "2028-01-10",
+      "messages": [
+        {
+          "webhook": "DISCORD_WEBHOOK_URL",
+          "id": "1574687502600507467",
+          "style": "compact"
+        },
+        {
+          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
+          "id": "1574687508157956167",
           "style": "compact"
         }
       ]
