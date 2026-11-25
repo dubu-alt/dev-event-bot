@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-11-24T07:25:55.847403",
+  "updated_at": "2026-11-25T05:55:53.552538",
   "boards": {
     "DISCORD_WEBHOOK_URL": {
       "id": "1562662554436640873"
@@ -2603,18 +2603,7 @@
       ],
       "sent_at": "2026-10-28T02:53:11.957132",
       "deadline": "2026-11-24",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1564834403107086450",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1564834411092901919",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": ".NET Conf 2026 @Seoul",
@@ -3425,18 +3414,7 @@
       ],
       "sent_at": "2026-11-13T03:55:45.313454",
       "deadline": "2026-11-24",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1570648342466404355",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1570648344550973483",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "AI 시안으로 개발자와 협업하기",
@@ -3449,18 +3427,7 @@
       ],
       "sent_at": "2026-11-13T03:55:45.313454",
       "deadline": "2026-11-24",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1570648342466404355",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1570648344550973483",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "2027 ChatGPT 도입 전략 세미나",
@@ -4321,18 +4288,7 @@
       ],
       "sent_at": "2026-11-24T07:25:55.847403",
       "deadline": "2026-11-24",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1574687500973117601",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1574687503741358112",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "Builders Lounge 11월 모임: AI 개발 시대, 기획의 중요성",
