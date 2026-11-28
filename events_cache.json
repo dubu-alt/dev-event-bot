@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-11-27T05:42:25.613912",
+  "updated_at": "2026-11-28T05:21:23.523592",
   "boards": {
     "DISCORD_WEBHOOK_URL": {
       "id": "1562662554436640873"
@@ -1114,18 +1114,7 @@
       ],
       "sent_at": "2026-09-24T02:00:18.444483",
       "deadline": "2026-11-27",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1552499904482517004",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1552499921020657717",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "FEConf 2026",
@@ -2618,18 +2607,7 @@
       ],
       "sent_at": "2026-10-28T02:53:11.957132",
       "deadline": "2026-11-27",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1564834403107086450",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1564834411092901919",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "GitHub Copilot 활용한 레거시 애플리케이션 현대화 핸즈온 워크샵",
@@ -2642,18 +2620,7 @@
       ],
       "sent_at": "2026-10-28T02:53:11.957132",
       "deadline": "2026-11-27",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1564834403107086450",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1564834411092901919",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "우리 회사 AI 에이전트, 도입 전에 직접 만들어보세요 | Agent in a Day",
@@ -2870,18 +2837,7 @@
       ],
       "sent_at": "2026-11-01T02:58:29.167271",
       "deadline": "2026-11-27",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1566285275284643982",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1566285277570404464",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "DevFest GDG Daejeon 2026",
@@ -3124,18 +3080,7 @@
       ],
       "sent_at": "2026-11-10T05:01:35.230349",
       "deadline": "2026-11-27",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1569577748027015309",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1569577751633993779",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "[토스페이먼츠] 2026 GEO 그로스 살롱 웨비나: 글로벌 진출 초기 챙겨야 할 GEO 전략",
@@ -4008,18 +3953,7 @@
       ],
       "sent_at": "2026-11-21T04:38:39.220015",
       "deadline": "2026-11-27",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1573558240560554005",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1573558241667973125",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "DevFest Cloud x Pangyo 2026",
@@ -4252,18 +4186,7 @@
       ],
       "sent_at": "2026-11-24T07:25:55.847403",
       "deadline": "2026-11-27",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1574687500973117601",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1574687503741358112",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "PyLadies Asia Conference 2026",
@@ -4780,18 +4703,7 @@
       ],
       "sent_at": "2026-11-27T05:42:25.613912",
       "deadline": "2026-11-27",
-      "messages": [
-        {
-          "webhook": "DISCORD_WEBHOOK_URL",
-          "id": "1575748617782689945",
-          "style": "compact"
-        },
-        {
-          "webhook": "DISCORD_SUMOKJANG_WEBHOOK",
-          "id": "1575748620475699231",
-          "style": "compact"
-        }
-      ]
+      "messages": []
     },
     {
       "title": "실감미디어와 콘텐츠 국제 컨퍼런스 2027 (IMC 2027)",
